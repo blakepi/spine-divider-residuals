@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{Descriptor-family conclusions by target.} The ratio is interpreted as a compact coordinate for the analytic local divider. Other targets require component, impedance, dynamic, conductance, or downstream filtering descriptors.}
+\label{tab:predictors}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+\toprule
+Target or question & Ratio/divider role & Additional descriptor evidence & Manuscript interpretation \\
+\midrule
+Local peak transfer $\Ghd$ & $\Gamma_{\mathrm{div}}$ CV RMSE 0.052 vs raw $\SMI$ 0.091 & log component pair RMSE 0.072 & divider transform is the correct first-order local scalar \\
+Divider residual $\Delta_{\mathrm{div}}$ & raw $\SMI$ abs Spearman 0.704 & dynamic SMI 0.853; $\Rneck$ about 0.765 & residuals retain dynamic/component information \\
+Head amplitude $\Ah$ & raw $\SMI$ abs Spearman 0.143 & synaptic conductance scale 0.982 & amplitude is primarily drive/load dependent \\
+Somatic transfer $\Ghs$ & raw $\SMI$ abs Spearman 0.553 & transfer gain 0.635; transfer impedance 0.602 & downstream filtering must be reported \\
+Attached vs omitted $\Rin$ & conceptually spine-omitted & median relative difference $-1.53\times10^{-6}$; 0/3702 class changes & omitted definition is clean; numerical change is negligible here \\
+Equal-ratio comparisons & ratio alone insufficient & passive iso-SMI spread 0.28 in $\Ghd$ and 0.61 in $\Ah$ & equal $\SMI$ is not electrical equivalence \\
+\bottomrule
+\end{tabular}}
+\end{table}

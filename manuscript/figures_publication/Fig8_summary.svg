@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1150" viewBox="0 0 1700 1150">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run during figure rendering.</desc>
+<rect x="0.000" y="0.000" width="1700.000" height="1150.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<text x="110.000" y="105.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<rect x="150.000" y="125.000" width="650.000" height="430.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="150.000" y1="125.000" x2="150.000" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="147.350" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="312.500" y1="125.000" x2="312.500" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="301.900" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.25</text>
+<line x1="475.000" y1="125.000" x2="475.000" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="467.050" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.5</text>
+<line x1="637.500" y1="125.000" x2="637.500" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="626.900" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.75</text>
+<line x1="800.000" y1="125.000" x2="800.000" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="797.350" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="754.798" y1="168.000" x2="763.629" y2="168.000" stroke="#0072B2" stroke-width="2.000"/>
+<rect x="150.000" y="154.000" width="609.965" height="28.000" rx="0.000" fill="#0072B2" stroke="none" stroke-width="1.000"/>
+<text x="62.210" y="172.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Passive local</text>
+<line x1="543.695" y1="230.000" x2="595.689" y2="230.000" stroke="#D55E00" stroke-width="2.000"/>
+<rect x="150.000" y="216.000" width="419.690" height="28.000" rx="0.000" fill="#D55E00" stroke="none" stroke-width="1.000"/>
+<text x="50.550" y="234.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Passive somatic</text>
+<line x1="253.479" y1="292.000" x2="338.354" y2="292.000" stroke="#CC79A7" stroke-width="2.000"/>
+<rect x="150.000" y="278.000" width="142.981" height="28.000" rx="0.000" fill="#CC79A7" stroke="none" stroke-width="1.000"/>
+<text x="38.890" y="296.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Passive amplitude</text>
+<line x1="753.422" y1="354.000" x2="762.504" y2="354.000" stroke="#0072B2" stroke-width="2.000"/>
+<rect x="150.000" y="340.000" width="608.585" height="28.000" rx="0.000" fill="#0072B2" stroke="none" stroke-width="1.000"/>
+<text x="68.040" y="358.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Active local</text>
+<line x1="544.842" y1="416.000" x2="594.221" y2="416.000" stroke="#D55E00" stroke-width="2.000"/>
+<rect x="150.000" y="402.000" width="419.145" height="28.000" rx="0.000" fill="#D55E00" stroke="none" stroke-width="1.000"/>
+<text x="56.380" y="420.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Active somatic</text>
+<line x1="250.448" y1="478.000" x2="334.448" y2="478.000" stroke="#CC79A7" stroke-width="2.000"/>
+<rect x="150.000" y="464.000" width="141.285" height="28.000" rx="0.000" fill="#CC79A7" stroke="none" stroke-width="1.000"/>
+<text x="44.720" y="482.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Active amplitude</text>
+<text x="354.160" y="612.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI association, absolute Spearman rho</text>
+<text x="900.000" y="105.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">B</text>
+<rect x="940.000" y="125.000" width="650.000" height="430.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="940.000" y1="125.000" x2="940.000" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="937.350" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="1156.667" y1="125.000" x2="1156.667" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="1146.067" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.25</text>
+<line x1="1373.333" y1="125.000" x2="1373.333" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="1365.383" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.5</text>
+<line x1="1590.000" y1="125.000" x2="1590.000" y2="555.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="1579.400" y="578.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.75</text>
+<line x1="1492.754" y1="178.000" x2="1505.924" y2="178.000" stroke="#CC79A7" stroke-width="2.000"/>
+<rect x="940.000" y="163.000" width="559.371" height="30.000" rx="0.000" fill="#CC79A7" stroke="none" stroke-width="1.000"/>
+<text x="770.590" y="182.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Passive equal-SMI amplitude</text>
+<text x="1507.371" y="182.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">64.5%</text>
+<line x1="1096.379" y1="260.000" x2="1100.855" y2="260.000" stroke="#D55E00" stroke-width="2.000"/>
+<rect x="940.000" y="245.000" width="158.605" height="30.000" rx="0.000" fill="#D55E00" stroke="none" stroke-width="1.000"/>
+<text x="764.760" y="264.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Passive iso-transfer failure</text>
+<text x="1106.605" y="264.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">18.3%</text>
+<line x1="1434.376" y1="342.000" x2="1447.972" y2="342.000" stroke="#CC79A7" stroke-width="2.000"/>
+<rect x="940.000" y="327.000" width="501.191" height="30.000" rx="0.000" fill="#CC79A7" stroke="none" stroke-width="1.000"/>
+<text x="788.080" y="346.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Active amplitude failure</text>
+<text x="1449.191" y="346.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">57.8%</text>
+<line x1="940.000" y1="424.000" x2="940.219" y2="424.000" stroke="#0072B2" stroke-width="2.000"/>
+<rect x="940.000" y="409.000" width="0.000" height="30.000" rx="0.000" fill="#0072B2" stroke="none" stroke-width="1.000"/>
+<text x="811.400" y="428.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#1F1F1F">Active local failure</text>
+<text x="948.000" y="428.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">0.0%</text>
+<text x="1147.340" y="612.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">counterexample design fraction, N=768</text>
+<text x="110.000" y="710.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">C</text>
+<rect x="150.000" y="730.000" width="1440.000" height="310.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<circle cx="182.000" cy="760.000" r="8.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="765.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI is a local isolation descriptor</text>
+<text x="1160.000" y="765.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0072B2">supported</text>
+<circle cx="182.000" cy="803.000" r="8.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="808.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI is not a reliable amplitude predictor</text>
+<text x="1160.000" y="808.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#009E73">strongly supported</text>
+<circle cx="182.000" cy="846.000" r="8.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="851.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI is not a universal transfer predictor</text>
+<text x="1160.000" y="851.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0072B2">supported</text>
+<circle cx="182.000" cy="889.000" r="8.000" fill="#E69F00" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="894.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">Active mechanisms sharpen SMI limitations</text>
+<text x="1160.000" y="894.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#E69F00">uncertain</text>
+<circle cx="182.000" cy="932.000" r="8.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="937.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">Equal SMI does not imply electrical equivalence</text>
+<text x="1160.000" y="937.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#009E73">strongly supported</text>
+<circle cx="182.000" cy="975.000" r="8.000" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<text x="205.000" y="980.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI class assignments are stable under radius uncertainty</text>
+<text x="1160.000" y="980.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#B2182B">contradicted</text>
+</svg>

@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{Active-extension parameter audit.} All mechanisms are disabled in the baseline reference configuration and enabled only through active-extension configurations or explicit protocols.}
+\label{tab:active_parameters}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllll}
+\toprule
+Mechanism & Main parameters & Values & Units & Provenance/status \\
+\midrule
+AMPA & $g_{\max}$; $\tau_r$; $\tau_d$; $E_{\mathrm{rev}}$ & 1.4; 0.3; 3.0; 0 & nS; ms; ms; mV & active-extension double exponential \\
+NMDA & $g_{\max}$; $\tau_r$; $\tau_d$; Mg; $\eta$; $\gamma$ & 0.7; 2.0; 80.0; 1.0; 3.57; 0.062 & nS; ms; ms; mM; mM; mV$^{-1}$ & reduced magnesium block family \\
+Na & $\bar g$; $E_{\mathrm{rev}}$; gates & 6.0; 55; $m^3h$ & nS; mV; dimensionless & restrained HH-style extension \\
+KDR & $\bar g$; $E_{\mathrm{rev}}$; gates & 1.5; -90; $n^4$ & nS; mV; dimensionless & restrained HH-style extension \\
+HCN & $\bar g$; $E_{\mathrm{rev}}$; gates & 0.05; -30; $r$ & nS; mV; dimensionless & generic subthreshold HCN approximation \\
+A-type K & $\bar g$; $E_{\mathrm{rev}}$; gates & 0.5; -90; $a^3b$ & nS; mV; dimensionless & restrained transient potassium extension \\
+CaT & $\bar g$; $E_{\mathrm{rev}}$; gates & 0.05; 120; $p^2q$ & nS; mV; dimensionless & electrical-only restrained calcium extension \\
+\bottomrule
+\end{tabular}}
+\end{table}

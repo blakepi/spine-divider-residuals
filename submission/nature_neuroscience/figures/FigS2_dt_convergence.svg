@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="-199.354" y1="575.000" x2="-199.354" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="-212.604" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1e-03</text>
+<line x1="665.987" y1="575.000" x2="665.987" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="655.387" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.01</text>
+<line x1="1531.329" y1="575.000" x2="1531.329" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1523.379" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="140.000" y1="575.000" x2="145.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="575.000" x2="995.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="475.284" x2="145.000" y2="475.284" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="475.284" x2="995.000" y2="475.284" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="479.284" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.5</text>
+<line x1="140.000" y1="375.569" x2="145.000" y2="375.569" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="375.569" x2="995.000" y2="375.569" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="379.569" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="140.000" y1="275.853" x2="145.000" y2="275.853" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="275.853" x2="995.000" y2="275.853" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="279.853" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1.5</text>
+<line x1="140.000" y1="176.137" x2="145.000" y2="176.137" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="176.137" x2="995.000" y2="176.137" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="180.137" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">2</text>
+<line x1="140.000" y1="76.422" x2="145.000" y2="76.422" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="76.422" x2="995.000" y2="76.422" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="80.422" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">2.5</text>
+<text x="547.740" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">dt (ms)</text>
+<text x="89.000" y="365.440" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,365.440)">A_h (mV)</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<circle cx="926.481" cy="105.023" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="665.987" cy="105.185" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="405.494" cy="105.268" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="145.000" cy="105.310" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Baseline timestep convergence</text>
+</svg>

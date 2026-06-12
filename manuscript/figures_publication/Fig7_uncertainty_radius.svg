@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1200" viewBox="0 0 1700 1200">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1700.000" height="1200.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="130.000" y="130.000" width="610.000" height="420.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="143.556" y1="550.000" x2="143.556" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="132.956" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">96.0</text>
+<line x1="224.889" y1="550.000" x2="224.889" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="216.939" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">192</text>
+<line x1="387.556" y1="550.000" x2="387.556" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="379.606" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">384</text>
+<line x1="712.889" y1="550.000" x2="712.889" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="704.939" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">768</text>
+<line x1="125.000" y1="550.000" x2="130.000" y2="550.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="550.000" x2="740.000" y2="550.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="115.700" y="554.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="125.000" y1="464.833" x2="130.000" y2="464.833" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="464.833" x2="740.000" y2="464.833" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="99.800" y="468.833" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.05</text>
+<line x1="125.000" y1="379.665" x2="130.000" y2="379.665" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="379.665" x2="740.000" y2="379.665" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="383.665" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="125.000" y1="294.498" x2="130.000" y2="294.498" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="294.498" x2="740.000" y2="294.498" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="99.800" y="298.498" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.15</text>
+<line x1="125.000" y1="209.330" x2="130.000" y2="209.330" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="209.330" x2="740.000" y2="209.330" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="213.330" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<line x1="125.000" y1="124.163" x2="130.000" y2="124.163" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="124.163" x2="740.000" y2="124.163" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="99.800" y="128.163" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.25</text>
+<text x="390.480" y="598.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">sample count N</text>
+<text x="74.000" y="349.540" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 74.000,349.540)">SMI</text>
+<text x="92.000" y="118.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<line x1="143.556" y1="167.000" x2="143.556" y2="507.000" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="138.556" y1="167.000" x2="148.556" y2="167.000" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="138.556" y1="507.000" x2="148.556" y2="507.000" stroke="#0072B2" stroke-width="1.300"/>
+<circle cx="143.556" cy="412.935" r="5.500" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<line x1="224.889" y1="164.360" x2="224.889" y2="506.520" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="219.889" y1="164.360" x2="229.889" y2="164.360" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="219.889" y1="506.520" x2="229.889" y2="506.520" stroke="#0072B2" stroke-width="1.300"/>
+<circle cx="224.889" cy="413.984" r="5.500" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<line x1="387.556" y1="197.066" x2="387.556" y2="507.964" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="382.556" y1="197.066" x2="392.556" y2="197.066" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="382.556" y1="507.964" x2="392.556" y2="507.964" stroke="#0072B2" stroke-width="1.300"/>
+<circle cx="387.556" cy="417.420" r="5.500" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<line x1="712.889" y1="188.518" x2="712.889" y2="504.261" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="707.889" y1="188.518" x2="717.889" y2="188.518" stroke="#0072B2" stroke-width="1.300"/>
+<line x1="707.889" y1="504.261" x2="717.889" y2="504.261" stroke="#0072B2" stroke-width="1.300"/>
+<circle cx="712.889" cy="415.798" r="5.500" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<polyline points="143.556,412.935 224.889,413.984 387.556,417.420 712.889,415.798" fill="none" stroke="#0072B2" stroke-width="2.000" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="178.800" y="193.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#0072B2">Median and 2.5-97.5% sampled range</text>
+<text x="178.800" y="206.750" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#0072B2">deterministic seeds</text>
+<rect x="925.000" y="130.000" width="610.000" height="420.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="964.415" y1="550.000" x2="964.415" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="956.465" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">192</text>
+<line x1="1144.600" y1="550.000" x2="1144.600" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1136.650" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">384</text>
+<line x1="1504.969" y1="550.000" x2="1504.969" y2="555.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1497.019" y="570.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">768</text>
+<line x1="920.000" y1="550.000" x2="925.000" y2="550.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="550.000" x2="1535.000" y2="550.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="910.700" y="554.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="920.000" y1="375.000" x2="925.000" y2="375.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="375.000" x2="1535.000" y2="375.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="894.800" y="379.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.05</text>
+<line x1="920.000" y1="200.000" x2="925.000" y2="200.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="200.000" x2="1535.000" y2="200.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="204.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<text x="1185.480" y="598.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">sample count N</text>
+<text x="869.000" y="387.700" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 869.000,387.700)">relative change</text>
+<text x="887.000" y="118.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">B</text>
+<polyline points="964.415,523.005 1144.600,459.284 1504.969,507.682" fill="none" stroke="#D55E00" stroke-width="2.300" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="964.415" cy="523.005" r="5.500" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="1144.600" cy="459.284" r="5.500" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="1504.969" cy="507.682" r="5.500" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<line x1="925.000" y1="200.000" x2="1535.000" y2="200.000" stroke="#B2182B" stroke-width="1.600" stroke-dasharray="6,5"/>
+<text x="973.800" y="188.800" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#B2182B">10% convergence</text>
+<text x="973.800" y="202.550" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#B2182B">threshold retained</text>
+<rect x="130.000" y="740.000" width="610.000" height="330.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="143.556" y1="1070.000" x2="143.556" y2="1075.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="132.956" y="1090.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">96.0</text>
+<line x1="224.889" y1="1070.000" x2="224.889" y2="1075.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="216.939" y="1090.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">192</text>
+<line x1="387.556" y1="1070.000" x2="387.556" y2="1075.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="379.606" y="1090.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">384</text>
+<line x1="712.889" y1="1070.000" x2="712.889" y2="1075.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="704.939" y="1090.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">768</text>
+<line x1="125.000" y1="1070.000" x2="130.000" y2="1070.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="1070.000" x2="740.000" y2="1070.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="115.700" y="1074.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="125.000" y1="985.216" x2="130.000" y2="985.216" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="985.216" x2="740.000" y2="985.216" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="989.216" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="125.000" y1="900.432" x2="130.000" y2="900.432" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="900.432" x2="740.000" y2="900.432" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="904.432" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<line x1="125.000" y1="815.648" x2="130.000" y2="815.648" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="815.648" x2="740.000" y2="815.648" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="819.648" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.3</text>
+<line x1="125.000" y1="730.864" x2="130.000" y2="730.864" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="730.864" x2="740.000" y2="730.864" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="734.864" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.4</text>
+<text x="390.480" y="1118.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">sample count N</text>
+<text x="74.000" y="965.420" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 74.000,965.420)">class flip fraction</text>
+<text x="92.000" y="728.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">C</text>
+<line x1="143.556" y1="806.000" x2="143.556" y2="944.720" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="138.556" y1="806.000" x2="148.556" y2="806.000" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="138.556" y1="944.720" x2="148.556" y2="944.720" stroke="#CC79A7" stroke-width="1.300"/>
+<circle cx="143.556" cy="884.535" r="5.500" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="224.889" y1="821.089" x2="224.889" y2="921.309" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="219.889" y1="821.089" x2="229.889" y2="821.089" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="219.889" y1="921.309" x2="229.889" y2="921.309" stroke="#CC79A7" stroke-width="1.300"/>
+<circle cx="224.889" cy="875.703" r="5.500" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="387.556" y1="837.892" x2="387.556" y2="908.966" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="382.556" y1="837.892" x2="392.556" y2="837.892" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="382.556" y1="908.966" x2="392.556" y2="908.966" stroke="#CC79A7" stroke-width="1.300"/>
+<circle cx="387.556" cy="875.703" r="5.500" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="712.889" y1="840.219" x2="712.889" y2="891.326" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="707.889" y1="840.219" x2="717.889" y2="840.219" stroke="#CC79A7" stroke-width="1.300"/>
+<line x1="707.889" y1="891.326" x2="717.889" y2="891.326" stroke="#CC79A7" stroke-width="1.300"/>
+<circle cx="712.889" cy="866.871" r="5.500" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<polyline points="143.556,884.535 224.889,875.703 387.556,875.703 712.889,866.871" fill="none" stroke="#CC79A7" stroke-width="2.000" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="422.800" y="792.800" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#CC79A7">Radius error: SD=0.018 um</text>
+<text x="422.800" y="806.550" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#CC79A7">thresholds: 0.25, 0.75</text>
+<text x="890.000" y="728.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">D</text>
+<rect x="925.000" y="740.000" width="610.000" height="330.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="955.000" y="772.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">Boundary examples</text>
+<line x1="1097.051" y1="815.000" x2="1305.978" y2="815.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1149.406" cy="815.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="819.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 94</text>
+<text x="1475.000" y="819.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">low</text>
+<line x1="1101.031" y1="855.000" x2="1276.205" y2="855.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1147.307" cy="855.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="859.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 19</text>
+<text x="1475.000" y="859.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">low</text>
+<line x1="1091.526" y1="895.000" x2="1267.351" y2="895.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1140.969" cy="895.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="899.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 16</text>
+<text x="1475.000" y="899.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">low</text>
+<line x1="1075.523" y1="935.000" x2="1169.036" y2="935.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1115.665" cy="935.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="939.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 61</text>
+<text x="1475.000" y="939.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">low</text>
+<line x1="1082.265" y1="975.000" x2="1243.013" y2="975.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1119.718" cy="975.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="979.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 77</text>
+<text x="1475.000" y="979.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">low</text>
+<line x1="1122.201" y1="1015.000" x2="1381.590" y2="1015.000" stroke="#666666" stroke-width="2.000"/>
+<circle cx="1205.072" cy="1015.000" r="5.200" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<line x1="1156.667" y1="800.000" x2="1156.667" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<line x1="1390.000" y1="800.000" x2="1390.000" y2="1045.000" stroke="#E6E6E6" stroke-width="1.000" stroke-dasharray="4,4"/>
+<text x="955.000" y="1019.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">id 81</text>
+<text x="1475.000" y="1019.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">intermediate</text>
+<text x="1141.880" y="1088.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">SMI range under radius uncertainty</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="159.685" y1="575.000" x2="159.685" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="149.085" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">28.0</text>
+<line x1="368.640" y1="575.000" x2="368.640" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="358.040" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">30.0</text>
+<line x1="577.595" y1="575.000" x2="577.595" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="566.995" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">32.0</text>
+<line x1="786.550" y1="575.000" x2="786.550" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="775.950" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">34.0</text>
+<line x1="995.505" y1="575.000" x2="995.505" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="984.905" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">36.0</text>
+<line x1="140.000" y1="575.000" x2="145.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="575.000" x2="995.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="462.826" x2="145.000" y2="462.826" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="462.826" x2="995.000" y2="462.826" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="466.826" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<line x1="140.000" y1="350.652" x2="145.000" y2="350.652" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="350.652" x2="995.000" y2="350.652" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="354.652" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.4</text>
+<line x1="140.000" y1="238.478" x2="145.000" y2="238.478" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="238.478" x2="995.000" y2="238.478" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="242.478" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.6</text>
+<line x1="140.000" y1="126.303" x2="145.000" y2="126.303" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="126.303" x2="995.000" y2="126.303" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="130.303" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.8</text>
+<text x="512.760" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">effective R (MOhm)</text>
+<text x="89.000" y="371.800" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,371.800)">Gamma h-&gt;d</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<circle cx="559.937" cy="115.586" r="5.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="203.621" cy="106.470" r="5.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="936.379" cy="124.841" r="5.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="781.585" cy="121.081" r="5.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="559.937" cy="115.582" r="5.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Neck-model comparison</text>
+</svg>

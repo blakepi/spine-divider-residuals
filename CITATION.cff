@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use SPINE, please cite the manuscript and this submission release."
+title: "Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models"
+version: "1.0.0-submission"
+date-released: "2026-06-12"
+type: software
+authors:
+  - family-names: Pierpoint
+    given-names: Gregory
+    orcid: "https://orcid.org/0000-0001-8288-8549"
+  - family-names: Musto
+    given-names: Alberto
+    name-particle: "MD, PhD"
+    orcid: "https://orcid.org/0000-0002-0877-8883"
+repository-code: "TO_BE_INSERTED_AFTER_MANUAL_GITHUB_UPLOAD"
+license: MIT
+abstract: "SPINE analyzes residuals from the classical load-normalized spine-neck voltage divider in compartmental dendritic-spine models."

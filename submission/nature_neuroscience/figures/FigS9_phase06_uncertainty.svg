@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="820" viewBox="0 0 1350 820">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run during figure rendering.</desc>
+<rect x="0.000" y="0.000" width="1350.000" height="820.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="190.000" y="105.000" width="900.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="240.000" y1="575.000" x2="240.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="237.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="340.000" y1="575.000" x2="340.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="337.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">2</text>
+<line x1="440.000" y1="575.000" x2="440.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="437.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">3</text>
+<line x1="540.000" y1="575.000" x2="540.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="537.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">4</text>
+<line x1="640.000" y1="575.000" x2="640.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="637.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">5</text>
+<line x1="740.000" y1="575.000" x2="740.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="737.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">6</text>
+<line x1="840.000" y1="575.000" x2="840.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="837.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">7</text>
+<line x1="940.000" y1="575.000" x2="940.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="937.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">8</text>
+<line x1="1040.000" y1="575.000" x2="1040.000" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1037.350" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">9</text>
+<line x1="185.000" y1="575.000" x2="190.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="575.000" x2="1090.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="175.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="185.000" y1="473.227" x2="190.000" y2="473.227" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="473.227" x2="1090.000" y2="473.227" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="159.800" y="477.227" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.03</text>
+<line x1="185.000" y1="371.454" x2="190.000" y2="371.454" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="371.454" x2="1090.000" y2="371.454" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="159.800" y="375.454" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.05</text>
+<line x1="185.000" y1="269.681" x2="190.000" y2="269.681" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="269.681" x2="1090.000" y2="269.681" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="159.800" y="273.681" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.07</text>
+<line x1="185.000" y1="167.909" x2="190.000" y2="167.909" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="167.909" x2="1090.000" y2="167.909" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="165.100" y="171.909" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="185.000" y1="66.136" x2="190.000" y2="66.136" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="190.000" y1="66.136" x2="1090.000" y2="66.136" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="159.800" y="70.136" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.12</text>
+<text x="640.000" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124"></text>
+<text x="134.000" y="416.320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 134.000,416.320)">SMI uncertainty interval</text>
+<text x="152.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<line x1="240.000" y1="291.139" x2="240.000" y2="411.523" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="235.000" y1="291.139" x2="245.000" y2="291.139" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="235.000" y1="411.523" x2="245.000" y2="411.523" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="240.000" cy="341.309" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="340.000" y1="146.338" x2="340.000" y2="279.144" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="335.000" y1="146.338" x2="345.000" y2="146.338" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="335.000" y1="279.144" x2="345.000" y2="279.144" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="340.000" cy="200.421" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="440.000" y1="253.711" x2="440.000" y2="419.857" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="435.000" y1="253.711" x2="445.000" y2="253.711" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="435.000" y1="419.857" x2="445.000" y2="419.857" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="440.000" cy="363.902" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="540.000" y1="292.400" x2="540.000" y2="416.423" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="535.000" y1="292.400" x2="545.000" y2="292.400" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="535.000" y1="416.423" x2="545.000" y2="416.423" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="540.000" cy="356.271" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="640.000" y1="253.824" x2="640.000" y2="419.857" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="635.000" y1="253.824" x2="645.000" y2="253.824" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="635.000" y1="419.857" x2="645.000" y2="419.857" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="640.000" cy="357.591" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="740.000" y1="250.595" x2="740.000" y2="413.603" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="735.000" y1="250.595" x2="745.000" y2="250.595" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="735.000" y1="413.603" x2="745.000" y2="413.603" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="740.000" cy="366.881" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="840.000" y1="287.936" x2="840.000" y2="409.228" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="835.000" y1="287.936" x2="845.000" y2="287.936" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="835.000" y1="409.228" x2="845.000" y2="409.228" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="840.000" cy="364.554" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="940.000" y1="136.856" x2="940.000" y2="341.114" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="935.000" y1="136.856" x2="945.000" y2="136.856" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="935.000" y1="341.114" x2="945.000" y2="341.114" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="940.000" cy="255.705" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<line x1="1040.000" y1="367.979" x2="1040.000" y2="455.413" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="1035.000" y1="367.979" x2="1045.000" y2="367.979" stroke="#B2182B" stroke-width="1.300"/>
+<line x1="1035.000" y1="455.413" x2="1045.000" y2="455.413" stroke="#B2182B" stroke-width="1.300"/>
+<circle cx="1040.000" cy="414.842" r="5.500" fill="#B2182B" stroke="white" stroke-width="0.800"/>
+<text x="223.305" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">matched</text>
+<text x="220.920" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">baseline</text>
+<text x="316.150" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">morphology</text>
+<text x="320.920" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">dominant</text>
+<text x="432.845" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">hcn</text>
+<text x="418.535" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">reduction</text>
+<text x="518.535" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">potassium</text>
+<text x="530.460" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">loss</text>
+<text x="620.920" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">synaptic</text>
+<text x="620.920" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">strength</text>
+<text x="730.460" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">nmda</text>
+<text x="711.380" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">contribution</text>
+<text x="816.150" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">clustering</text>
+<text x="818.535" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">synchrony</text>
+<text x="920.920" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">combined</text>
+<text x="913.765" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">stress test</text>
+<text x="1013.765" y="620.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">alternative</text>
+<text x="1018.535" y="634.000" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#1F1F1F">direction</text>
+<text x="190.000" y="710.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Exploratory Phase 06 scenario uncertainty is kept separate from the general physiological model.</text>
+</svg>

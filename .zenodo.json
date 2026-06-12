@@ -1,0 +1,26 @@
+{
+  "title": "Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models",
+  "upload_type": "software",
+  "description": "SPINE submission release for reproducible residual-domain analysis of a load-normalized spine-neck ratio.",
+  "creators": [
+    {
+      "name": "Pierpoint, Gregory",
+      "orcid": "0000-0001-8288-8549",
+      "affiliation": "Department of Neurology, Macon & Joan Brock Virginia Health Sciences, Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA"
+    },
+    {
+      "name": "Musto, Alberto",
+      "orcid": "0000-0002-0877-8883",
+      "affiliation": "Department of Neurology, Macon & Joan Brock Virginia Health Sciences, Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dendritic spines",
+    "compartmental modeling",
+    "cable theory",
+    "voltage divider",
+    "reproducible modeling"
+  ],
+  "related_identifiers": []
+}

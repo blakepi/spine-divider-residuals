@@ -1,0 +1,7 @@
+claim,classification,evidence
+SMI is a local isolation descriptor,supported,N=768; passive SMI abs_spearman=0.9384077670334999 rank=4; active SMI abs_spearman=0.9362839837120628 rank=4
+SMI is not a reliable amplitude predictor,strongly supported,N=768; passive amplitude SMI abs_spearman=0.2199705727396185; active amplitude SMI abs_spearman=0.21736197766109494; passive amplitude failures=0.6454282711508145
+SMI is not a universal transfer predictor,supported,N=768; passive somatic SMI rank=5 abs_spearman=0.6456772042205882; active somatic SMI rank=1 abs_spearman=0.6448388965842295
+Active mechanisms sharpen SMI limitations,uncertain,N=768; active amplitude failure prevalence=0.5782974251182343; passive amplitude failure prevalence=0.6454282711508145
+Equal SMI does not imply electrical equivalence,strongly supported,N=768; passive iso-SMI amplitude failure prevalence=0.6454282711508145; active amplitude failure prevalence=0.5782974251182343
+SMI class assignments are stable under radius uncertainty,contradicted,N=768; radius-induced class flip fraction=0.23958333333333334; SMI median convergence delta from previous N=0.012090835475659055

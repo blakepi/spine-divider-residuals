@@ -1,0 +1,6 @@
+validation_component,status,rows,max_primary_difference,units,interpretation
+NEURON availability,unavailable,0,,,importlib.util.find_spec('neuron') returned None in the bundled Python runtime
+independent direct matrix benchmark,completed,3,1.249000902703301e-13,mV,independent matrix implementation reproduced existing SPINE baseline traces to numerical precision
+DC analytic benchmark,completed,9,2.0265579223632812e-12,MOhm or dimensionless by row,"closed-form divider, load, limit, and attached one-port checks passed algebraically"
+BE-vs-CN peak comparison,completed,3,0.0020271018306221578,mV,internal integration-scheme peak differences are bounded and small
+diagnostic figures,completed,1,,,diagnostic-only trace overlay figures under results/revision_restart/phase4/diagnostic_figures

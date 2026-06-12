@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="630" viewBox="0 0 1500 630">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run during figure rendering.</desc>
+<rect x="0.000" y="0.000" width="1500.000" height="630.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<text x="80.000" y="80.000" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1F1F1F">A</text>
+<text x="80.000" y="135.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">spine head</text>
+<circle cx="205.000" cy="205.000" r="64.000" fill="#56B4E9" stroke="#1F1F1F" stroke-width="1.600"/>
+<text x="190.160" y="210.000" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#1F1F1F">head</text>
+<line x1="270.000" y1="205.000" x2="430.000" y2="205.000" stroke="#1F1F1F" stroke-width="3.000"/>
+<line x1="300.000" y1="185.000" x2="318.000" y2="225.000" stroke="#D55E00" stroke-width="2.400"/>
+<line x1="330.000" y1="185.000" x2="348.000" y2="225.000" stroke="#D55E00" stroke-width="2.400"/>
+<line x1="360.000" y1="185.000" x2="378.000" y2="225.000" stroke="#D55E00" stroke-width="2.400"/>
+<line x1="390.000" y1="185.000" x2="408.000" y2="225.000" stroke="#D55E00" stroke-width="2.400"/>
+<text x="270.765" y="165.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">geometry-derived R_neck</text>
+<rect x="430.000" y="150.000" width="290.000" height="110.000" rx="8.000" fill="#D8F0E8" stroke="#1F1F1F" stroke-width="1.400"/>
+<text x="515.375" y="195.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">parent dendrite</text>
+<text x="511.400" y="222.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#1F1F1F">R_in,d measured here</text>
+<line x1="720.000" y1="205.000" x2="890.000" y2="205.000" stroke="#1F1F1F" stroke-width="3.000"/>
+<circle cx="965.000" cy="205.000" r="54.000" fill="#F7D7C4" stroke="#1F1F1F" stroke-width="1.500"/>
+<text x="950.160" y="210.000" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#1F1F1F">soma</text>
+<line x1="205.000" y1="75.000" x2="205.000" y2="135.000" stroke="#CC79A7" stroke-width="2.300"/>
+<text x="153.325" y="66.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#CC79A7">AMPA/NMDA input</text>
+<rect x="1035.000" y="130.000" width="340.000" height="150.000" rx="8.000" fill="#F7F7F7" stroke="#1F1F1F" stroke-width="1.100"/>
+<text x="1060.000" y="165.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">SMI = R_neck / R_in,d</text>
+<text x="1060.000" y="198.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Stimulated spine omitted for R_in,d</text>
+<text x="1060.000" y="228.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Low-frequency local isolation descriptor</text>
+<text x="1060.000" y="258.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Not a universal transient predictor</text>
+<text x="80.000" y="395.000" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1F1F1F">B</text>
+<rect x="120.000" y="455.000" width="215.000" height="115.000" rx="8.000" fill="white" stroke="#0072B2" stroke-width="2.400"/>
+<text x="195.700" y="500.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">Baseline</text>
+<text x="179.800" y="518.750" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">reproduction</text>
+<line x1="342.000" y1="512.500" x2="368.000" y2="512.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="368.000" y1="512.500" x2="353.000" y2="503.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="368.000" y1="512.500" x2="353.000" y2="521.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<rect x="380.000" y="455.000" width="215.000" height="115.000" rx="8.000" fill="white" stroke="#009E73" stroke-width="2.400"/>
+<text x="415.950" y="500.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">Passive morphology</text>
+<text x="435.825" y="518.750" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">and impedance</text>
+<line x1="602.000" y1="512.500" x2="628.000" y2="512.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="628.000" y1="512.500" x2="613.000" y2="503.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="628.000" y1="512.500" x2="613.000" y2="521.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<rect x="640.000" y="455.000" width="215.000" height="115.000" rx="8.000" fill="white" stroke="#D55E00" stroke-width="2.400"/>
+<text x="703.775" y="500.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">Active/NMDA</text>
+<text x="707.750" y="518.750" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">extensions</text>
+<line x1="862.000" y1="512.500" x2="888.000" y2="512.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="888.000" y1="512.500" x2="873.000" y2="503.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="888.000" y1="512.500" x2="873.000" y2="521.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<rect x="900.000" y="455.000" width="215.000" height="115.000" rx="8.000" fill="white" stroke="#CC79A7" stroke-width="2.400"/>
+<text x="947.875" y="500.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">Uncertainty and</text>
+<text x="947.875" y="518.750" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">identifiability</text>
+<line x1="1122.000" y1="512.500" x2="1148.000" y2="512.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="1148.000" y1="512.500" x2="1133.000" y2="503.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<line x1="1148.000" y1="512.500" x2="1133.000" y2="521.500" stroke="#1F1F1F" stroke-width="2.000"/>
+<rect x="1160.000" y="455.000" width="215.000" height="115.000" rx="8.000" fill="white" stroke="#666666" stroke-width="2.400"/>
+<text x="1223.775" y="500.000" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">Publication</text>
+<text x="1235.700" y="518.750" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#1F1F1F">revision</text>
+</svg>

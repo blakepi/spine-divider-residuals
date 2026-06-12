@@ -1,0 +1,7 @@
+claim,classification,evidence
+SMI is a local isolation descriptor,supported,Passive local best=dynamic_SMI_abs_50Hz abs_spearman=0.9997693977211068; bootstrap p05=0.871190990774843
+SMI is not a reliable somatic-transfer predictor,uncertain,Somatic best=SMI abs_spearman=0.6442078133478025; SMI=0.6442078133478025
+SMI is not a reliable amplitude predictor,strongly supported,Amplitude best=synaptic_conductance_scale abs_spearman=0.9836950623982637; SMI=0.09921323928377646
+Equal SMI does not imply electrical equivalence,strongly supported,Passive iso-SMI amplitude prevalence=0.625 (dominant)
+Impedance-based descriptors outperform SMI for somatic transfer,uncertain,Best passive somatic predictor=SMI vs SMI=0.6442078133478025
+Active mechanisms sharpen rather than erase SMI limitations,uncertain,Active amplitude prevalence=0.5546875; passive amplitude prevalence=0.625

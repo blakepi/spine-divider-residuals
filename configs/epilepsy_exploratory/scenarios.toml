@@ -1,0 +1,62 @@
+track = "epilepsy_exploratory"
+description = "Evidence-graded exploratory Phase 06 scenario definitions. Not a calibrated disease model."
+
+[matched_baseline]
+evidence_grade = "control"
+summary = "Exploratory matched baseline used only as an internal comparator."
+
+[morphology_dominant]
+evidence_grade = "limited_conflicting"
+neck_radius_scale = 0.85
+neck_length_scale = 1.20
+head_radius_scale = 1.10
+summary = "Restrained spine-geometry perturbation to test whether SMI changes dominate active responses."
+
+[hcn_reduction]
+evidence_grade = "conflicting"
+hcn_scale = 0.40
+summary = "HCN/Ih reduction scenario; literature also includes contexts with HCN increases."
+
+[potassium_loss_of_function]
+evidence_grade = "moderate"
+kdr_scale = 0.80
+ka_scale = 0.50
+summary = "Reduced potassium availability/excitability-control scenario."
+
+[increased_exc_synaptic_strength]
+evidence_grade = "limited"
+synaptic_g_scale = 1.50
+summary = "Increased excitatory conductance scenario without changing morphology."
+
+[increased_nmda_contribution]
+evidence_grade = "limited"
+nmda_fraction = 0.65
+summary = "Increased NMDA contribution with magnesium block retained."
+
+[increased_clustering_synchrony]
+evidence_grade = "limited"
+cluster_spine_count = 3
+synaptic_g_scale = 1.25
+summary = "Clustered synchronous input scenario."
+
+[combined_restrained_epileptogenesis]
+evidence_grade = "compound_uncertain"
+neck_radius_scale = 0.90
+neck_length_scale = 1.15
+head_radius_scale = 1.08
+dendritic_leak_scale = 1.30
+hcn_scale = 0.50
+kdr_scale = 0.85
+ka_scale = 0.65
+synaptic_g_scale = 1.30
+nmda_fraction = 0.55
+cluster_spine_count = 3
+summary = "Combined restrained perturbation used as a stress test, not as a calibrated disease model."
+
+[alternative_direction_conflicting]
+evidence_grade = "conflicting"
+neck_radius_scale = 1.10
+neck_length_scale = 0.90
+hcn_scale = 1.50
+synaptic_g_scale = 0.90
+summary = "Opposite-direction scenario preserving conflicting literature possibilities."

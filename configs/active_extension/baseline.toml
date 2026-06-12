@@ -1,0 +1,48 @@
+[meta]
+track = "active_extension"
+description = "Phase 04 active/nonlinear extension configuration. Manuscript-faithful parameters remain unchanged and active mechanisms are opt-in only."
+
+[reversal]
+leak_mV = -70.0
+excitatory_synapse_mV = 0.0
+sodium_mV = 55.0
+potassium_mV = -90.0
+hcn_mV = -30.0
+calcium_mV = 120.0
+
+[synapse.ampa]
+g_max_nS = 1.4
+tau_rise_ms = 0.3
+tau_decay_ms = 3.0
+
+[synapse.nmda]
+g_max_nS = 0.7
+tau_rise_ms = 2.0
+tau_decay_ms = 80.0
+magnesium_mM = 1.0
+eta_mM = 3.57
+gamma_per_mV = 0.062
+
+[active_channels]
+enabled = true
+default_profile = "full_restrained"
+na_gbar_nS = 6.0
+kdr_gbar_nS = 1.5
+hcn_gbar_nS = 0.05
+ka_gbar_nS = 0.5
+cat_gbar_nS = 0.05
+
+[numerics]
+time_step_ms = 0.02
+refined_time_step_ms = 0.005
+simulation_stop_ms = 80.0
+metric_window_ms = 50.0
+event_time_ms = 20.0
+voltage_min_mV = -200.0
+voltage_max_mV = 150.0
+
+[validation]
+strong_drive_scale = 4.0
+rest_stability_mV = 1.0
+timestep_relative_tolerance = 0.05
+solver_relative_tolerance = 0.075

@@ -1,0 +1,8 @@
+validation,value,threshold,passed
+latin_hypercube_reproducibility,True,True,True
+local_sensitivity_radius_Rneck,-2.0100376253918015,-2 +/- 0.02,True
+local_sensitivity_length_Rneck,0.9999999999999997,1 +/- 0.02,True
+local_sensitivity_resistivity_Rneck,1.0000000000000002,1 +/- 0.02,True
+uncertainty_convergence_48_vs_96,0.18885434806962575,0.1,False
+bootstrap_seed_fixed,202606,202606,True
+cross_validation_seed_fixed,202607,202607,True

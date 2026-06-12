@@ -1,0 +1,11 @@
+field,value,unit
+track,manuscript_faithful,
+dt,0.01,ms
+stop,80.0,ms
+metric_window,50.0,ms
+E_L,-70.0,mV
+E_syn,0.0,mV
+g_max,1.4,nS
+tau_rise,0.3,ms
+tau_decay,3.0,ms
+t0,20.0,ms

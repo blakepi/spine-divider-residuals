@@ -1,0 +1,105 @@
+file_path,row_count,relevant_columns,analytic_divider_computable,observed_gamma_available,regime_labels_available,residual_analysis_possible,used_in_phase1_primary,caveats
+results\phase02\caption_discrepancy_table.csv,9,condition,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase02\central_smi_claim_tests.csv,5,,no,no,no,no,no,
+results\phase02\convergence_dt_intermediate.csv,4,condition; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; A_h_mV_abs_diff_vs_0_0025_ms; Gamma_h_to_d_abs_diff_vs_0_0025_ms; Gamma_h_to_s_abs_diff_vs_0_0025_ms,yes,yes,yes,yes,yes,Validation rows repeat the intermediate reference condition across dt.
+results\phase02\Figure2_high_trace.csv,8001,condition,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase02\Figure2_intermediate_trace.csv,8001,condition,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase02\Figure2_low_trace.csv,8001,condition,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase02\Figure2_representative_summary.csv,3,condition; neck_resistance_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; peak_neck_current_pA_head_to_dendrite,yes,yes,yes,yes,yes,
+results\phase02\Figure3_geometry_sweep.csv,400,neck_resistance_Mohm; R_in_d_Mohm; SMI; Gamma_h_to_s; Gamma_h_to_d; A_h_mV,yes,yes,no,yes,yes,
+results\phase02\Figure4_matched_neck_heterogeneous_load.csv,30,neck_resistance_Mohm; R_in_d_Mohm; SMI; Gamma_h_to_s; Gamma_h_to_d; A_h_mV,yes,yes,no,yes,yes,
+results\phase02\reproduction_parameters.csv,10,,no,no,no,no,no,
+results\phase03\chirp_validation.csv,4,,no,no,no,no,no,
+results\phase03\falsification_summary.csv,2,,no,no,no,no,no,
+results\phase03\impedance_spectrum.csv,18,Z_transfer_abs_Mohm; Z_transfer_phase_rad; dynamic_SMI_abs; dynamic_SMI_phase_rad,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase03\iso_transfer_counterexamples.csv,5,case_a; case_b; Gamma_h_to_d_a; Gamma_h_to_d_b; SMI_a; SMI_b; relative_SMI_difference,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase03\neck_model_comparison.csv,5,effective_R_neck_Mohm; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,no,yes,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase03\phase03_summary.csv,7,smi_abs_spearman,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase03\predictor_comparison.csv,33,,no,no,no,no,no,
+results\phase03\sinusoidal_validation.csv,3,,no,no,no,no,no,
+results\phase03\smi_challenge_suite.csv,24,case; R_neck_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz,yes,yes,yes,yes,yes,
+results\phase03\spatial_convergence.csv,4,R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Gamma_h_to_s_rel_diff_vs_32seg,yes,yes,no,yes,yes,"Spatial convergence rows are validation rows, not independent biological samples."
+results\phase04\active_falsification_summary.csv,12,,no,no,no,no,no,
+results\phase04\active_impedance_operating_point.csv,12,Zin_Mohm; Ztransfer_Mohm; transfer_gain,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase04\active_multivariable_diagnostic.csv,3,,no,no,no,no,no,
+results\phase04\active_predictor_comparison.csv,260,,no,no,yes,no,no,
+results\phase04\active_protocol_library.csv,14,protocol_family; protocol; active_profile; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,no,yes,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase04\active_smi_challenge_suite.csv,47,case; protocol; active_profile; R_neck_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Zin_50Hz_Mohm; transfer_gain_50Hz; active_frozen_Zin_50Hz_Mohm; active_frozen_transfer_gain_50Hz; active_profile_channel_count,yes,yes,yes,yes,yes,
+results\phase04\active_validation.csv,12,,no,no,no,no,no,
+results\phase04\phase04_summary.csv,16,smi_abs_spearman,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05\claim_robustness.csv,6,,no,no,no,no,no,
+results\phase05\counterexample_prevalence.csv,6,,no,no,no,no,no,
+results\phase05\global_uncertainty_samples.csv,96,R_neck_Mohm; R_in_d_Mohm; SMI; SMI_class; Gamma_h_to_d; Gamma_h_to_s; A_h_mV; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_Gamma_h_to_d; active_Gamma_h_to_s; active_A_h_mV; active_local_voltage_isolation; active_Zin_50Hz_Mohm; active_transfer_gain_50Hz; active_dynamic_SMI_abs_50Hz; AMPA_only_A_h_mV; NMDA_delta_A_h_fraction,yes,yes,no,yes,yes,Deterministic uncertainty-design rows; not biological samples.
+results\phase05\identifiability_degeneracy_examples.csv,60,SMI_a; SMI_b; relative_SMI_difference; Gamma_h_to_d_a; Gamma_h_to_d_b; Gamma_h_to_d_abs_difference; A_h_mV_a; A_h_mV_b; A_h_relative_difference,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05\local_sensitivity.csv,210,,no,no,no,no,no,
+results\phase05\phase05_summary.csv,19,,no,no,no,no,no,
+results\phase05\phase05_validation.csv,7,,no,no,no,no,no,
+results\phase05\predictor_comparison.csv,210,,no,no,yes,no,no,
+results\phase05\radius_uncertainty_class_stability.csv,96,true_SMI; measured_SMI_min; measured_SMI_max,yes,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05\residual_analysis.csv,20,,no,no,yes,no,no,
+results\phase05\uncertainty_decomposition.csv,98,,no,no,no,no,no,
+results\phase05\uncertainty_distributions.csv,14,,no,no,no,no,no,
+results\phase05\uncertainty_summary.csv,12,,no,no,no,no,no,
+results\phase05_1\claim_reassessment.csv,6,,no,no,no,no,no,
+results\phase05_1\convergence_cause_diagnostics.csv,4,smi_mean; smi_median; smi_sd; smi_coefficient_of_variation; smi_skewness; smi_p95_over_median; radius_smi_spearman; length_smi_spearman; resistivity_smi_spearman; rin_smi_spearman,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05_1\counterexample_prevalence_by_n.csv,24,,no,no,no,no,no,
+results\phase05_1\global_uncertainty_samples_N192.csv,192,R_neck_Mohm; R_in_d_Mohm; SMI; SMI_class; Gamma_h_to_d; Gamma_h_to_s; A_h_mV; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_Gamma_h_to_d; active_Gamma_h_to_s; active_A_h_mV; active_local_voltage_isolation; active_Zin_50Hz_Mohm; active_transfer_gain_50Hz; active_dynamic_SMI_abs_50Hz; AMPA_only_A_h_mV; NMDA_delta_A_h_fraction,yes,yes,no,yes,yes,Deterministic uncertainty-design rows; not biological samples.
+results\phase05_1\global_uncertainty_samples_N384.csv,384,R_neck_Mohm; R_in_d_Mohm; SMI; SMI_class; Gamma_h_to_d; Gamma_h_to_s; A_h_mV; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_Gamma_h_to_d; active_Gamma_h_to_s; active_A_h_mV; active_local_voltage_isolation; active_Zin_50Hz_Mohm; active_transfer_gain_50Hz; active_dynamic_SMI_abs_50Hz; AMPA_only_A_h_mV; NMDA_delta_A_h_fraction,yes,yes,no,yes,yes,Deterministic uncertainty-design rows; not biological samples.
+results\phase05_1\global_uncertainty_samples_N768.csv,768,R_neck_Mohm; R_in_d_Mohm; SMI; SMI_class; Gamma_h_to_d; Gamma_h_to_s; A_h_mV; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_Gamma_h_to_d; active_Gamma_h_to_s; active_A_h_mV; active_local_voltage_isolation; active_Zin_50Hz_Mohm; active_transfer_gain_50Hz; active_dynamic_SMI_abs_50Hz; AMPA_only_A_h_mV; NMDA_delta_A_h_fraction,yes,yes,no,yes,yes,Deterministic uncertainty-design rows; not biological samples.
+results\phase05_1\global_uncertainty_samples_N96.csv,96,R_neck_Mohm; R_in_d_Mohm; SMI; SMI_class; Gamma_h_to_d; Gamma_h_to_s; A_h_mV; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_Gamma_h_to_d; active_Gamma_h_to_s; active_A_h_mV; active_local_voltage_isolation; active_Zin_50Hz_Mohm; active_transfer_gain_50Hz; active_dynamic_SMI_abs_50Hz; AMPA_only_A_h_mV; NMDA_delta_A_h_fraction,yes,yes,no,yes,yes,Deterministic uncertainty-design rows; not biological samples.
+results\phase05_1\phase05_1_validation.csv,7,,no,no,no,no,no,
+results\phase05_1\predictor_rankings_by_n.csv,328,,no,no,yes,no,no,
+results\phase05_1\predictor_stability_summary.csv,56,smi_abs_spearman; smi_bootstrap_p05; smi_bootstrap_p95; smi_cv_rmse; smi_rank,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05_1\progressive_convergence_deltas.csv,108,,no,no,no,no,no,
+results\phase05_1\progressive_uncertainty_summary.csv,48,,no,no,no,no,no,
+results\phase05_1\radius_boundary_examples.csv,48,true_SMI; measured_SMI_min; measured_SMI_max; SMI_fold_range,yes,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05_1\radius_only_uncertainty.csv,1440,true_SMI; true_R_neck_Mohm; R_neck_min_Mohm; R_neck_max_Mohm; R_neck_relative_range; SMI_min; SMI_max; SMI_relative_range,yes,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase05_1\radius_uncertainty_by_n.csv,4,median_radius_induced_SMI_fold_range,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase06\claim_classification.csv,5,,no,no,no,no,no,
+results\phase06\epilepsy_evidence_table.csv,13,,no,no,no,no,no,
+results\phase06\falsifiable_predictions.csv,3,,no,no,no,no,no,
+results\phase06\matched_baseline_comparisons.csv,27,scenario; protocol; baseline_protocol; R_neck_Mohm_value; R_neck_Mohm_baseline; R_neck_Mohm_delta; R_neck_Mohm_relative_delta; R_in_d_Mohm_value; R_in_d_Mohm_baseline; R_in_d_Mohm_delta; R_in_d_Mohm_relative_delta; SMI_value; SMI_baseline; SMI_delta; SMI_relative_delta; A_h_mV_value; A_h_mV_baseline; A_h_mV_delta; A_h_mV_relative_delta; Gamma_h_to_d_value; Gamma_h_to_d_baseline; Gamma_h_to_d_delta; Gamma_h_to_d_relative_delta; Gamma_h_to_s_value; Gamma_h_to_s_baseline; Gamma_h_to_s_delta; Gamma_h_to_s_relative_delta; active_frozen_Zin_50Hz_Mohm_value; active_frozen_Zin_50Hz_Mohm_baseline; active_frozen_Zin_50Hz_Mohm_delta; active_frozen_Zin_50Hz_Mohm_relative_delta,yes,yes,yes,yes,yes,Comparison table uses *_value columns and may overlap scenario_metrics.
+results\phase06\mechanistic_decomposition.csv,8,SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; active_frozen_Zin_50Hz_Mohm; A_h_mV_delta_vs_baseline; Gamma_h_to_d_delta_vs_baseline; Gamma_h_to_s_delta_vs_baseline,yes,yes,no,yes,yes,Exploratory decomposition rows only.
+results\phase06\phase06_validation.csv,6,,no,no,no,no,no,
+results\phase06\predictor_table.csv,52,,no,no,no,no,no,
+results\phase06\provenance_metadata.csv,1,uncertainty_n_per_scenario,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\phase06\scenario_definitions.csv,9,,no,no,no,no,no,
+results\phase06\scenario_metrics.csv,27,scenario; protocol; R_neck_Mohm; R_in_d_Mohm; SMI; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_frozen_Zin_50Hz_Mohm; active_frozen_Ztransfer_50Hz_Mohm; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,yes,yes,yes,yes,yes,Exploratory supplemental scenarios only; no disease or clinical claim.
+results\phase06\scenario_uncertainty_samples.csv,72,scenario; protocol; R_neck_Mohm; R_in_d_Mohm; SMI; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_frozen_Zin_50Hz_Mohm; active_frozen_Ztransfer_50Hz_Mohm; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,yes,yes,yes,yes,yes,N=8 per exploratory scenario sensitivity screen; no biological inference.
+results\phase06\scenario_uncertainty_summary.csv,54,scenario,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r3\r3_active_parameter_table.csv,7,,no,no,no,no,no,
+results\revision_v2\r3\r3_be_cn_peak_comparison.csv,3,condition; BE_A_h_mV; CN_A_h_mV; A_h_abs_diff_mV; BE_Gamma_h_to_d; CN_Gamma_h_to_d; Gamma_h_to_d_abs_diff; BE_Gamma_h_to_s; CN_Gamma_h_to_s; Gamma_h_to_s_abs_diff,no,no,yes,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r3\r3_convergence_display_table.csv,16,,no,no,no,no,no,
+results\revision_v2\r3\r3_counterexample_prevalence_intervals.csv,30,,no,no,no,no,no,
+results\revision_v2\r3\r3_headline_statistics.csv,16,,no,no,no,no,no,
+results\revision_v2\r3\r3_lhs_parameter_ranges.csv,14,,no,no,no,no,no,
+results\revision_v2\r3\r3_numeric_rounding_map.csv,43,,no,no,no,no,no,
+results\revision_v2\r3\r3_predictor_comparison_intervals.csv,261,regime,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r3\r3_radius_flip_examples.csv,20,true_SMI; SMI_min; SMI_max; R_neck_relative_range; SMI_relative_range; R_in_d_Mohm,yes,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r3\r3_radius_uncertainty_summary.csv,4,median_radius_induced_SMI_fold_range; smi_class_thresholds,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r3\r3_target_validation_tolerances.csv,5,exact_or_pass_condition; approximate_condition; failure_condition,no,no,no,no,no,Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\active_falsification_summary.csv,12,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\active_impedance_operating_point.csv,12,Zin_Mohm; Ztransfer_Mohm; transfer_gain,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\active_protocol_library.csv,14,protocol_family; protocol; active_profile; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,no,yes,yes,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\active_smi_challenge_suite.csv,47,case; protocol; active_profile; R_neck_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Zin_50Hz_Mohm; transfer_gain_50Hz; active_frozen_Zin_50Hz_Mohm; active_frozen_transfer_gain_50Hz; active_profile_channel_count,yes,yes,yes,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\claim_reassessment.csv,6,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\convergence_dt_intermediate.csv,4,condition; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; A_h_mV_abs_diff_vs_0_0025_ms; Gamma_h_to_d_abs_diff_vs_0_0025_ms; Gamma_h_to_s_abs_diff_vs_0_0025_ms,yes,yes,yes,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\falsification_summary.csv,2,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\Figure2_high_trace.csv,8001,condition,no,no,yes,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\Figure2_intermediate_trace.csv,8001,condition,no,no,yes,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\Figure2_low_trace.csv,8001,condition,no,no,yes,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\Figure2_representative_summary.csv,3,condition; neck_resistance_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; peak_neck_current_pA_head_to_dendrite,yes,yes,yes,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\Figure3_geometry_sweep.csv,400,neck_resistance_Mohm; R_in_d_Mohm; SMI; Gamma_h_to_s; Gamma_h_to_d; A_h_mV,yes,yes,no,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\Figure4_matched_neck_heterogeneous_load.csv,30,neck_resistance_Mohm; R_in_d_Mohm; SMI; Gamma_h_to_s; Gamma_h_to_d; A_h_mV,yes,yes,no,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\impedance_spectrum.csv,18,Z_transfer_abs_Mohm; Z_transfer_phase_rad; dynamic_SMI_abs; dynamic_SMI_phase_rad,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\neck_model_comparison.csv,5,effective_R_neck_Mohm; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,no,yes,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\progressive_convergence_deltas.csv,108,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\progressive_uncertainty_summary.csv,48,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\r3_counterexample_prevalence_intervals.csv,30,,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\r3_predictor_comparison_intervals.csv,261,regime,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\r3_radius_uncertainty_summary.csv,4,median_radius_induced_SMI_fold_range; smi_class_thresholds,no,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\radius_boundary_examples.csv,48,true_SMI; measured_SMI_min; measured_SMI_max; SMI_fold_range,yes,no,no,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\scenario_metrics.csv,27,scenario; protocol; R_neck_Mohm; R_in_d_Mohm; SMI; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz; dynamic_SMI_abs_50Hz; active_frozen_Zin_50Hz_Mohm; active_frozen_Ztransfer_50Hz_Mohm; A_h_mV; Gamma_h_to_d; Gamma_h_to_s,yes,yes,yes,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\scenario_uncertainty_summary.csv,54,scenario,no,no,yes,no,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows. Relevant descriptors present but SMI and observed Gamma_h_to_d are not both available.
+results\revision_v2\r4\figure_data_snapshots\smi_challenge_suite.csv,24,case; R_neck_Mohm; R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Zin_50Hz_Mohm; Ztransfer_50Hz_Mohm; transfer_gain_50Hz,yes,yes,yes,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.
+results\revision_v2\r4\figure_data_snapshots\spatial_convergence.csv,4,R_in_d_Mohm; SMI; A_h_mV; Gamma_h_to_d; Gamma_h_to_s; Gamma_h_to_s_rel_diff_vs_32seg,yes,yes,no,yes,no,R4 figure-data snapshot; not used in primary residual table to avoid duplicate rows.

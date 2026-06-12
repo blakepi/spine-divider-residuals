@@ -1,0 +1,6 @@
+claim,classification,basis
+Epilepsy exploratory perturbations should remain separate from baseline SPINE claims.,strongly_supported,Phase 06 configs and outputs are under epilepsy_exploratory and contain no clinical claim field beyond none.
+SMI remains a local isolation descriptor under restrained epilepsy-like perturbations.,supported,"SMI/topology changes track local isolation in isolated protocols, but active/synaptic variables also alter amplitudes; combined delta A_h=4.083 mV."
+SMI is not a reliable active-regime amplitude predictor.,supported,Top A_h predictor in combined scenario ensemble was synaptic_g_scale; SMI is challenged by synaptic/NMDA/channel perturbations.
+Equal or similar SMI does not imply electrical equivalence in exploratory epilepsy scenarios.,supported,"HCN, potassium, synaptic-strength, NMDA, and clustering scenarios can leave SMI unchanged while changing amplitude, latency, voltage integral, or active impedance."
+The exploratory module can identify disease mechanisms.,contradicted,"Evidence grades are mixed and parameter values are restrained sensitivity probes, not calibrated disease mechanisms."

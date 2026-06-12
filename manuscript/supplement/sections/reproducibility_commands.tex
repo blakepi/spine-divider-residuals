@@ -1,0 +1,30 @@
+\section{Reproducibility Commands}
+
+The following commands reproduce the validated software checks and manuscript source-data generation in a local development environment. Broad primary ensembles should not be rerun casually during review unless the authors intentionally regenerate the source data.
+
+Windows PowerShell:
+\begingroup\footnotesize
+\begin{verbatim}
+$env:PYTHONPATH='src'
+python -m unittest discover -s tests -p 'test_*.py'
+python -m spine.cli smoke configs\manuscript_faithful\baseline.toml `
+  --output-csv results\phase01_smoke_trace.csv
+python scripts\reproduce_manuscript.py
+python scripts\revision_restart\phase4_validation_runner.py
+python scripts\revision_restart\phase7_generate_divider_residual_figure.py
+\end{verbatim}
+\endgroup
+
+Unix shell:
+\begingroup\footnotesize
+\begin{verbatim}
+PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
+PYTHONPATH=src python -m spine.cli smoke configs/manuscript_faithful/baseline.toml \
+  --output-csv results/phase01_smoke_trace.csv
+PYTHONPATH=src python scripts/reproduce_manuscript.py
+PYTHONPATH=src python scripts/revision_restart/phase4_validation_runner.py
+PYTHONPATH=src python scripts/revision_restart/phase7_generate_divider_residual_figure.py
+\end{verbatim}
+\endgroup
+
+Reviewer-access package drafts include manifests and checksums. Private access, public release, archival deposition, and license selection remain subject to author, PI, institutional, and journal approval.

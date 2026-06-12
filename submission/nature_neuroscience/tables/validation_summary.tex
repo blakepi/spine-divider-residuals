@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{Validation and credibility summary.} Checks are scoped to what they actually test. Internal scheme agreement is numerical self-consistency; the independent direct-matrix and DC analytic checks are the executed Phase 4 fallback benchmark because NEURON was unavailable.}
+\label{tab:validation}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+\toprule
+Domain & Check & Result & Interpretation \\
+\midrule
+Baseline target cases & low/intermediate/high references & 9/9 tolerance-class pass & reference equations and metrics reproduce intended ordering \\
+Independent matrix benchmark & passive baseline traces & max all-trace difference $1.25\times10^{-13}$ mV & independent implementation agreement to roundoff \\
+DC analytic benchmark & two-node $\Rin$ and divider limits & $\Rin=144.486692$ M$\Omega$; roundoff agreement & validates divider/load algebra \\
+BE versus CN & reference peak differences & max $\Ah$ difference 0.00203 mV; max $\Ghd$ difference 0.000500 & internal scheme consistency \\
+Passive impedance checks & sinusoid/chirp/spatial convergence & errors 0.0054, 0.072, and 0.014 & passive morphology numerics within tested scope \\
+Active mechanism checks & active and NMDA safeguards & 12/12 rows passed & opt-in generic active stress tests \\
+Deterministic uncertainty & N=384 to N=768 SMI median & 0.012 $<$ 0.10 & sampled low/intermediate summaries stabilized \\
+High-SMI uncertainty coverage & N=768 ensemble classes & 757 low, 11 intermediate, 0 high & high-SMI uncertainty not covered \\
+NEURON cross-check & availability check & unavailable & no NEURON result claimed \\
+Public-release staging & finalization package & manifest and checksums generated in submission/final & prepared for manual GitHub/Zenodo upload \\
+\bottomrule
+\end{tabular}}
+\end{table}

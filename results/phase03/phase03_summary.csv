@@ -1,0 +1,8 @@
+summary_item,value,statistic,numeric_value,smi_abs_spearman,interpretation
+best_predictor_for_Gamma_h_to_d,SMI,abs_spearman,0.9423418891382007,0.9423418891382007,SMI best
+best_predictor_for_Gamma_h_to_s,transfer_gain_50Hz,abs_spearman,0.8161232439547772,0.12101469786336652,alternative outperforms SMI
+best_predictor_for_A_h_mV,Zin_50Hz_Mohm,abs_spearman,0.7756003065880958,0.04761950204731751,alternative outperforms SMI
+max_sinusoidal_relative_amplitude_error,,max,0.005428165516106269,,passes <=5% criterion
+max_chirp_relative_amplitude_error,,max,0.07226976505686024,,passes <=10% criterion
+iso_smi_Gamma_h_to_d_spread,,relative_spread,0.27864641325190864,,SMI failure/counterexample
+iso_smi_A_h_spread,,relative_spread,0.6143403656099966,,SMI failure/counterexample

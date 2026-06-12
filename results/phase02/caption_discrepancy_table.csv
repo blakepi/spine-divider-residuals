@@ -1,0 +1,10 @@
+figure,condition,metric,reported_value,reproduced_value,absolute_error,relative_error,unit,classification
+Figure 2,low,SMI,0.01,0.008812157901719679,0.001187842098280321,0.1187842098280321,dimensionless,exact reproduction
+Figure 2,low,Gamma_h_to_d,0.984,0.9839703151549639,2.968484503607094e-05,3.0167525443161523e-05,dimensionless,exact reproduction
+Figure 2,low,Gamma_h_to_s,0.357,0.35665667443127486,0.000343325568725128,0.0009616962709387339,dimensionless,exact reproduction
+Figure 2,intermediate,SMI,0.11,0.1147416393453083,0.004741639345308302,0.04310581223007547,dimensionless,exact reproduction
+Figure 2,intermediate,Gamma_h_to_d,0.751,0.7512821308690512,0.0002821308690511559,0.00037567359394295063,dimensionless,exact reproduction
+Figure 2,intermediate,Gamma_h_to_s,0.272,0.27267058580960674,0.0006705858096067163,0.002465389005907045,dimensionless,exact reproduction
+Figure 2,high,SMI,1.32,1.3218236852579517,0.0018236852579516238,0.0013815797408724421,dimensionless,exact reproduction
+Figure 2,high,Gamma_h_to_d,0.102,0.10213244622161508,0.0001324462216150818,0.0012984923687753118,dimensionless,exact reproduction
+Figure 2,high,Gamma_h_to_s,0.038,0.037555947626859855,0.0004440523731401441,0.011685588766845898,dimensionless,exact reproduction

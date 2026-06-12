@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="163.889" y1="575.000" x2="163.889" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="153.289" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">96.0</text>
+<line x1="277.222" y1="575.000" x2="277.222" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="269.272" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">192</text>
+<line x1="503.889" y1="575.000" x2="503.889" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="495.939" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">384</text>
+<line x1="957.222" y1="575.000" x2="957.222" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="949.272" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">768</text>
+<line x1="140.000" y1="575.000" x2="145.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="575.000" x2="995.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="459.071" x2="145.000" y2="459.071" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="459.071" x2="995.000" y2="459.071" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="463.071" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.05</text>
+<line x1="140.000" y1="343.142" x2="145.000" y2="343.142" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="343.142" x2="995.000" y2="343.142" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="347.142" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="140.000" y1="227.213" x2="145.000" y2="227.213" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="227.213" x2="995.000" y2="227.213" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="231.213" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.15</text>
+<line x1="140.000" y1="111.284" x2="145.000" y2="111.284" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="111.284" x2="995.000" y2="111.284" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="115.284" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<text x="525.480" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">sample count N</text>
+<text x="89.000" y="409.960" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,409.960)">SMI sampled-range width</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<polyline points="163.889,112.196 277.222,109.255 503.889,151.809 957.222,145.214" fill="none" stroke="#CC79A7" stroke-width="2.300" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="163.889" cy="112.196" r="6.000" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<circle cx="277.222" cy="109.255" r="6.000" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<circle cx="503.889" cy="151.809" r="6.000" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<circle cx="957.222" cy="145.214" r="6.000" fill="#CC79A7" stroke="white" stroke-width="0.800"/>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Continuous SMI interval width is shown separately from radius class-boundary flips.</text>
+</svg>

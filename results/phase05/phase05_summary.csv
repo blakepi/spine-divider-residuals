@@ -1,0 +1,20 @@
+summary_item,value,numeric_value,detail
+validation_passed,False,6,7 validation checks
+best_predictor_Gamma_h_to_d,dynamic_SMI_abs_50Hz,0.9997693977211068,SMI abs_spearman=0.9155453065653826
+best_predictor_Gamma_h_to_s,SMI,0.6442078133478025,SMI abs_spearman=0.6442078133478025
+best_predictor_A_h_mV,synaptic_conductance_scale,0.9836950623982637,SMI abs_spearman=0.09921323928377646
+best_predictor_active_Gamma_h_to_d,R_neck_Mohm,0.9979924036896365,SMI abs_spearman=0.9140124796527401
+best_predictor_active_Gamma_h_to_s,SMI,0.6964324470971243,SMI abs_spearman=0.6964324470971243
+best_predictor_active_A_h_mV,synaptic_conductance_scale,0.9848209441128595,SMI abs_spearman=0.09313619099294629
+passive_iso_SMI_local_failure,rare,0.0,0/256
+passive_iso_SMI_amplitude_failure,dominant,0.625,160/256
+passive_iso_transfer_failure,common,0.19044006069802732,251/1318
+active_iso_SMI_local_failure,rare,0.0,0/256
+active_amplitude_failure,dominant,0.5546875,142/256
+NMDA_induced_amplitude_failure,rare,0.0,0/72
+SMI is a local isolation descriptor,supported,,Passive local best=dynamic_SMI_abs_50Hz abs_spearman=0.9997693977211068; bootstrap p05=0.871190990774843
+SMI is not a reliable somatic-transfer predictor,uncertain,,Somatic best=SMI abs_spearman=0.6442078133478025; SMI=0.6442078133478025
+SMI is not a reliable amplitude predictor,strongly supported,,Amplitude best=synaptic_conductance_scale abs_spearman=0.9836950623982637; SMI=0.09921323928377646
+Equal SMI does not imply electrical equivalence,strongly supported,,Passive iso-SMI amplitude prevalence=0.625 (dominant)
+Impedance-based descriptors outperform SMI for somatic transfer,uncertain,,Best passive somatic predictor=SMI vs SMI=0.6442078133478025
+Active mechanisms sharpen rather than erase SMI limitations,uncertain,,Active amplitude prevalence=0.5546875; passive amplitude prevalence=0.625

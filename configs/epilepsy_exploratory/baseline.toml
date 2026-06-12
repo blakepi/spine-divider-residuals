@@ -1,0 +1,37 @@
+track = "epilepsy_exploratory"
+description = "Exploratory epilepsy/epileptogenesis hypothesis-generation configuration. Not clinical, diagnostic, prognostic, or therapeutic."
+inherits_validated_baseline = false
+separated_from_manuscript_faithful = true
+separated_from_active_extension = true
+
+[numerics]
+dt_s = 0.00002
+stop_s = 0.08
+event_time_s = 0.02
+metric_window_s = 0.05
+impedance_frequency_hz = 50.0
+uncertainty_samples_per_scenario = 8
+seed = 20260601
+
+[baseline_geometry]
+neck_length_um = 0.75
+neck_radius_um = 0.12
+head_radius_um = 0.35
+cytoplasmic_resistivity_ohm_cm = 100.0
+
+[baseline_synapse]
+ampa_g_max_nS = 1.4
+nmda_fraction_of_ampa = 0.35
+magnesium_mM = 1.0
+
+[baseline_active]
+na_scale = 1.0
+kdr_scale = 1.0
+hcn_scale = 1.0
+ka_scale = 1.0
+cat_scale = 1.0
+
+[interpretation_limits]
+clinical_claims_allowed = false
+parameter_tuning_allowed = false
+mechanism_family = "exploratory_epilepsy_only"

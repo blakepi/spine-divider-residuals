@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="-236.754" y1="575.000" x2="-236.754" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="-239.404" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="309.412" y1="575.000" x2="309.412" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="298.812" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">10.0</text>
+<line x1="855.579" y1="575.000" x2="855.579" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="847.629" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">100</text>
+<line x1="1401.745" y1="575.000" x2="1401.745" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1388.495" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1e+03</text>
+<line x1="140.000" y1="575.000" x2="145.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="575.000" x2="995.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="472.628" x2="145.000" y2="472.628" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="472.628" x2="995.000" y2="472.628" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="476.628" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">100</text>
+<line x1="140.000" y1="370.257" x2="145.000" y2="370.257" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="370.257" x2="995.000" y2="370.257" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="374.257" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">200</text>
+<line x1="140.000" y1="267.885" x2="145.000" y2="267.885" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="267.885" x2="995.000" y2="267.885" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="271.885" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">300</text>
+<line x1="140.000" y1="165.513" x2="145.000" y2="165.513" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="165.513" x2="995.000" y2="165.513" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="169.513" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">400</text>
+<line x1="140.000" y1="63.141" x2="145.000" y2="63.141" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="63.141" x2="995.000" y2="63.141" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="67.141" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">500</text>
+<text x="525.480" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">frequency (Hz)</text>
+<text x="89.000" y="416.320" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,416.320)">frozen-gate |Zin| (MOhm)</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<circle cx="145.000" cy="118.481" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="691.166" cy="213.500" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="951.754" cy="285.869" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="145.000" cy="120.304" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="691.166" cy="214.618" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="951.754" cy="286.505" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="145.000" cy="121.392" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="691.166" cy="215.287" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="951.754" cy="286.886" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="145.000" cy="121.703" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="691.166" cy="215.479" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="951.754" cy="286.996" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Exploratory active operating-point impedance</text>
+</svg>

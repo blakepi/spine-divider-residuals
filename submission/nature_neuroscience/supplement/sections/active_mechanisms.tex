@@ -1,0 +1,21 @@
+\section{Active and Nonlinear Mechanism Notes}
+
+AMPA and NMDA synapses are opt-in extensions. NMDA includes a voltage-dependent magnesium block based on established reduced forms \citep{MayerWestbrookGuthrie1984,JahrStevens1990}. Na and delayed-rectifier K conductances follow Hodgkin-Huxley-style conductance-current logic \citep{HodgkinHuxley1952}. HCN, A-type K, and restrained calcium conductances are included as generic active-state stressors with provenance from dendritic physiology literature \citep{Magee1998,Magee1999,ConnorStevens1971,HuguenardMcCormick1992}.
+
+These conductances are not cell-type-calibrated densities. They are disabled in the baseline reference configuration and should not be interpreted as fitted biological parameters. Their purpose in this manuscript is to test whether passive load-ratio conclusions survive nonlinear and active stress tests.
+
+\input{../tables/active_parameter_summary}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.85\textwidth,keepaspectratio]{../figures_publication/FigS6_active_protocol_strength.pdf}
+\caption{\textbf{Figure S6.} Active AMPA and AMPA+NMDA strength-sweep protocol. The panel shows head-amplitude responses across pre-specified conductance scales for the active-extension protocol library.}
+\label{fig:s6_active_strength}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.85\textwidth,keepaspectratio]{../figures_publication/FigS7_active_impedance.pdf}
+\caption{\textbf{Figure S7.} Exploratory frozen-gate operating-point impedance. The panel summarizes operating-point impedance estimates used as exploratory active-context descriptors.}
+\label{fig:s7_active_impedance}
+\end{figure}

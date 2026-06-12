@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="154.770" y1="575.000" x2="154.770" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="152.120" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="350.172" y1="575.000" x2="350.172" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="347.522" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="545.575" y1="575.000" x2="545.575" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="542.925" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">2</text>
+<line x1="740.977" y1="575.000" x2="740.977" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="738.327" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">3</text>
+<line x1="936.379" y1="575.000" x2="936.379" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="933.729" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">4</text>
+<line x1="140.000" y1="574.320" x2="145.000" y2="574.320" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="574.320" x2="995.000" y2="574.320" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="578.320" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="477.217" x2="145.000" y2="477.217" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="477.217" x2="995.000" y2="477.217" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="481.217" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">10.0</text>
+<line x1="140.000" y1="380.113" x2="145.000" y2="380.113" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="380.113" x2="995.000" y2="380.113" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="384.113" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">20.0</text>
+<line x1="140.000" y1="283.010" x2="145.000" y2="283.010" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="283.010" x2="995.000" y2="283.010" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="287.010" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">30.0</text>
+<line x1="140.000" y1="185.907" x2="145.000" y2="185.907" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="185.907" x2="995.000" y2="185.907" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="189.907" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">40.0</text>
+<line x1="140.000" y1="88.803" x2="145.000" y2="88.803" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="88.803" x2="995.000" y2="88.803" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="92.803" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">50.0</text>
+<text x="487.320" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">synaptic conductance scale</text>
+<text x="89.000" y="365.440" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,365.440)">A_h (mV)</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<polyline points="203.621,535.833 252.471,501.157 350.172,440.732 545.575,341.493 936.379,169.006" fill="none" stroke="#0072B2" stroke-width="2.200" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="203.621" cy="535.833" r="5.200" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="252.471" cy="501.157" r="5.200" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="350.172" cy="440.732" r="5.200" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="545.575" cy="341.493" r="5.200" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="936.379" cy="169.006" r="5.200" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<polyline points="203.621,535.392 252.471,500.180 350.172,438.385 545.575,333.837 936.379,144.167" fill="none" stroke="#D55E00" stroke-width="2.200" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="203.621" cy="535.392" r="5.200" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="252.471" cy="500.180" r="5.200" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="350.172" cy="438.385" r="5.200" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="545.575" cy="333.837" r="5.200" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<circle cx="936.379" cy="144.167" r="5.200" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<line x1="790.000" y1="151.000" x2="812.000" y2="151.000" stroke="#0072B2" stroke-width="2.500"/>
+<circle cx="801.000" cy="151.000" r="4.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<text x="820.000" y="155.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202124">AMPA</text>
+<line x1="790.000" y1="170.000" x2="812.000" y2="170.000" stroke="#D55E00" stroke-width="2.500"/>
+<circle cx="801.000" cy="170.000" r="4.000" fill="#D55E00" stroke="white" stroke-width="0.800"/>
+<text x="820.000" y="174.000" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#202124">AMPA_NMDA</text>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Strength-sweep protocol; active mechanisms remain outside the manuscript-faithful baseline.</text>
+</svg>

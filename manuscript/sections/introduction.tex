@@ -1,0 +1,17 @@
+Dendritic spines place excitatory synapses in small postsynaptic compartments connected to the parent dendrite by narrow necks. These necks can impede current flow, alter local voltage, and separate spine-head depolarization from parent-dendrite or somatic impact \citep{Rall1964,SegevRall1988,TsayYuste2004,Yuste2013,Araya2006,Harnett2012SpineAmplification,Kwon2017,BeaulieuLarocheHarnett2018,Cornejo2022}. A neck resistance by itself, however, is incomplete: the same series resistance has different consequences depending on the load presented by the dendritic and somatic circuit.
+
+The first-order electrical expectation is the classical voltage divider. If a spine-head voltage drives a series neck resistance $\Rneck$ into a dendrite-soma load with input resistance $\Rin$, the DC small-signal local transfer is
+\begin{equation}
+\Gamma_{\mathrm{div}}=\frac{\Rin}{\Rneck+\Rin}=\frac{1}{1+\Rneck/\Rin}.
+\end{equation}
+For compact notation, we denote the author-defined ratio $\Rneck/\Rin$ as $\SMI$. The abbreviation is used as a manuscript and software shorthand for a load-normalized spine-neck ratio, not as a claim that the ratio is a field-standard morphology index or a new cable-theory law.
+
+This distinction matters because the divider expectation is not the same as a transient synaptic peak response. Conductance-based excitation changes driving force while the response evolves; capacitance, local impedance, dendrite-to-soma filtering, active conductances, morphology, and measurement uncertainty can all alter observed voltages \citep{Magee2000Review,LondonHausser2005,StuartSpruston2015,Popovic2015,Zecevic2023}. A scalar ratio can be useful when the target is local low-frequency isolation, yet fail for head amplitude, somatic voltage, nonlinear response, or categorical class assignment.
+
+The present study therefore reframes SPINE around the residual from the analytic divider:
+\begin{equation}
+\Delta_{\mathrm{div}}=\Ghd-\Gamma_{\mathrm{div}}.
+\end{equation}
+The ratio defines the expected local divider coordinate; the residual tests where the full simulated response leaves that coordinate. This makes negative results central rather than embarrassing. Large residuals, equal-ratio nonequivalence, and amplitude failures identify the electrical variables that the compact ratio cannot contain.
+
+We ask five bounded questions. First, do the pre-specified low-, intermediate-, and high-isolation reference cases reproduce the intended passive responses? Second, how far do observed peak local transfers depart from $\Gamma_{\mathrm{div}}$ across existing passive, active, uncertainty, and exploratory rows? Third, when is the ratio more useful than its component resistances, and when do component, impedance, dynamic, or conductance descriptors carry additional information? Fourth, how should deterministic uncertainty and radius-error screens be reported without implying population inference? Fifth, do independent matrix and analytic benchmarks support the computational credibility of the from-scratch passive implementation? The resulting thesis is deliberately scoped: the load-normalized ratio recovers the classical local divider expectation, and SPINE maps the residual domains where a single scalar is insufficient.

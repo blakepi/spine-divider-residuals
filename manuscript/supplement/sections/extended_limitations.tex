@@ -1,0 +1,9 @@
+\section{Extended Limitations}
+
+SPINE is a transparent computational framework, not a calibrated biological reconstruction. The baseline reference track preserves pre-specified assumptions even when they are simplified. The plausibility-revised and active-extension tracks are explicitly separated. Exploratory perturbation scenarios are supplemental stress tests and are not disease models.
+
+The analytic divider is a DC small-signal reference. The simulated targets in this manuscript are transient conductance-based peak responses, so residuals from the divider are expected and informative. The independent direct-matrix benchmark checks the passive three-compartment baseline implementation against an independently assembled equation solve, but it does not check every morphology, active, uncertainty, or exploratory output. NEURON cross-checking was not performed.
+
+The deterministic uncertainty ensembles are sensitivity designs, not experimentally fitted posterior distributions. The N=768 ensemble contains no high-SMI rows, so high-isolation uncertainty remains a future targeted extension. Radius uncertainty, unmodeled ultrastructure, cytoplasmic resistivity uncertainty, segmentation error, local synaptic receptor composition, and active conductance distributions can all alter interpretation.
+
+The current package does not include posterior inference from experimental voltage traces, cell-type-specific channel fitting, full morphology libraries, biochemical calcium reaction-diffusion, receptor trafficking, signaling cascades, or public release approvals. These are future validation and administrative targets, not hidden assumptions of the current manuscript.

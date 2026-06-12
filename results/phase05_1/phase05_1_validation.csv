@@ -1,0 +1,8 @@
+validation,value,threshold,passed
+progressive_lhs_reproducibility,True,True,True
+final_smi_median_convergence,0.012090835475659055,0.1,True
+final_all_median_convergence,0.029154415501181967,0.1,True
+bootstrap_reproducibility,True,True,True
+cross_validation_reproducibility,True,True,True
+final_ranking_stability_vs_previous_n,False,True,False
+counterexample_prevalence_stability_vs_previous_n,True,True,True

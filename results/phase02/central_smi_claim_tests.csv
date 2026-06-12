@@ -1,0 +1,6 @@
+claim,statistic,value,interpretation
+fixed_load_SMI_and_Rneck_identical_rank_order,"Spearman(SMI,R_neck)",1.0,supporting
+fixed_load_downstream_transfer_decreases_with_SMI,"Spearman(SMI,Gamma_h_to_s)",-1.0,supporting
+fixed_load_head_amplitude_increases_with_SMI,"Spearman(SMI,A_h)",1.0,supporting
+matched_neck_Rneck_cannot_rank_transfer,unique_R_neck_values,1,supporting
+matched_neck_SMI_orders_transfer_by_load,"Spearman(SMI,Gamma_h_to_s)",-1.0,supporting

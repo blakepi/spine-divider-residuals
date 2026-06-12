@@ -1,0 +1,26 @@
+\newcommand{\spinenatbiboptions}{numbers,sort&compress}
+\newcommand{\spinebibstyle}{unsrtnat}
+\newif\ifblind
+\blindfalse
+\input{preamble}
+\input{metadata}
+
+\begin{document}
+
+\spinetitleblock
+
+\input{sections/abstract}
+
+\noindent\textbf{Keywords:} dendritic spines; compartmental modeling; cable theory; voltage divider; electrical isolation; impedance; reproducible modeling
+
+\input{sections/introduction}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/methods}
+\input{sections/disclosures}
+\input{sections/data_code_availability}
+
+\bibliographystyle{\spinebibstyle}
+\bibliography{references}
+
+\end{document}

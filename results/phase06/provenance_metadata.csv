@@ -1,0 +1,2 @@
+phase,track,dt_s,stop_s,event_time_s,metric_window_s,uncertainty_n_per_scenario,seed,clinical_claims
+06,epilepsy_exploratory,2e-05,0.08,0.02,0.05,8,20260601,none

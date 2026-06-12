@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage[\spinenatbiboptions]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\graphicspath{{figures_pdf/}{supplement/figures_pdf/}{figures/}{supplement/figures/}}
+\urlstyle{same}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+
+\newcommand{\Rneck}{R_{\mathrm{neck}}}
+\newcommand{\Rin}{R_{\mathrm{in},d}}
+\newcommand{\SMI}{\mathrm{SMI}}
+\newcommand{\Esyn}{E_{\mathrm{syn}}}
+\newcommand{\gsyn}{g_{\mathrm{syn}}}
+\newcommand{\gHD}{g_{hd}}
+\newcommand{\gDS}{g_{ds}}
+\newcommand{\gLd}{g_{L,d}}
+\newcommand{\gLs}{g_{L,s}}
+\newcommand{\gLh}{g_{L,h}}
+\newcommand{\Ghd}{\Gamma_{h\rightarrow d}}
+\newcommand{\Ghs}{\Gamma_{h\rightarrow s}}
+\newcommand{\Ah}{A_h}
+
+\captionsetup{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+
+\newcommand{\figpanel}[3]{%
+  \begin{subfigure}[t]{#1}
+  \centering
+  \includegraphics[width=\linewidth,keepaspectratio]{#2}
+  \caption{#3}
+  \end{subfigure}}

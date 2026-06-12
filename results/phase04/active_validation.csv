@@ -1,0 +1,13 @@
+validation,value,threshold,units,passed
+AMPA_peak_normalization,0.0,1e-12,S,True
+NMDA_magnesium_block_monotonic,0.055201715767434004,0.0,dimensionless difference,True
+NMDA_IV_relief,1.1938156010140064,1.0,ratio,True
+gate_inf_bounds,"9.357622968839299e-14,0.999999778441875","[0,1]",dimensionless,True
+gate_tau_positive,3.5747607844118655e-05,0.0,s,True
+active_current_signs,5,5,checks passed,True
+resting_state_stability,0.16408866449149628,1.0,mV,True
+simulated_gate_bounds,"0.028905534475191907,0.7540796658225246","[0,1]",dimensionless,True
+timestep_refinement_A_h,0.00048568296546897335,0.05,relative,True
+independent_solver_crosscheck_A_h,0.0002077209577083966,0.075,relative,True
+strong_drive_stability,"-70.0,-31.0829247943699,0.028905534475191907,0.7540796658225246","finite voltage in [-200,150] mV and gates in [0,1]",mixed,True
+active_unit_conversions,3,3,checks passed,True

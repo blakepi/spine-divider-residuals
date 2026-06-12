@@ -1,0 +1,4 @@
+prediction,falsification,status
+"If spine-neck geometry dominates a preparation, R_neck and SMI changes should covary with local voltage isolation more strongly than with somatic transfer.",Somatic or head amplitude changes occur with no corresponding SMI/local-isolation change after controlling synaptic conductance.,hypothesis_generating
+"If HCN/Ih perturbation dominates, active frozen-gate impedance and latency/voltage-integral metrics should change even when DC SMI is unchanged.",HCN scaling leaves active impedance and time-domain metrics unchanged within convergence tolerance.,hypothesis_generating
+Clustered synchronous inputs should weaken scalar SMI predictions relative to isolated single-spine protocols.,Clustered and isolated protocols have indistinguishable predictor rankings and deltas.,hypothesis_generating

@@ -1,0 +1,13 @@
+criterion,value,threshold,result
+iso_smi_AMPA_none_Gamma_h_to_d_spread_gt_25_percent,0.24176442998330652,0.25,no counterexample by spread criterion
+iso_smi_AMPA_none_A_h_mV_spread_gt_25_percent,0.49637458277401453,0.25,active SMI failure/counterexample
+iso_smi_AMPA_NMDA_full_restrained_Gamma_h_to_d_spread_gt_25_percent,0.3452685925335085,0.25,active SMI failure/counterexample
+iso_smi_AMPA_NMDA_full_restrained_A_h_mV_spread_gt_25_percent,0.8566850995590801,0.25,active SMI failure/counterexample
+iso_smi_AMPA_NMDA_hcn_Gamma_h_to_d_spread_gt_25_percent,0.24863366936316625,0.25,no counterexample by spread criterion
+iso_smi_AMPA_NMDA_hcn_A_h_mV_spread_gt_25_percent,0.5044616532724288,0.25,active SMI failure/counterexample
+iso_smi_AMPA_NMDA_none_Gamma_h_to_d_spread_gt_25_percent,0.25020529037137595,0.25,active SMI failure/counterexample
+iso_smi_AMPA_NMDA_none_A_h_mV_spread_gt_25_percent,0.5102181454837517,0.25,active SMI failure/counterexample
+all_Gamma_h_to_d_SMI_association,0.9249061498523893,"0.80 success, 0.50 failure boundary",active SMI success; best=SMI abs_spearman=0.9249061498523893
+all_Gamma_h_to_s_SMI_association,0.33936895517616456,"0.80 success, 0.50 failure boundary",active SMI failure; best=Zin_50Hz_Mohm abs_spearman=0.7642191103949165
+all_A_h_mV_SMI_association,0.23640435500065868,"0.80 success, 0.50 failure boundary",active SMI failure; best=active_frozen_transfer_gain_50Hz abs_spearman=0.7359316338384632
+all_local_voltage_isolation_SMI_association,0.9249061498523893,"0.80 success, 0.50 failure boundary",active SMI success; best=SMI abs_spearman=0.9249061498523893

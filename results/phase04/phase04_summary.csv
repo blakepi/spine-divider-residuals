@@ -1,0 +1,17 @@
+summary_item,value,numeric_value,total,smi_abs_spearman,interpretation,threshold
+validation_passed,True,12,12,,,
+best_predictor_for_Gamma_h_to_d,SMI,0.9249061498523893,,0.9249061498523893,SMI best,
+best_predictor_for_Gamma_h_to_s,Zin_50Hz_Mohm,0.7642191103949165,,0.33936895517616456,alternative outperforms SMI,
+best_predictor_for_A_h_mV,active_frozen_transfer_gain_50Hz,0.7359316338384632,,0.23640435500065868,alternative outperforms SMI,
+iso_smi_AMPA_none_Gamma_h_to_d_spread_gt_25_percent,no counterexample by spread criterion,0.24176442998330652,,,,0.25
+iso_smi_AMPA_none_A_h_mV_spread_gt_25_percent,active SMI failure/counterexample,0.49637458277401453,,,,0.25
+iso_smi_AMPA_NMDA_full_restrained_Gamma_h_to_d_spread_gt_25_percent,active SMI failure/counterexample,0.3452685925335085,,,,0.25
+iso_smi_AMPA_NMDA_full_restrained_A_h_mV_spread_gt_25_percent,active SMI failure/counterexample,0.8566850995590801,,,,0.25
+iso_smi_AMPA_NMDA_hcn_Gamma_h_to_d_spread_gt_25_percent,no counterexample by spread criterion,0.24863366936316625,,,,0.25
+iso_smi_AMPA_NMDA_hcn_A_h_mV_spread_gt_25_percent,active SMI failure/counterexample,0.5044616532724288,,,,0.25
+iso_smi_AMPA_NMDA_none_Gamma_h_to_d_spread_gt_25_percent,active SMI failure/counterexample,0.25020529037137595,,,,0.25
+iso_smi_AMPA_NMDA_none_A_h_mV_spread_gt_25_percent,active SMI failure/counterexample,0.5102181454837517,,,,0.25
+all_Gamma_h_to_d_SMI_association,active SMI success; best=SMI abs_spearman=0.9249061498523893,0.9249061498523893,,,,"0.80 success, 0.50 failure boundary"
+all_Gamma_h_to_s_SMI_association,active SMI failure; best=Zin_50Hz_Mohm abs_spearman=0.7642191103949165,0.33936895517616456,,,,"0.80 success, 0.50 failure boundary"
+all_A_h_mV_SMI_association,active SMI failure; best=active_frozen_transfer_gain_50Hz abs_spearman=0.7359316338384632,0.23640435500065868,,,,"0.80 success, 0.50 failure boundary"
+all_local_voltage_isolation_SMI_association,active SMI success; best=SMI abs_spearman=0.9249061498523893,0.9249061498523893,,,,"0.80 success, 0.50 failure boundary"

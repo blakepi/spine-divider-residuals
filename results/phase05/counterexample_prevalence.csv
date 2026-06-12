@@ -1,0 +1,7 @@
+counterexample_type,eligible_pairs,failure_pairs,prevalence,classification
+passive_iso_SMI_local_failure,256,0,0.0,rare
+passive_iso_SMI_amplitude_failure,256,160,0.625,dominant
+passive_iso_transfer_failure,1318,251,0.19044006069802732,common
+active_iso_SMI_local_failure,256,0,0.0,rare
+active_amplitude_failure,256,142,0.5546875,dominant
+NMDA_induced_amplitude_failure,72,0,0.0,rare

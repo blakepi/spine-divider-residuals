@@ -1,0 +1,7 @@
+check,status,observed,threshold,interpretation
+scenario_set_complete,pass,9,9,all approved scenarios were simulated
+deterministic_lhs_reproducibility,pass,0.0,0.0,uncertainty design is deterministic for a fixed seed
+finite_active_solutions,pass,99,99,time-domain simulations remained finite
+gating_bounds,pass,0.9550717634271297,1.0,active gating variables stayed within validated bounds
+clinical_claim_absent,pass,none,none,outputs do not make clinical claims
+unit_positive_resistances,pass,12.331219764351397,>0,neck resistance and dendritic input resistance are positive SI-derived quantities

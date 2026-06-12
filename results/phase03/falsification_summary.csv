@@ -1,0 +1,3 @@
+criterion,value,threshold,result
+iso_smi_Gamma_h_to_d_spread_gt_20_percent,0.27864641325190864,0.2,SMI failure/counterexample
+iso_smi_A_h_spread_gt_20_percent,0.6143403656099966,0.2,SMI failure/counterexample

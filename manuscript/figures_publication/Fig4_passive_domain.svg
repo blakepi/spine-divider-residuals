@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1100" viewBox="0 0 1700 1100">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1700.000" height="1100.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="130.000" y="135.000" width="610.000" height="430.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="214.753" y1="565.000" x2="214.753" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="206.803" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<line x1="375.812" y1="565.000" x2="375.812" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="367.862" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.4</text>
+<line x1="536.872" y1="565.000" x2="536.872" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="528.922" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.6</text>
+<line x1="697.931" y1="565.000" x2="697.931" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="689.981" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.8</text>
+<line x1="125.000" y1="565.000" x2="130.000" y2="565.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="565.000" x2="740.000" y2="565.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="115.700" y="569.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="125.000" y1="468.560" x2="130.000" y2="468.560" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="468.560" x2="740.000" y2="468.560" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="472.560" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.2</text>
+<line x1="125.000" y1="372.121" x2="130.000" y2="372.121" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="372.121" x2="740.000" y2="372.121" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="376.121" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.4</text>
+<line x1="125.000" y1="275.681" x2="130.000" y2="275.681" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="275.681" x2="740.000" y2="275.681" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="279.681" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.6</text>
+<line x1="125.000" y1="179.241" x2="130.000" y2="179.241" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="130.000" y1="179.241" x2="740.000" y2="179.241" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="105.100" y="183.241" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.8</text>
+<text x="425.460" y="613.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">SMI</text>
+<text x="74.000" y="381.800" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 74.000,381.800)">Gamma h-&gt;d</text>
+<text x="92.000" y="123.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<circle cx="697.931" cy="390.557" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="697.931" cy="358.942" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="697.931" cy="334.556" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="697.931" cy="382.390" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="697.931" cy="363.195" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="697.931" cy="354.520" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="365.664" cy="304.821" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="264.663" cy="227.934" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="172.069" cy="161.164" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="319.843" cy="274.596" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="245.958" cy="220.978" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="209.381" cy="194.029" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="561.585" cy="488.208" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="417.439" cy="367.810" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="337.029" cy="299.228" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="285.732" cy="251.788" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="250.159" cy="220.875" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="224.038" cy="201.298" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="207.213" cy="227.922" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="264.663" cy="227.934" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="313.241" cy="227.960" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="306.764" cy="232.961" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="260.121" cy="224.793" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<circle cx="267.307" cy="229.769" r="5.000" fill="#0072B2" stroke="white" stroke-width="0.800"/>
+<text x="435.000" y="186.600" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#0072B2">SMI local support</text>
+<text x="435.000" y="200.350" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#0072B2">n=24</text>
+<text x="435.000" y="214.100" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#0072B2">|rho_s| 0.94 [0.83, 0.99]</text>
+<rect x="925.000" y="135.000" width="610.000" height="430.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="782.876" y1="565.000" x2="782.876" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="774.926" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.1</text>
+<line x1="986.209" y1="565.000" x2="986.209" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="983.559" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="1189.543" y1="565.000" x2="1189.543" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1178.943" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">10.0</text>
+<line x1="1392.876" y1="565.000" x2="1392.876" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1384.926" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">100</text>
+<line x1="1596.209" y1="565.000" x2="1596.209" y2="570.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="1582.959" y="585.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1e+03</text>
+<line x1="920.000" y1="565.000" x2="925.000" y2="565.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="565.000" x2="1535.000" y2="565.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="910.700" y="569.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="920.000" y1="487.020" x2="925.000" y2="487.020" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="487.020" x2="1535.000" y2="487.020" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="491.020" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">100</text>
+<line x1="920.000" y1="409.040" x2="925.000" y2="409.040" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="409.040" x2="1535.000" y2="409.040" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="413.040" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">200</text>
+<line x1="920.000" y1="331.060" x2="925.000" y2="331.060" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="331.060" x2="1535.000" y2="331.060" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="335.060" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">300</text>
+<line x1="920.000" y1="253.080" x2="925.000" y2="253.080" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="253.080" x2="1535.000" y2="253.080" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="257.080" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">400</text>
+<line x1="920.000" y1="175.100" x2="925.000" y2="175.100" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="175.100" x2="1535.000" y2="175.100" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="179.100" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">500</text>
+<line x1="920.000" y1="97.121" x2="925.000" y2="97.121" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="925.000" y1="97.121" x2="1535.000" y2="97.121" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="900.100" y="101.121" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">600</text>
+<text x="1185.480" y="613.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">frequency (Hz)</text>
+<text x="869.000" y="400.880" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 869.000,400.880)">local |Z| (MOhm)</text>
+<text x="887.000" y="123.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">B</text>
+<polyline points="925.000,162.700 960.882,163.993 996.765,166.803 1032.647,172.653 1068.529,183.817 1104.412,201.998 1140.294,225.210 1176.176,247.241 1212.059,263.185 1247.941,273.083 1283.824,279.789 1319.706,286.681 1355.588,297.384 1391.471,315.714 1427.353,343.570 1463.235,377.580 1499.118,410.854 1535.000,439.704" fill="none" stroke="#009E73" stroke-width="2.200" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="973.800" y="199.500" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#009E73">Frequency-domain</text>
+<text x="973.800" y="213.250" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#009E73">context for DC SMI</text>
+<text x="208.000" y="733.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">C</text>
+<rect x="250.000" y="745.000" width="1120.000" height="230.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="255.000" y="727.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">Predictors of passive local transfer</text>
+<line x1="250.000" y1="745.000" x2="250.000" y2="975.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="247.350" y="995.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="530.000" y1="745.000" x2="530.000" y2="975.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="519.400" y="995.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.25</text>
+<line x1="810.000" y1="745.000" x2="810.000" y2="975.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="802.050" y="995.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.5</text>
+<line x1="1090.000" y1="745.000" x2="1090.000" y2="975.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="1079.400" y="995.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.75</text>
+<line x1="1370.000" y1="745.000" x2="1370.000" y2="975.000" stroke="#E6E6E6" stroke-width="0.800"/>
+<text x="1367.350" y="995.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<line x1="1181.915" y1="779.000" x2="1353.966" y2="779.000" stroke="#0072B2" stroke-width="2.000"/>
+<rect x="250.000" y="767.500" width="1055.423" height="23.000" rx="0.000" fill="#0072B2" stroke="none" stroke-width="1.000"/>
+<text x="224.100" y="783.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">SMI</text>
+<line x1="646.469" y1="815.000" x2="1100.427" y2="815.000" stroke="#666666" stroke-width="2.000"/>
+<rect x="250.000" y="803.500" width="649.869" height="23.000" rx="0.000" fill="#666666" stroke="none" stroke-width="1.000"/>
+<text x="208.200" y="819.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">R_neck</text>
+<line x1="535.826" y1="851.000" x2="1292.759" y2="851.000" stroke="#666666" stroke-width="2.000"/>
+<rect x="250.000" y="839.500" width="679.321" height="23.000" rx="0.000" fill="#666666" stroke="none" stroke-width="1.000"/>
+<text x="208.200" y="855.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">R_in,d</text>
+<line x1="435.261" y1="887.000" x2="1241.224" y2="887.000" stroke="#666666" stroke-width="2.000"/>
+<rect x="250.000" y="875.500" width="665.657" height="23.000" rx="0.000" fill="#666666" stroke="none" stroke-width="1.000"/>
+<text x="202.900" y="891.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">local Z</text>
+<line x1="419.125" y1="923.000" x2="1193.523" y2="923.000" stroke="#666666" stroke-width="2.000"/>
+<rect x="250.000" y="911.500" width="632.472" height="23.000" rx="0.000" fill="#666666" stroke="none" stroke-width="1.000"/>
+<text x="171.100" y="927.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">transfer gain</text>
+<line x1="398.193" y1="959.000" x2="1193.659" y2="959.000" stroke="#666666" stroke-width="2.000"/>
+<rect x="250.000" y="947.500" width="632.472" height="23.000" rx="0.000" fill="#666666" stroke="none" stroke-width="1.000"/>
+<text x="144.600" y="963.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#1F1F1F">electrotonic dist.</text>
+<text x="663.720" y="1023.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">absolute Spearman rho (95% bootstrap interval)</text>
+</svg>

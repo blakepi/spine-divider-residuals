@@ -1,0 +1,97 @@
+\section{Online Methods}
+
+\subsection{Reference circuit and load-normalized ratio}
+
+SPINE was implemented in Python using project-local equations, matrix assembly, solvers, metrics, and validation scripts. General scientific Python libraries are used for numerical linear algebra and analysis, but no prebuilt neuroscience simulator or copied model code is used as the runtime foundation. Baseline, plausibility-revised, active-extension, and exploratory configurations are separated so that extensions are not silently folded into the baseline reference track.
+
+The baseline reference model contains a spine head $h$, a parent dendrite compartment $d$, and a soma/load compartment $s$. For a cylindrical spine neck with length $L_n$, radius $r_n$, and intracellular resistivity $\rho_i$,
+\begin{equation}
+\Rneck=\frac{\rho_i L_n}{\pi r_n^2},
+\label{eq:rneck}
+\end{equation}
+with geometry converted to centimeters before resistance is computed. The baseline target neck geometries are listed in Table~\ref{tab:parameters}. The head area is approximated as $4\pi r_h^2$ and sets head capacitance and leak; dendrite and soma capacitances and leaks are lumped. The soma is therefore a compact downstream load rather than a reconstructed full neuron.
+
+The dendrite-soma input resistance $\Rin$ is measured after removing the stimulated spine and neck edge. A small current perturbation is applied to the dendrite-soma subcircuit, and $\Delta V_d/\Delta I_d$ is computed from the steady-state passive linear system with a perturbation simulation check. We then define the load-normalized spine-neck ratio
+\begin{equation}
+\SMI=\frac{\Rneck}{\Rin}.
+\end{equation}
+This spine-omitted definition avoids normalizing a neck by a load that already contains the same neck. Phase 2 and Phase 4 one-port reconstructions showed that attached-versus-omitted $\Rin$ differences were numerically negligible for the compact passive-head model family, but the omitted definition remains conceptually cleaner.
+
+\subsection{Analytic divider and residual target}
+
+The analytic local reference is the DC small-signal voltage divider:
+\begin{equation}
+\Gamma_{\mathrm{div}}=
+\frac{\Rin}{\Rneck+\Rin}
+=\frac{1}{1+\SMI}.
+\label{eq:divider}
+\end{equation}
+This equation is treated as classical circuit logic, not as a novel result. The manuscript's main diagnostic quantity is the residual between the simulated peak local transfer and this divider expectation:
+\begin{equation}
+\Delta_{\mathrm{div}}=\Ghd-\Gamma_{\mathrm{div}}.
+\label{eq:divider_residual}
+\end{equation}
+Here $\Ghd=A_d/\Ah$ is measured from transient conductance-based simulations over the predefined metric window. Because $\Gamma_{\mathrm{div}}$ is a DC low-frequency reference and $\Ghd$ is a peak transient ratio, nonzero residuals are expected whenever capacitance, changing synaptic driving force, morphology, impedance, active state, or downstream coupling matters.
+
+\subsection{Passive equations and numerical solution}
+
+Passive voltages obey conductance-balance equations for leak, synaptic, head-dendrite, and dendrite-soma terms:
+\begin{align}
+C_h\frac{dV_h}{dt} &=
+-\gLh(V_h-E_L)-\gsyn(t)(V_h-\Esyn)+\gHD(V_d-V_h),\\
+C_d\frac{dV_d}{dt} &=
+-\gLd(V_d-E_L)+\gHD(V_h-V_d)+\gDS(V_s-V_d),\\
+C_s\frac{dV_s}{dt} &=
+-\gLs(V_s-E_L)+\gDS(V_d-V_s).
+\end{align}
+Letting $\mathbf{V}=(V_h,V_d,V_s)^T$ and $\mathbf{C}=\mathrm{diag}(C_h,C_d,C_s)$ gives
+\begin{equation}
+\mathbf{C}\frac{d\mathbf{V}}{dt}= -\mathbf{G}(t)\mathbf{V}+\mathbf{b}(t),
+\end{equation}
+where
+\begin{equation}
+\mathbf{G}(t)=
+\begin{bmatrix}
+\gLh+\gsyn(t)+\gHD & -\gHD & 0\\
+-\gHD & \gLd+\gHD+\gDS & -\gDS\\
+0 & -\gDS & \gLs+\gDS
+\end{bmatrix}.
+\label{eq:matrix}
+\end{equation}
+Backward Euler advances the passive state by solving
+\begin{equation}
+\left(\frac{\mathbf{C}}{\Delta t}+\mathbf{G}_{n+1}\right)\mathbf{V}_{n+1}
+=
+\frac{\mathbf{C}}{\Delta t}\mathbf{V}_n+\mathbf{b}_{n+1}.
+\end{equation}
+Crank-Nicolson comparisons are used as internal numerical self-consistency checks, not as independent external validation.
+
+The synapse is conductance based:
+\begin{equation}
+I_{\mathrm{syn},h}(t,V_h)=\gsyn(t)(V_h-\Esyn),
+\end{equation}
+where $\gsyn(t)$ is a normalized double exponential with peak conductance $g_{\max}$. Peak depolarizations $\Ah$, $A_d$, and $A_s$ are measured over a predefined 50 ms post-event window. Attenuation ratios are $\Ghd=A_d/\Ah$ and $\Ghs=A_s/\Ah$. $\Ghd$ measures local transfer across the neck, $\Ghs$ combines local transfer with downstream dendrite-to-soma filtering, and $\Ah$ measures local voltage excursion.
+
+\subsection{Challenge suites and descriptor comparisons}
+
+Passive morphology analyses generalize the reference circuit to compartment trees assembled from nodes and axial edges. Frequency-domain analyses solve the linearized passive system to estimate input impedance, transfer impedance, gain, phase, and dynamic SMI variants. Active and NMDA mechanisms are disabled in the baseline reference configuration and enabled only in active-extension protocols. These active conductances are generic stress tests using literature-traceable current forms \citep{HodgkinHuxley1952,MayerWestbrookGuthrie1984,JahrStevens1990,Magee1998,Magee1999,ConnorStevens1971,HuguenardMcCormick1992}, not calibrated cell-type-specific channel densities.
+
+Descriptor comparisons were performed on existing derived rows. We compared raw $\SMI$, the analytic divider transform $\Gamma_{\mathrm{div}}$, component resistances $\Rneck$ and $\Rin$, log-component models, impedance and dynamic descriptors, transfer gain, and synaptic conductance scale where available. These comparisons were interpreted by target and descriptor family. Exact winner labels were avoided when near-tied or correlated predictors made the ranking unstable.
+
+Designed counterexamples tested logical sufficiency. Iso-SMI cases ask whether equal ratio implies equivalent voltage responses; iso-neck-resistance cases ask whether equal $\Rneck$ can change under different loads; iso-transfer cases ask whether similar transfer can arise from different ratios. These experiments were designed to expose limitations as well as successes.
+
+\subsection{Deterministic uncertainty and reporting language}
+
+Uncertainty analyses used deterministic Latin-hypercube ensembles and progressive sample sizes of N=96, 192, 384, and 768. The global uncertainty seed was 202605; progressive ensembles used $202605+5100+N$. Radius-only uncertainty was analyzed separately because $\Rneck\propto1/r_n^2$, using 25 deterministic offsets spanning $\pm2$ SD with SD $=0.018$ $\mu$m and clipping measured radius to 0.06--0.22 $\mu$m. Heuristic SMI classes were low $<0.25$, intermediate 0.25 to $<0.75$, and high $\geq0.75$.
+
+All uncertainty fractions are reported as deterministic design fractions over sampled parameter combinations. They are not biological rates and are not treated as inferential population intervals. The N=768 ensemble contained 757 low-SMI rows, 11 intermediate-SMI rows, and zero high-SMI rows, so high-SMI uncertainty claims are explicitly scoped to reference and designed challenge rows rather than to the main uncertainty ensemble.
+
+\subsection{Computational credibility checks}
+
+Numerical credibility was assessed at three levels. First, internal checks covered units, current signs, synaptic normalization, limiting cases, timestep refinement, sparse/dense passive assembly, impedance validation, and Backward Euler versus Crank-Nicolson peak differences. Second, Phase 4 added an independent direct-matrix benchmark that separately assembled the baseline passive three-compartment equations and compared against existing SPINE trace outputs without calling the production passive simulation function as its benchmark engine. Third, DC analytic checks tested the two-node dendrite-soma input resistance, divider formula, limiting cases, and attached-versus-omitted one-port behavior.
+
+NEURON availability was checked during Phase 4. It was not available in the bundled runtime, no installation was attempted, and no NEURON result is claimed. The executed validation therefore supports the passive reference implementation through independent direct-matrix and analytic benchmarks, not through a community-simulator cross-validation.
+
+\subsection{Traceability}
+
+All manuscript-facing values are rounded for readability while exact values remain in machine-readable CSV outputs and ledgers. The claim-to-source ledger links major quantitative statements to source reports and CSV rows, following model-sharing and FAIR-data principles \citep{Hines2004ModelDB,Wilkinson2016FAIR}. Figure and table manifests record provenance for publication assets. Exploratory perturbation scenarios remain supplemental stress tests and are not used to support primary biological mechanism claims.

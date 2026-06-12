@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<desc>Publication figure generated from audited repository CSV outputs; no simulation was run by the R4 script.</desc>
+<rect x="0.000" y="0.000" width="1200.000" height="760.000" rx="0.000" fill="white" stroke="none" stroke-width="1.000"/>
+<rect x="145.000" y="105.000" width="850.000" height="470.000" rx="0.000" fill="white" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="360.640" y1="575.000" x2="360.640" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="350.040" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">10.0</text>
+<line x1="622.340" y1="575.000" x2="622.340" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="611.740" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">20.0</text>
+<line x1="884.039" y1="575.000" x2="884.039" y2="580.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<text x="873.439" y="595.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">30.0</text>
+<line x1="140.000" y1="575.000" x2="145.000" y2="575.000" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="575.000" x2="995.000" y2="575.000" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="579.000" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0</text>
+<line x1="140.000" y1="449.558" x2="145.000" y2="449.558" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="449.558" x2="995.000" y2="449.558" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="453.558" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.25</text>
+<line x1="140.000" y1="324.117" x2="145.000" y2="324.117" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="324.117" x2="995.000" y2="324.117" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="120.100" y="328.117" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.5</text>
+<line x1="140.000" y1="198.675" x2="145.000" y2="198.675" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="198.675" x2="995.000" y2="198.675" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="114.800" y="202.675" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">0.75</text>
+<line x1="140.000" y1="73.234" x2="145.000" y2="73.234" stroke="#1F1F1F" stroke-width="1.000"/>
+<line x1="145.000" y1="73.234" x2="995.000" y2="73.234" stroke="#E6E6E6" stroke-width="0.700"/>
+<text x="130.700" y="77.234" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#666666">1</text>
+<text x="531.840" y="623.000" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124">compartments</text>
+<text x="89.000" y="371.800" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#202124" transform="rotate(-90.000 89.000,371.800)">Gamma h-&gt;d</text>
+<text x="107.000" y="93.000" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1F1F1F">A</text>
+<circle cx="203.621" cy="108.425" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="308.300" cy="106.512" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="517.660" cy="105.656" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<circle cx="936.379" cy="105.254" r="5.000" fill="#009E73" stroke="white" stroke-width="0.800"/>
+<text x="145.000" y="650.000" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#1F1F1F">Passive spatial convergence</text>
+</svg>

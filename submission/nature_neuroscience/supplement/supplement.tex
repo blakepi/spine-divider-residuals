@@ -1,0 +1,28 @@
+\newcommand{\spinenatbiboptions}{numbers,sort&compress}
+\newcommand{\spinebibstyle}{unsrtnat}
+\newif\ifblind
+\blindfalse
+\input{../preamble}
+
+\begin{document}
+
+\begin{center}
+{\Large Supplementary Materials}\\[0.5em]
+\begin{minipage}{0.9\textwidth}
+\centering
+{\large Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models}
+\end{minipage}
+\end{center}
+
+\input{sections/extended_equations}
+\input{sections/numerical_validation}
+\input{sections/uncertainty_identifiability}
+\input{sections/active_mechanisms}
+\input{sections/exploratory_phase06}
+\input{sections/reproducibility_commands}
+\input{sections/extended_limitations}
+
+\bibliographystyle{\spinebibstyle}
+\bibliography{../references}
+
+\end{document}

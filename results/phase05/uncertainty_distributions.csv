@@ -1,0 +1,15 @@
+parameter,distribution,center,lower,upper,sd,local_fraction,rationale
+neck_radius_um,truncated_normal,0.12,0.06,0.22,0.018,0.05,central imaging uncertainty amplified by R_neck proportional to 1/r^2
+neck_length_um,uniform,0.75,0.4,1.4,,0.05,manuscript neck-length range and morphology uncertainty
+intracellular_resistivity_ohm_cm,uniform,100.0,80.0,180.0,,0.05,axial resistivity and nanoscale application uncertainty
+head_diameter_um,uniform,0.7,0.5,1.0,,0.05,spine-head size uncertainty around manuscript radius
+dendritic_area_scale,uniform,1.0,0.7,1.5,,0.05,lumped dendritic area/load uncertainty
+membrane_capacitance_scale,uniform,1.0,0.8,1.2,,0.05,specific capacitance/modeling uncertainty
+membrane_leak_scale,log_uniform,1.0,0.5,2.0,,0.05,passive leak is a positive multiplicative uncertainty
+synaptic_conductance_scale,log_uniform,1.0,0.5,2.0,,0.05,synaptic strength is a positive multiplicative uncertainty
+nmda_fraction,uniform,0.35,0.0,0.8,,0.05,active-extension NMDA-to-AMPA peak fraction uncertainty
+hcn_density_scale,uniform,1.0,0.0,2.0,,0.05,generic HCN active-extension density uncertainty
+na_density_scale,uniform,1.0,0.0,2.0,,0.05,generic sodium active-extension density uncertainty
+kdr_density_scale,uniform,1.0,0.0,2.0,,0.05,generic KDR active-extension density uncertainty
+a_type_density_scale,uniform,1.0,0.0,2.0,,0.05,generic A-type potassium active-extension density uncertainty
+calcium_density_scale,uniform,1.0,0.0,2.0,,0.05,restrained electrical-only calcium active-extension uncertainty

@@ -1,0 +1,4 @@
+target,predictors,diagnostic_r2,note
+Gamma_h_to_d,SMI+transfer_gain_50Hz+active_profile_channel_count,0.9798184047633544,"fixed diagnostic comparison, not Phase 05 predictor ranking"
+Gamma_h_to_s,SMI+transfer_gain_50Hz+active_profile_channel_count,0.9159685889887792,"fixed diagnostic comparison, not Phase 05 predictor ranking"
+A_h_mV,SMI+transfer_gain_50Hz+active_profile_channel_count,0.7213420406208096,"fixed diagnostic comparison, not Phase 05 predictor ranking"

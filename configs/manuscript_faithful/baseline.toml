@@ -1,0 +1,52 @@
+[meta]
+track = "manuscript_faithful"
+description = "Authoritative Phase 00 transcription of manuscript proof-of-principle parameters."
+
+[reversal]
+leak_mV = -70.0
+excitatory_synapse_mV = 0.0
+
+[spine_head]
+specific_capacitance_pF_per_um2 = 0.01
+specific_leak_nS_per_um2 = 3e-6
+radius_um = 0.35
+
+[dendrite]
+capacitance_pF = 120.0
+leak_conductance_nS = 2.5
+
+[soma]
+capacitance_pF = 220.0
+leak_conductance_nS = 7.0
+
+[coupling]
+dendrite_soma_conductance_nS = 12.0
+intracellular_resistivity_ohm_cm = 100.0
+
+[synapse]
+g_max_nS = 1.4
+tau_rise_ms = 0.3
+tau_decay_ms = 3.0
+event_time_ms = 20.0
+
+[numerics]
+time_step_ms = 0.01
+input_resistance_current_pA = 10.0
+simulation_stop_ms = 80.0
+metric_window_ms = 50.0
+
+[sweeps.neck_length]
+start_um = 0.10
+stop_um = 2.00
+steps = 20
+
+[sweeps.neck_radius]
+start_um = 0.035
+stop_um = 0.25
+steps = 20
+
+[validation.matched_neck]
+neck_resistance_Mohm = 100.0
+dendritic_leak_start_nS = 0.1
+dendritic_leak_stop_nS = 30.0
+spacing = "log"
