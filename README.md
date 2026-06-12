@@ -1,11 +1,12 @@
 # SPINE: load-normalized spine-neck ratio residuals
 
-SPINE is a reproducible Python compartmental-modeling project analyzing the limits of a load-normalized spine-neck ratio in dendritic spine electrical isolation. The ratio `SMI = R_neck/R_in,d` defines the classical DC local voltage-divider expectation `Gamma_div = 1/(1+SMI)`. The manuscript and repository focus on residuals from that divider in transient conductance-based simulations, showing where component resistances, impedance/dynamic descriptors, synaptic conductance scale, active state, downstream filtering, and measurement uncertainty make a single scalar incomplete.
+SPINE is a reproducible Python compartmental-modeling project analyzing the limits of a load-normalized spine-neck ratio in dendritic spine electrical isolation. The ratio `SMI = R_neck/R_in,d` defines the classical DC local voltage-divider expectation `Gamma_div = 1/(1+SMI)`. The manuscript and repository focus on residuals from that divider in transient conductance-based simulations, showing where component resistances, impedance/dynamic descriptors, synaptic conductance scale, active state, downstream filtering, and measurement uncertainty make a single scalar incomplete. SMI is not a universal predictor; it is a scoped local-divider coordinate.
 
 ## Repository contents
 
 - `src/spine/`: transparent first-principles Python implementation.
 - `configs/`: baseline, plausibility-revised, and active-extension configuration tracks.
+- `configs/epilepsy_exploratory/`: separated exploratory epilepsy stress-test configuration; it is not part of the primary physiological baseline and does not support clinical claims.
 - `scripts/`: bounded reproduction, validation, and manuscript-support scripts.
 - `results/`: selected machine-readable derived outputs used by the manuscript.
 - `manuscript/`: unblinded manuscript source, figure/table manifests, and provenance ledgers.
