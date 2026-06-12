@@ -12,4 +12,5 @@ Date: 2026-06-12
 - Gregory Pierpoint is not listed as MD.
 - NEURON validation: not claimed.
 - Deterministic uncertainty: design-fraction language retained.
-- Zenodo DOI: not minted in local environment; manual action required.
+- Zenodo version DOI: https://doi.org/10.5281/zenodo.20672333
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.20672356

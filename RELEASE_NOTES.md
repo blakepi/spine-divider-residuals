@@ -16,6 +16,9 @@ Submission release for *Residual Limits of a Load-Normalized Spine-Neck Ratio in
 - `Delta_div = Gamma_h_to_d - Gamma_div` is the residual-domain target.
 - The release does not claim NEURON validation, biological prevalence, or high-SMI uncertainty coverage in the N=768 uncertainty ensemble.
 
-## Remote release status
+## Verified release metadata
 
-GitHub upload and Zenodo DOI minting require manual authenticated steps in this environment.
+- Repository: https://github.com/blakepi/spine-divider-residuals
+- Release: https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission
+- Version DOI: https://doi.org/10.5281/zenodo.20672333
+- Concept DOI: https://doi.org/10.5281/zenodo.20672356

@@ -41,6 +41,7 @@ Date: 2026-06-12
 
 ## Remote release status
 
-- GitHub CLI: not available on PATH
-- GitHub release: manual action required.
-- Zenodo DOI: manual action required; no DOI invented.
+- Repository URL: https://github.com/blakepi/spine-divider-residuals
+- GitHub release: https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission
+- Zenodo version DOI: https://doi.org/10.5281/zenodo.20672333
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.20672356

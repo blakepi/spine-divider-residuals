@@ -2,13 +2,14 @@
 
 Date: 2026-06-12
 
-- Public repo URL: manual action required; not invented.
-- Public/private status: local public-release staging prepared; remote public status not verifiable without authenticated GitHub upload.
+- Public repo URL: https://github.com/blakepi/spine-divider-residuals
+- Public/private status: public repository URL verified by user for metadata lock.
 - Branch: `main` in local staging repository.
 - Commit hash: report from `git rev-parse HEAD` in `public_release/spine-divider-residuals` after final local staging commit or after any manual URL/DOI metadata update. The root final report records the hash observed at completion.
-- Release tag: intended `v1.0.0-submission`.
-- Release URL: manual action required.
-- Zenodo DOI: manual action required; no DOI minted or claimed.
+- Release tag: `v1.0.0-submission`.
+- Release URL: https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission
+- Zenodo version DOI: https://doi.org/10.5281/zenodo.20672333
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.20672356
 - Code license: MIT (`LICENSE`).
 - Data/docs license: CC BY 4.0 (`DATA_LICENSE.md`).
 - Manifest: `public_release/spine-divider-residuals/PUBLIC_RELEASE_MANIFEST.csv`.

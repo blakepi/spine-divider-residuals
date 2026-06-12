@@ -16,4 +16,4 @@
 - [x] AI-use disclosure present.
 - [x] No NEURON validation claimed.
 - [x] No high-SMI uncertainty coverage claimed for N=768.
-- [ ] Human action: authenticated GitHub upload and Zenodo DOI minting, then update manuscript/README with verified URL/DOI.
+- [x] Repository/DOI metadata locked: https://github.com/blakepi/spine-divider-residuals and https://doi.org/10.5281/zenodo.20672333.

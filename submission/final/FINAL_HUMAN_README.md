@@ -13,7 +13,8 @@ This finalization created a Nature Neuroscience unblinded submission package, a 
 
 ## Manual actions
 
-- GitHub CLI was not available on PATH; push `public_release/spine-divider-residuals` manually or install/authenticate `gh`.
+- Repository URL: https://github.com/blakepi/spine-divider-residuals
 - Local staging commit: run `git rev-parse HEAD` in `public_release/spine-divider-residuals` after any final manual metadata update. The final response records the hash observed at completion.
-- Zenodo DOI was not minted. Follow `submission/final/ZENODO_DOI_ACTION_REQUIRED.md`.
+- Zenodo version DOI: https://doi.org/10.5281/zenodo.20672333
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.20672356
 - After a real public GitHub URL and Zenodo DOI exist, update `README.md`, `CITATION.cff`, `.zenodo.json`, manuscript Data/Code Availability, and the portal field guide.

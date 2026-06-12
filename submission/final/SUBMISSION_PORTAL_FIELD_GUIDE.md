@@ -43,11 +43,11 @@
 
     ## Data availability
 
-    This study uses mathematical and computational modeling and generated no new human participant or animal data. Manuscript-facing derived data, validation outputs, figure/table source data, and provenance ledgers are included in the SPINE release package. Public GitHub URL and Zenodo DOI should be inserted after manual authenticated upload and DOI minting.
+    This study uses mathematical and computational modeling and generated no new human participant or animal data. Manuscript-facing derived data, validation outputs, figure/table source data, and provenance ledgers are included in the SPINE release package at https://github.com/blakepi/spine-divider-residuals and archived at https://doi.org/10.5281/zenodo.20672333.
 
     ## Code availability
 
-    The SPINE Python code, configuration files, analysis scripts, tests, validation scripts, environment instructions, and release manifests are included in the approved public-release staging package. Code is released under the MIT License. Derived manuscript-facing data, figures, tables, and documentation are released under CC BY 4.0 unless otherwise stated. Public GitHub URL, release tag/commit, and Zenodo DOI should be inserted after manual authenticated upload and archival integration.
+    The SPINE Python code, configuration files, analysis scripts, tests, validation scripts, environment instructions, release manifests, and manuscript-facing derived data are available at https://github.com/blakepi/spine-divider-residuals and archived at https://doi.org/10.5281/zenodo.20672333. The release tag is v1.0.0-submission. Code is released under the MIT License. Derived manuscript-facing data, figures, tables, and documentation are released under CC BY 4.0 unless otherwise stated.
 
     ## AI disclosure
 
@@ -73,7 +73,7 @@
 We are pleased to submit "Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models" as an unblinded Article for consideration in Nature Neuroscience.
 This manuscript addresses a basic interpretive problem in dendritic-spine electrophysiology: spine-neck resistance is meaningful only relative to the dendritic load that it drives. We define a load-normalized spine-neck ratio, SMI = R_neck/R_in,d, and use the classical DC voltage divider, Gamma_div = 1/(1+SMI), as an explicit analytic reference rather than as a new law. The scientific contribution is the residual-domain analysis: where transient conductance-based responses depart from this divider, the residuals identify the limits of a single scalar descriptor.
 The work should be of interest to Nature Neuroscience readers because spine-neck electrical isolation is often invoked as a mechanistic explanation for synaptic compartmentalization, amplitude amplification, and somatic impact. SPINE separates the local divider expectation from head-amplitude, somatic-transfer, active-state, impedance, and measurement-uncertainty effects, showing where morphology/load shorthand is useful and where richer electrical descriptors are required.
-The study uses mathematical and computational modeling only and reports no new human participant or animal experiments. The authors declare no competing interests, and this work received no external funding. A public-release staging repository, final source package, validation outputs, and provenance ledgers have been prepared; authenticated GitHub upload and Zenodo DOI minting remain manual technical steps in the local environment and are documented in the submission package.
+The study uses mathematical and computational modeling only and reports no new human participant or animal experiments. The authors declare no competing interests, and this work received no external funding. The code, final source package, validation outputs, and provenance ledgers are available at https://github.com/blakepi/spine-divider-residuals and archived at https://doi.org/10.5281/zenodo.20672333.
 All authors approved the submitted manuscript. Correspondence should be addressed to Alberto Musto, MD, PhD (mustoae@odu.edu).
 Sincerely,
 Gregory Pierpoint

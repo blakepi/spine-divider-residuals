@@ -73,7 +73,7 @@ Sources: `manuscript/revision_restart/PHASE5_PACKAGE_CONTENT_AUDIT.md` and `PHAS
 
 - Blinded reviewer draft: `275` files, SHA-256 `efaca101ecbd3df262f502f5c24e3b55012cbbf70c06c09d351226eefeaa428c`.
 - Unblinded internal release candidate: `279` files, SHA-256 `42caa289d4d7e45838a67b2de0b9b1f679ea2a8aeec49695a04967bd57cdeaf0`.
-- Final public release is approved, and a release-ready staging package is generated during final submission cleanup. GitHub upload and Zenodo DOI minting remain technical manual steps because authenticated `gh` and Zenodo integration were unavailable in the local execution environment.
+- Final public release metadata is verified: repository https://github.com/blakepi/spine-divider-residuals, release https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission, and version DOI https://doi.org/10.5281/zenodo.20672333.
 
 ## Rounding Policy
 
@@ -82,5 +82,5 @@ The manuscript rounds values for readability and preserves exact values in CSV f
 ## Pending Or Out-Of-Scope Items
 
 - NEURON validation was not performed.
-- No Zenodo DOI is claimed until manually minted and verified.
+- Zenodo version DOI is verified as https://doi.org/10.5281/zenodo.20672333; concept DOI is https://doi.org/10.5281/zenodo.20672356.
 - Full LaTeX compilation depends on local TeX availability; final submission cleanup records build output and static validation in `submission/final/FINAL_SUBMISSION_QA_REPORT.md`.

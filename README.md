@@ -41,9 +41,11 @@ The passive baseline was cross-checked with an independently assembled direct-ma
 
 ## Citation
 
-Pierpoint, G., and Musto, A. (2026). *Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models*. Submission release `v1.0.0-submission`.
+Pierpoint, G., and Musto, A. (2026). *Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models*. Submission release `v1.0.0-submission`. Zenodo. https://doi.org/10.5281/zenodo.20672333
 
-Public GitHub upload and Zenodo DOI minting require authenticated manual steps in this environment. Do not cite a DOI until it appears in `submission/final/ZENODO_DOI_ACTION_REQUIRED.md` as completed and verified.
+Repository: https://github.com/blakepi/spine-divider-residuals
+
+Release: https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission
 
 ## Licenses
 

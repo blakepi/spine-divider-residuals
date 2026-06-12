@@ -22,5 +22,11 @@
     "voltage divider",
     "reproducible modeling"
   ],
-  "related_identifiers": []
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/blakepi/spine-divider-residuals",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
 }

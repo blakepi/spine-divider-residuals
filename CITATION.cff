@@ -12,6 +12,8 @@ authors:
     given-names: Alberto
     name-particle: "MD, PhD"
     orcid: "https://orcid.org/0000-0002-0877-8883"
-repository-code: "TO_BE_INSERTED_AFTER_MANUAL_GITHUB_UPLOAD"
+url: "https://github.com/blakepi/spine-divider-residuals/releases/tag/v1.0.0-submission"
+doi: "10.5281/zenodo.20672333"
+repository-code: "https://github.com/blakepi/spine-divider-residuals"
 license: MIT
 abstract: "SPINE analyzes residuals from the classical load-normalized spine-neck voltage divider in compartmental dendritic-spine models."

@@ -1,6 +1,10 @@
-# Zenodo DOI Action Required
+# Zenodo DOI Metadata Locked
 
-A Zenodo DOI was not minted because this local environment had no authenticated GitHub CLI on PATH and no verified Zenodo integration/token. No DOI has been invented.
+The Zenodo DOI values have been supplied and locked for metadata use.
+
+- Version DOI: https://doi.org/10.5281/zenodo.20672333
+- Concept DOI: https://doi.org/10.5281/zenodo.20672356
+- Record URL: https://zenodo.org/records/20672333
 
 ## Manual steps
 
