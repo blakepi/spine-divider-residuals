@@ -7,8 +7,7 @@ Date: 2026-06-12
 - Nature package directory: `submission/nature_neuroscience/`
 - Public release staging directory: `public_release/spine-divider-residuals/`
 - Local staging commit: recorded in final response and in `submission/final/LOCAL_STAGING_COMMIT.txt`
-- Public release manifest files: 478
-- Public release manifest total bytes: 39804496
+- Public release manifest: see `PUBLIC_RELEASE_MANIFEST.csv`; the root final report records exact observed counts at completion.
 - Main manuscript DOCX: not created: pandoc not available on PATH
 - Cover letter DOCX: created
 - Cover letter PDF: created

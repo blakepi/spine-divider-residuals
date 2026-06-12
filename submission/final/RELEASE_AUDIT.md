@@ -12,7 +12,7 @@ Date: 2026-06-12
 - Code license: MIT (`LICENSE`).
 - Data/docs license: CC BY 4.0 (`DATA_LICENSE.md`).
 - Manifest: `public_release/spine-divider-residuals/PUBLIC_RELEASE_MANIFEST.csv`.
-- Files staged: 478.
+- Files staged: see `PUBLIC_RELEASE_MANIFEST.csv`; the root final report records exact observed counts at completion.
 - Excluded rationale: raw prompts, `.codex/`, tasks, checkpoints, backups, old reviewer packages, generated caches, temporary files, local logs, and historical planning artifacts not needed for reproducibility were excluded from the clean public staging repo.
 - Sensitive scan: `.env`, credential, token, and secret path patterns excluded by `.gitignore`; final grep scan should be run before manual push.
 - AI/scratch cleanup: public staging keeps concise AI-use disclosure and excludes raw chat/prompt attachments.
