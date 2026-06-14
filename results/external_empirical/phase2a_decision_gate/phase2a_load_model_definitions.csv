@@ -1,0 +1,5 @@
+load_model_id,load_value_policy,fixed_load_MOhm,load_model_source,load_model_assumption,source_native_to_row,measured_same_source_possible,phase2a_scope_note
+source_native,per_row_phase1_load_value,,Phase 1 row-specific load_value_MOhm,Uses each summary row's own source-native load or model/proxy load.,true,true,Feasibility-only source-native normalization; not a per-spine analysis.
+common_SPINE_baseline_144p487,fixed_common_load,144.487,SPINE baseline common-reference load specified for Phase 2a,Computational common reference; not a biological measurement.,false,false,Decision-gate stress test only; not a Phase 2b sweep.
+common_Harnett_model_125,fixed_common_load,125,Harnett model Rdend anchor carried from Phase 1,Model/proxy common load; not a universal biological load.,false,false,Decision-gate stress test only; not a Phase 2b sweep.
+common_Popovic_measured_275,fixed_common_load,275,Popovic measured Zdendrite summary anchor carried from Phase 1,Measured Popovic summary load reused as a common reference; not universal.,false,false,Decision-gate stress test only; not a Phase 2b sweep.

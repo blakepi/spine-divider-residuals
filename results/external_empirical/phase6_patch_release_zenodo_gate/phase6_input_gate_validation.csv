@@ -1,0 +1,15 @@
+gate_item,status,observed,expected,notes
+git_root,PASS,C:/Research/SPINE_Codex_Starter,C:/Research/SPINE_Codex_Starter,git rev-parse --show-toplevel
+current_branch,PASS,external-empirical-phase6-patch-release-zenodo-gate,external-empirical-phase6-patch-release-zenodo-gate,git branch --show-current
+git_status_clean_start,PASS,## external-empirical-phase6-patch-release-zenodo-gate,## external-empirical-phase6-patch-release-zenodo-gate,Verified immediately after branch creation before the Phase 6 script and artifacts were written.
+git_status_current_phase6_scope,PASS,## external-empirical-phase6-patch-release-zenodo-gate | ?? reports/PHASE_6_BOUNDARY_AND_CLAIM_AUDIT.md | ?? reports/PHASE_6_EXTERNAL_RELEASE_ATTEMPT_OR_HANDOFF.md | ?? reports/PHASE_6_NEXT_PHASE_HANDOFF.md | ?? reports/PHASE_6_PATCH_RELEASE_AND_ZENODO_DECISION_GATE.md | ?? reports/PHASE_6_PUBLIC_RELEASE_DELTA_AUDIT.md | ?? reports/PHASE_6_RELEASE_NOTES_AND_METADATA_DRAFT.md | ?? results/external_empirical/phase6_patch_release_zenodo_gate/ | ?? scripts/external_empirical/phase6_patch_release_zenodo_gate.py,Only Phase 6 script/artifact/doc/checkpoint changes after clean branch start.,"Current working tree may contain generated Phase 6 files, but no unrelated dirt is allowed."
+phase5b_commit_contained,PASS,contains,46380b3e64e96807766916c3c0a8701b7525a34e,git merge-base --is-ancestor
+public_release_not_root,PASS,C:\Research\SPINE_Codex_Starter,C:\Research\SPINE_Codex_Starter,Nested release mirror is not root working repository.
+approval_marker_present,MODE_A_ABSENT,False,optional,submission/human_approval/PHASE6_PUBLIC_RELEASE_APPROVAL.md
+approval_marker_valid,MODE_A_INVALID_OR_ABSENT,False,True only for release execution,Absent or invalid marker forces Mode A.
+approval_marker_not_overbroad,PASS,False,False,Journal submission must remain no.
+phase5b_classification,PASS,SUBMISSION_PACKAGE_SYNCED_HUMAN_APPROVED,SUBMISSION_PACKAGE_SYNCED_HUMAN_APPROVED,results/external_empirical/phase5b_human_approved_sync/phase5b_decision_result.json
+phase5b_public_release_unchanged,PASS,False,False,Phase 5b boundary.
+phase5b_doi_metadata_unchanged,PASS,False,False,Phase 5b boundary.
+phase5b_journal_submission_unchanged,PASS,False,False,Phase 5b boundary.
+phase5b_forbidden_claims_disallowed,PASS,false claim booleans,all false,No forbidden scientific claims allowed.

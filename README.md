@@ -1,6 +1,6 @@
 # SPINE: load-normalized spine-neck ratio residuals
 
-SPINE is a reproducible Python compartmental-modeling project analyzing the limits of a load-normalized spine-neck ratio in dendritic spine electrical isolation. The ratio `SMI = R_neck/R_in,d` defines the classical DC local voltage-divider expectation `Gamma_div = 1/(1+SMI)`. The manuscript and repository focus on residuals from that divider in transient conductance-based simulations, showing where component resistances, impedance/dynamic descriptors, synaptic conductance scale, active state, downstream filtering, and measurement uncertainty make a single scalar incomplete. SMI is not a universal predictor; it is a scoped local-divider coordinate.
+SPINE is a reproducible Python compartmental-modeling project analyzing residuals from a load-normalized spine-neck divider in dendritic spine electrical isolation. The ratio `rho_L = R_neck/R_in,d` defines the classical DC local voltage-divider expectation `Gamma_div = 1/(1+rho_L)`. The manuscript and repository focus on residuals from that divider in transient conductance-based simulations, showing where component resistances, impedance/dynamic descriptors, synaptic conductance scale, active state, downstream filtering, and measurement uncertainty make a single scalar incomplete. `SMI` appears in legacy scripts and reports as author-defined shorthand for the same load-normalized ratio; the ratio is a scoped local-divider coordinate with limited target scope.
 
 ## Repository contents
 
@@ -37,11 +37,11 @@ The broad primary ensembles are not rerun during final submission cleanup. The r
 
 ## Validation summary
 
-The passive baseline was cross-checked with an independently assembled direct-matrix benchmark and DC analytic limits. The maximum all-trace voltage difference in the independent passive baseline benchmark was `1.249000902703301e-13` mV, and the maximum local-transfer difference was `7.549516567451064e-15`. NEURON was unavailable in the execution environment; no NEURON validation is claimed.
+The passive baseline was cross-checked with an independently assembled direct-matrix benchmark and DC analytic limits. The maximum all-trace voltage difference in the independent passive baseline benchmark was `1.249000902703301e-13` mV, and the maximum local-transfer difference was `7.549516567451064e-15`. NEURON remains unavailable and is not claimed. Brian2 was installed only in an isolated optional validation environment, where Brian2-hosted scoped checks passed for the three passive baseline cases, one distributed-neck passive case, and one AMPA/NMDA synapse-only case; these are representative implementation checks, not all-row or active-channel validation.
 
 ## Citation
 
-Pierpoint, G., and Musto, A. (2026). *Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models*. Submission release `v1.0.0-submission`. Zenodo. https://doi.org/10.5281/zenodo.20672333
+Pierpoint, G., and Musto, A. (2026). *Residuals from a Load-Normalized Spine-Neck Divider Reveal Limits of Scalar Isolation Metrics*. Submission release `v1.0.0-submission`. Zenodo. https://doi.org/10.5281/zenodo.20672333
 
 Repository: https://github.com/blakepi/spine-divider-residuals
 
@@ -54,3 +54,7 @@ Code is released under the MIT License (`LICENSE`). Manuscript-facing derived da
 ## Contact
 
 Correspondence: Alberto Musto, MD, PhD, `mustoae@odu.edu`. First author/contact: Gregory Pierpoint, `pierpogb@odu.edu`.
+
+## Local v1.0.1 Staging Note
+
+This working tree contains local staging material for `v1.0.1-external-summary` / SPINE v1.0.1 external summary add-on. It is not a public release, was not pushed, has no GitHub release, has no new Zenodo DOI, and has no DOI metadata insertion. The staged external empirical add-on is limited to summary-level anchors and a load-normalization hypothesis, with no per-spine inference, not biological validation, not a population estimate, and not a controversy resolution.

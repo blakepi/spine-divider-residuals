@@ -1,0 +1,5 @@
+pdf_path,text_path,tool,status,external_text_present,forbidden_uncaveated_hits,notes
+manuscript/main_unblinded.pdf,results/external_empirical/phase4_final_qa_sync_gate/pdf_text/main_unblinded.txt,pdftotext,PASS,True,,Text extracted
+manuscript/main_blinded.pdf,results/external_empirical/phase4_final_qa_sync_gate/pdf_text/main_blinded.txt,pdftotext,PASS,True,,Text extracted
+manuscript/target_journal.pdf,results/external_empirical/phase4_final_qa_sync_gate/pdf_text/target_journal.txt,pdftotext,PASS,True,,Text extracted
+manuscript/supplement/supplement.pdf,results/external_empirical/phase4_final_qa_sync_gate/pdf_text/supplement.txt,pdftotext,PASS,True,,Text extracted

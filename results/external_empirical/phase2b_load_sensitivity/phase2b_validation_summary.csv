@@ -1,0 +1,15 @@
+validation_name,status,details
+input_gate_validation_rows,passed,rows=7
+exact_summary_rows,passed,"summary_rows=['harnett_2012_summary_model_anchor', 'popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']"
+no_per_spine_rows,passed,all rows false
+transfer_residuals_false,passed,all rows residual_allowed=false
+load_model_calculations,passed,bad=[]; rows=48
+class_threshold_formulas,passed,bad=[]
+uncertainty_uses_source_reported_only,passed,bad=[]
+candidate_claims_required_rows,passed,missing=[]
+allowed_claims_have_safer_replacements,passed,forbidden_with_replacements=6
+decision_json_claim_boundaries,passed,recommendation=PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON
+figure_data_backed_by_tables,passed,missing=[]
+figure_files_exist,passed,missing=[]
+report_static_language_audit,passed,bad_occurrences=[]
+protected_hash_comparison,passed,non_unchanged_rows=0; total=1630

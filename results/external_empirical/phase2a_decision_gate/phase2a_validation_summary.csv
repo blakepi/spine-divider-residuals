@@ -1,0 +1,15 @@
+validation_name,status,details
+phase0_1_final_classification,passed,final_classification=GO_SUMMARY_ONLY
+phase1_dataset_row_count,passed,csv_rows=7; phase1_summary_rows=7
+exactly_three_summary_usable_rows,passed,"summary_ids=['harnett_2012_summary_model_anchor', 'popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']"
+no_per_spine_rows,passed,usable_bad=[]; levels=[]
+source_native_calculation_rules,passed,bad=[]
+load_model_definition_count,passed,"load_models=['source_native', 'common_SPINE_baseline_144p487', 'common_Harnett_model_125', 'common_Popovic_measured_275']"
+load_model_calculation_count,passed,rows=12
+load_model_calculation_rules,passed,bad=[]
+summary_anchor_separation_preserved,passed,"preserved=['true', 'true', 'true', 'true']; min_harnett_to_popovic_measured=18.51851852"
+transfer_proxy_only_no_residuals,passed,"proxy_rows=['popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']; residual_bad=[]; forbidden_cols=[]"
+figure_data_traces_calculations,passed,plotted_missing=0; panel_b_missing_source=[]
+figure_files_exist,passed,missing_or_empty=[]
+decision_json_claim_boundaries,passed,classification=SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS
+protected_hash_comparison,passed,non_unchanged_rows=0; total=1630

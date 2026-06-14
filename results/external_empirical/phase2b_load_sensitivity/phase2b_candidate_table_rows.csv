@@ -1,0 +1,4 @@
+row_label,source,data_level,R_neck_MOhm_display,load_MOhm_display,rho_L_display,Gamma_div_display,source_native_class,route1_role,caveat
+Harnett high-isolation model/summary anchor,Harnett et al. 2012 Nature,summary_model,500,125,4,0.2,high,high-isolation model/proxy anchor,Not per-spine measured; load is a model/proxy value.
+Popovic measured low-isolation summary,Popovic et al. 2015 Nat Commun,summary_measured,27 +/- 6,275 +/- 27,0.0982,0.911,low,measured low-isolation anchor,Summary row only; not a per-spine biological sample.
+Popovic model-fit reference,Popovic et al. 2015 Nat Commun,summary_model,40.5,564,0.0718,0.933,low,model-fit reference kept separate,"Model summary, not an independent measured row."

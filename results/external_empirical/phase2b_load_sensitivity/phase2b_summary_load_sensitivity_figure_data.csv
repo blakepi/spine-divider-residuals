@@ -1,0 +1,189 @@
+panel,row_id,source_id,citation_short,label,x_value,y_value,x_variable,y_variable,load_model_id,marker_group,measured_or_model,plot_note
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03,0.9708737864,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03123016417,0.9697156219,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.0325107718,0.9685128982,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03384389135,0.9672640216,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03523167609,0.9659673512,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03667636761,0.9646211983,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03818029938,0.963223826,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.03974590059,0.9617734481,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.04137570001,0.9602682298,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.04307233013,0.9587062863,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.04483853137,0.9570856836,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.04667715652,0.9554044375,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.04859117536,0.9536605147,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.05058367946,0.951851832,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.05265788712,0.9499762575,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.05481714865,0.9480316103,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.05706495171,0.9460156619,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.05940492701,0.9439261367,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.06184085409,0.9417607131,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.06437666752,0.9395170249,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.06701646317,0.9371926625,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.06976450489,0.9347851751,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.07262523136,0.9322920725,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.07560326326,0.9297108275,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.07870341078,0.9270388784,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.0819306813,0.9242736317,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.08529028758,0.9214124658,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.0887876561,0.9184527345,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.09242843586,0.9153917705,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.09621850752,0.9122268901,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1001639929,0.908955398,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1042712647,0.905574592,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1085469571,0.9020817689,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1129979764,0.8984742302,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1176315118,0.8947492885,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1224550474,0.8909042748,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1274763745,0.8869365449,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1327036034,0.8828434879,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1381451773,0.8786225342,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1438098856,0.8742711639,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1497068779,0.8697869164,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1558456791,0.8651673992,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1622362047,0.8604102986,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1688887769,0.8555133899,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.175814141,0.8504745479,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1830234829,0.8452917584,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1905284472,0.8399631293,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.1983411562,0.8344869029,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2064742289,0.8288614676,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2149408022,0.8230853703,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2237545513,0.8171573286,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2329297123,0.8110762439,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2424811052,0.8048412132,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2524241574,0.7984515422,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2627749292,0.7919067578,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2735501392,0.7852066198,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.2847671919,0.7783511334,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.296444205,0.7713405607,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3086000397,0.7641754315,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.32125433,0.7568565546,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3344275155,0.7493850272,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3481408737,0.7417622442,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3624165547,0.7339899068,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3772776166,0.7260700297,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.3927480635,0.7180049474,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4088528833,0.7097973194,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4256180888,0.7014501344,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4430707595,0.6929667124,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4612390853,0.6843507063,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4801524118,0.6756061011,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.4998412881,0.6667372127,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.5203375162,0.6577486837,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.5416742018,0.6486454783,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.5638858082,0.6394328759,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.5870082121,0.6301164622,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.611078761,0.6207021185,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.6361363342,0.6111960105,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.662221405,0.6016045739,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.6893761064,0.5919344995,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.7176442992,0.5821927162,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.7470716425,0.5723863725,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.777705668,0.5625228169,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.8095958562,0.5526095766,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.8427937166,0.5426543356,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.877352871,0.532664911,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.9133291397,0.5226492292,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.9507806324,0.5126153005,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),0.9897678412,0.5025711941,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.030353739,0.4925250122,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.072603881,0.4824848633,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.116586509,0.4724588367,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.162372666,0.4624549762,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.210036306,0.4524812543,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.259654417,0.4425455471,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.311307141,0.4326556096,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.365077909,0.4228190522,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.421053574,0.4130433175,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.479324546,0.4033356591,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.539984948,0.3937031205,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.603132758,0.3841525166,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.668869974,0.3746904157,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.737302775,0.3653231236,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.808541696,0.3560566686,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.882701802,0.3468967894,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),1.959902879,0.3378489231,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.040269622,0.3289181962,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.123931841,0.3201094169,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.211024669,0.3114270686,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.30168878,0.3028753061,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.396070615,0.2944579525,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.494322622,0.2861784981,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.596603499,0.2780401009,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.703078452,0.2700455885,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.81391946,0.2621974613,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),2.929305557,0.2544978968,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.049423114,0.2469487558,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.174466149,0.2395515892,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.304636633,0.2323076453,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.440144818,0.2252178793,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.581209581,0.2182829627,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.728058771,0.2115032931,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),3.880929582,0.2048790058,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.040068932,0.1984099848,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.205733866,0.1920958746,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.37819197,0.1859360926,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.557721799,0.1799298411,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.744613333,0.17407612,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),4.939168444,0.1683737394,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),5.141701378,0.1628213321,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),5.352539271,0.1574173661,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),5.572022672,0.1521601568,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),5.800506093,0.1470478794,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),6.038358584,0.142078581,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),6.285964329,0.1372501916,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),6.543723265,0.1325605361,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),6.812051728,0.1280073449,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),7.091383126,0.1235882648,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),7.382168639,0.1193008687,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),7.684877951,0.1151426659,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,divider_curve,analytic,analytic divider,Gamma_div = 1/(1+rho_L),8,0.1111111111,rho_L,Gamma_div,analytic,curve,analytic,Analytic divider curve; not empirical data.
+A,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,Harnett_summary_model,4,0.2,rho_L_source_native,Gamma_div_source_native,source_native,Harnett_summary_model,model_summary,Summary-level anchor; point lies on divider by definition.
+A,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,Popovic_measured_summary,0.0981818182,0.910596026,rho_L_source_native,Gamma_div_source_native,source_native,Popovic_measured_summary,measured_summary,Summary-level anchor; point lies on divider by definition.
+A,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,Popovic_model_fit,0.0718085106,0.933002481,rho_L_source_native,Gamma_div_source_native,source_native,Popovic_model_fit,model_summary,Summary-level anchor; point lies on divider by definition.
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,0,0,load_model_index,summary_anchor_index,source_native,Harnett_summary_model,model_summary,rho_L=4; Gamma_div=0.2
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,1,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_75,Harnett_summary_model,model_summary,rho_L=6.666666667; Gamma_div=0.1304347826
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,2,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_100,Harnett_summary_model,model_summary,rho_L=5; Gamma_div=0.1666666667
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,3,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_108,Harnett_summary_model,model_summary,rho_L=4.62962963; Gamma_div=0.1776315789
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,4,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_125,Harnett_summary_model,model_summary,rho_L=4; Gamma_div=0.2
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,5,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_144p487,Harnett_summary_model,model_summary,rho_L=3.460518939; Gamma_div=0.2241891613
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,6,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_162,Harnett_summary_model,model_summary,rho_L=3.086419753; Gamma_div=0.2447129909
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,7,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_200,Harnett_summary_model,model_summary,rho_L=2.5; Gamma_div=0.2857142857
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,8,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_275,Harnett_summary_model,model_summary,rho_L=1.818181818; Gamma_div=0.3548387097
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,9,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_400,Harnett_summary_model,model_summary,rho_L=1.25; Gamma_div=0.4444444444
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high_gte_0p75,10,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_564,Harnett_summary_model,model_summary,rho_L=0.8865248227; Gamma_div=0.530075188
+B,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,intermediate_0p25_to_lt_0p75,11,0,load_model_index,summary_anchor_index,diagnostic_common_load_grid_666p667,Harnett_summary_model,model_summary,rho_L=0.749999625; Gamma_div=0.5714286939
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,0,1,load_model_index,summary_anchor_index,source_native,Popovic_measured_summary,measured_summary,rho_L=0.09818181818; Gamma_div=0.9105960265
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,1,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_75,Popovic_measured_summary,measured_summary,rho_L=0.36; Gamma_div=0.7352941176
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,2,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_100,Popovic_measured_summary,measured_summary,rho_L=0.27; Gamma_div=0.7874015748
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,3,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_108,Popovic_measured_summary,measured_summary,rho_L=0.25; Gamma_div=0.8
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,4,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_125,Popovic_measured_summary,measured_summary,rho_L=0.216; Gamma_div=0.8223684211
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,5,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_144p487,Popovic_measured_summary,measured_summary,rho_L=0.1868680227; Gamma_div=0.842553663
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,6,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_162,Popovic_measured_summary,measured_summary,rho_L=0.1666666667; Gamma_div=0.8571428571
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,7,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_200,Popovic_measured_summary,measured_summary,rho_L=0.135; Gamma_div=0.8810572687
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,8,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_275,Popovic_measured_summary,measured_summary,rho_L=0.09818181818; Gamma_div=0.9105960265
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,9,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_400,Popovic_measured_summary,measured_summary,rho_L=0.0675; Gamma_div=0.9367681499
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,10,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_564,Popovic_measured_summary,measured_summary,rho_L=0.04787234043; Gamma_div=0.9543147208
+B,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,11,1,load_model_index,summary_anchor_index,diagnostic_common_load_grid_666p667,Popovic_measured_summary,measured_summary,rho_L=0.04049997975; Gamma_div=0.9610764243
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,0,2,load_model_index,summary_anchor_index,source_native,Popovic_model_fit,model_summary,rho_L=0.07180851064; Gamma_div=0.9330024814
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,1,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_75,Popovic_model_fit,model_summary,rho_L=0.54; Gamma_div=0.6493506494
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,2,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_100,Popovic_model_fit,model_summary,rho_L=0.405; Gamma_div=0.7117437722
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,3,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_108,Popovic_model_fit,model_summary,rho_L=0.375; Gamma_div=0.7272727273
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,4,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_125,Popovic_model_fit,model_summary,rho_L=0.324; Gamma_div=0.7552870091
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,5,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_144p487,Popovic_model_fit,model_summary,rho_L=0.2803020341; Gamma_div=0.7810656965
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,intermediate_0p25_to_lt_0p75,6,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_162,Popovic_model_fit,model_summary,rho_L=0.25; Gamma_div=0.8
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,7,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_200,Popovic_model_fit,model_summary,rho_L=0.2025; Gamma_div=0.8316008316
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,8,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_275,Popovic_model_fit,model_summary,rho_L=0.1472727273; Gamma_div=0.8716323296
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,9,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_400,Popovic_model_fit,model_summary,rho_L=0.10125; Gamma_div=0.9080590238
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,10,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_564,Popovic_model_fit,model_summary,rho_L=0.07180851064; Gamma_div=0.9330024814
+B,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low_lt_0p25,11,2,load_model_index,summary_anchor_index,diagnostic_common_load_grid_666p667,Popovic_model_fit,model_summary,rho_L=0.06074996963; Gamma_div=0.942729228
+C,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,high/intermediate boundary,666.6666667,0,load_MOhm,summary_anchor_index,threshold_analysis,Harnett_summary_model,model_summary,Harnett remains high through the recovered/common loads up to 564 MOhm; the diagnostic 666.667 MOhm value sits just beyond the exact high boundary.
+C,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,low/intermediate boundary,2000,0,load_MOhm,summary_anchor_index,threshold_analysis,Harnett_summary_model,model_summary,Harnett remains high through the recovered/common loads up to 564 MOhm; the diagnostic 666.667 MOhm value sits just beyond the exact high boundary.
+C,harnett_2012_summary_model_anchor,harnett_2012,Harnett et al. 2012 Nature,source-native load,125,0,load_MOhm,summary_anchor_index,threshold_analysis,Harnett_summary_model,model_summary,Harnett remains high through the recovered/common loads up to 564 MOhm; the diagnostic 666.667 MOhm value sits just beyond the exact high boundary.
+C,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,high/intermediate boundary,36,1,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_measured_summary,measured_summary,"A high classification would require load <= 36 MOhm, outside the bounded recovered/common-load set used here."
+C,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,low/intermediate boundary,108,1,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_measured_summary,measured_summary,"A high classification would require load <= 36 MOhm, outside the bounded recovered/common-load set used here."
+C,popovic_2015_measured_summary_anchor,popovic_2015,Popovic et al. 2015 Nat Commun,source-native load,275,1,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_measured_summary,measured_summary,"A high classification would require load <= 36 MOhm, outside the bounded recovered/common-load set used here."
+C,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,high/intermediate boundary,54,2,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_model_fit,model_summary,"A high classification would require load <= 54 MOhm, outside the bounded recovered/common-load set used here."
+C,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,low/intermediate boundary,162,2,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_model_fit,model_summary,"A high classification would require load <= 54 MOhm, outside the bounded recovered/common-load set used here."
+C,popovic_2015_model_fit_reference,popovic_2015,Popovic et al. 2015 Nat Commun,source-native load,564,2,load_MOhm,summary_anchor_index,threshold_analysis,Popovic_model_fit,model_summary,"A high classification would require load <= 54 MOhm, outside the bounded recovered/common-load set used here."

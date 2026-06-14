@@ -1,0 +1,5 @@
+pdf_path,exists,size_bytes,modified_local,source_current_status,notes
+manuscript/main_unblinded.pdf,True,947796,2026-06-13T18:03:16-04:00,current_or_newer_than_sources,Existing Phase 3 PDF used; no rebuild performed.
+manuscript/main_blinded.pdf,True,939770,2026-06-13T18:03:26-04:00,current_or_newer_than_sources,Existing Phase 3 PDF used; no rebuild performed.
+manuscript/target_journal.pdf,True,962123,2026-06-13T18:04:34-04:00,current_or_newer_than_sources,Existing Phase 3 PDF used; no rebuild performed.
+manuscript/supplement/supplement.pdf,True,675199,2026-06-13T18:04:01-04:00,current_or_newer_than_sources,Existing Phase 3 PDF used; no rebuild performed.

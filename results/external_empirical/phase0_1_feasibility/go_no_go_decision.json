@@ -1,0 +1,18 @@
+{
+  "phase": "Phase 0.1 Codex-only external data feasibility",
+  "timestamp_local": "2026-06-13T16:37:26-04:00",
+  "final_classification": "GO_SUMMARY_ONLY",
+  "route1_feasible": true,
+  "route1_feasibility_level": "summary_contrast_pole_only_no_per_spine",
+  "harnett_status": "Machine-readable Harnett sources yielded an approximate/model R_neck around 500 MOhm and a model Rdend load proxy of 125 MOhm, but not native paired measured per-spine R_neck/R_d-EPSC rows or exact headline statistics.",
+  "popovic_status": "Machine-readable Popovic PDF text yielded measured summary R_neck = 27 +/- 6 MOhm, same-source Zdendrite = 275 +/- 27 MOhm, and AR = 1.10 +/- 0.02 for n = 29.",
+  "kwon_status": "Only metadata/review-context feasibility information was available; scripted primary PDF/full-text retrieval failed or was blocked, so no numeric Route 1 row is accepted.",
+  "cornejo_status": "Metadata-only/contrast-only in this run; no paired R_neck/load values were machine-recovered, so it is not a rho_L plotting source.",
+  "required_human_work_remaining": [],
+  "kill_criteria_triggered": [
+    "GO_PER_SPINE criteria not met: no Harnett paired measured per-spine rows were machine-recovered.",
+    "NO_GO criteria not triggered for summary level: Harnett load proxy and Popovic measured summary load/Rneck were machine-recovered from source text."
+  ],
+  "recommended_next_phase": "Phase 1 external empirical schema plus extracted summary dataset; do not proceed to per-spine Route 1 without fully automated table or figure extraction QC.",
+  "one_paragraph_rationale": "Codex-only acquisition and machine-readable extraction were sufficient for an honest summary/contrast-pole feasibility dataset, anchored by Harnett model/proxy values and Popovic measured summary Rneck/Zdendrite values. They were not sufficient for a per-spine empirical sample because Harnett native paired measured load rows and exact headline statistics were not recovered without figure/table digitization. No human extraction is required for the summary-only next phase, but all Harnett load values must remain marked as model/proxy rather than measured-native."
+}

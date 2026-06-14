@@ -1,0 +1,5 @@
+decision_axis,status,recommendation,rationale
+manuscript_qa,PASS,Proceed to sync decision only if PDF/static precheck also passes.,"Source, claim, manifest, citation, and traceability audits passed."
+pdf_static_precheck,PASS,Human visual review remains required.,PDF text extraction passed and page renders were produced.
+submission_package_sync,RECOMMENDED,Sync submission/nature_neuroscience in a separate Phase 5.,Phase 3 manuscript/source/PDF assets are stale or missing in the submission package.
+public_patch_release,RECOMMENDED_AFTER_HUMAN_APPROVAL,Prepare a patch-release approval packet only after human approval.,Public archive identity differs from current manuscript/source-data state.

@@ -1,0 +1,8 @@
+check_name,status,observed_value,expected_value,details
+phase0_1_final_classification,passed,GO_SUMMARY_ONLY,GO_SUMMARY_ONLY,Phase 0.1 allows summary-only work.
+phase2a_decision_gate_classification,passed,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,Phase 2a supports hypothesis-level reframing only.
+phase2a_recommended_shape,passed,Shape_A_plus_reframing_hypothesis_only,Shape_A_plus_reframing_hypothesis_only,No validation-strength manuscript shape is allowed.
+exact_summary_rows,passed,harnett_2012_summary_model_anchor;popovic_2015_measured_summary_anchor;popovic_2015_model_fit_reference,harnett_2012_summary_model_anchor;popovic_2015_measured_summary_anchor;popovic_2015_model_fit_reference,Exactly three summary Route 1 rows are available.
+no_per_spine_rows,passed,usable_bad=[]; levels=[],[],No per-spine row or per-spine usability is present.
+transfer_residuals_disabled,passed,,,All transfer rows remain proxy-only or nonnumeric.
+kwon_cornejo_nonnumeric,passed,confirmed,confirmed,Kwon and Cornejo remain context/exclusion rows without rho_L coordinates.

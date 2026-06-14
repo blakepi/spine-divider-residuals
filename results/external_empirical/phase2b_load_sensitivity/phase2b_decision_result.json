@@ -1,0 +1,77 @@
+{
+  "phase": "Phase 2b bounded summary-level load sensitivity and manuscript add-on draft",
+  "timestamp_local": "2026-06-13T17:32:59-04:00",
+  "phase2a_classification_confirmed": true,
+  "phase2b_final_recommendation": "PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON",
+  "manuscript_integration_allowed": true,
+  "recommended_next_phase": "Phase 3 - Controlled Summary-Level Manuscript Add-On Integration",
+  "per_spine_claim_allowed": false,
+  "biological_validation_claim_allowed": false,
+  "controversy_resolution_claim_allowed": false,
+  "recommended_claim_scope": "Summary-level load-normalization hypothesis only; no per-spine, prevalence, biological-validation, or controversy-resolution claim.",
+  "key_numeric_summary": {
+    "calculation_rows": 48,
+    "fixed_recovered_common_harnett_class_set": "high",
+    "fixed_recovered_common_popovic_measured_class_set": "low",
+    "fixed_recovered_common_popovic_model_fit_class_set": "low;intermediate",
+    "diagnostic_grid_harnett_class_set": "intermediate;high",
+    "diagnostic_grid_popovic_measured_class_set": "low;intermediate",
+    "diagnostic_grid_popovic_model_fit_class_set": "low;intermediate",
+    "common_load_harnett_to_popovic_measured_ratio_range": [
+      "18.51851852",
+      "18.51851852"
+    ],
+    "common_load_harnett_to_popovic_model_ratio_range": [
+      "12.34567901",
+      "12.34567901"
+    ],
+    "popovic_measured_uncertainty_classes_touched": "low_lt_0p25",
+    "threshold_rows": [
+      {
+        "row_id": "harnett_2012_summary_model_anchor",
+        "citation_short": "Harnett et al. 2012 Nature",
+        "R_neck_MOhm": "500",
+        "high_if_load_le_MOhm": "666.6666667",
+        "intermediate_if_load_gt_MOhm": "666.6666667",
+        "intermediate_if_load_le_MOhm": "2000",
+        "low_if_load_gt_MOhm": "2000",
+        "source_native_load_MOhm": "125",
+        "source_native_class": "high_gte_0p75",
+        "threshold_interpretation": "Harnett remains high through the recovered/common loads up to 564 MOhm; the diagnostic 666.667 MOhm value sits just beyond the exact high boundary."
+      },
+      {
+        "row_id": "popovic_2015_measured_summary_anchor",
+        "citation_short": "Popovic et al. 2015 Nat Commun",
+        "R_neck_MOhm": "27",
+        "high_if_load_le_MOhm": "36",
+        "intermediate_if_load_gt_MOhm": "36",
+        "intermediate_if_load_le_MOhm": "108",
+        "low_if_load_gt_MOhm": "108",
+        "source_native_load_MOhm": "275",
+        "source_native_class": "low_lt_0p25",
+        "threshold_interpretation": "A high classification would require load <= 36 MOhm, outside the bounded recovered/common-load set used here."
+      },
+      {
+        "row_id": "popovic_2015_model_fit_reference",
+        "citation_short": "Popovic et al. 2015 Nat Commun",
+        "R_neck_MOhm": "40.5",
+        "high_if_load_le_MOhm": "54",
+        "intermediate_if_load_gt_MOhm": "54",
+        "intermediate_if_load_le_MOhm": "162",
+        "low_if_load_gt_MOhm": "162",
+        "source_native_load_MOhm": "564",
+        "source_native_class": "low_lt_0p25",
+        "threshold_interpretation": "A high classification would require load <= 54 MOhm, outside the bounded recovered/common-load set used here."
+      }
+    ]
+  },
+  "required_caveats": [
+    "Summary-level anchors only; no per-spine inference.",
+    "Harnett is a model/summary anchor, not recovered paired measured per-spine data.",
+    "Popovic measured summary and model-fit rows are kept separate.",
+    "Kwon and Cornejo remain context/exclusion rows without accepted rho_L coordinates.",
+    "Transfer proxies are not SPINE residuals.",
+    "Common-load ratios equal R_neck ratios and mainly test class-boundary stability."
+  ],
+  "one_paragraph_rationale": "Phase 2b confirms that the Phase 2a summary-level signal survives bounded, transparent load choices well enough to draft a controlled manuscript add-on. Harnett remains high across fixed/recovered common loads, Popovic measured remains low across those loads, and Popovic model-fit remains low or intermediate and never high across both fixed/recovered loads and the diagnostic grid. The diagnostic grid appropriately exposes boundary behavior rather than broadening the claim: it is a deterministic stress test, not a biological distribution. The result supports only a summary-level load-normalization hypothesis."
+}

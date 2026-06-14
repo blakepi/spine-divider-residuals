@@ -1,0 +1,2 @@
+figure_id,status,target_file,source_data,notes
+Figure S10,PASS,manuscript/figures_publication/FigS10_external_summary_load_sensitivity.pdf,results/external_empirical/phase2b_load_sensitivity/phase2b_load_model_calculations.csv; results/external_empirical/phase2b_load_sensitivity/phase2b_class_threshold_loads.csv; results/external_empirical/phase2b_load_sensitivity/phase2b_uncertainty_envelopes.csv,"Figure S10 row exists, source files exist, and notes include summary/per-spine caveats."

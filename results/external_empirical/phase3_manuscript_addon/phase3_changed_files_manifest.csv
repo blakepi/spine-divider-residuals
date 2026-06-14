@@ -1,0 +1,13 @@
+path,status,phase3_classification,expected_phase3_change,notes
+manuscript/CLAIM_TO_SOURCE_LEDGER.csv,changed,claim_ledger_update,true,Phase 3 claim rows appended.
+manuscript/FIGURE_SOURCE_MANIFEST.csv,changed,figure_manifest_update,true,Figure S10 provenance row appended.
+manuscript/figures_publication/FigS10_external_summary_load_sensitivity.pdf,added,phase3_supplemental_figure_asset,true,Copied Phase 2b figure under a new manuscript asset name.
+manuscript/figures_publication/FigS10_external_summary_load_sensitivity.png,added,phase3_supplemental_figure_asset,true,Copied Phase 2b figure under a new manuscript asset name.
+manuscript/figures_publication/FigS10_external_summary_load_sensitivity.svg,added,phase3_supplemental_figure_asset,true,Copied Phase 2b figure under a new manuscript asset name.
+manuscript/sections/discussion.tex,changed,phase3_discussion_limitation_text,true,Discussion limitation add-on.
+manuscript/sections/methods.tex,changed,phase3_methods_text,true,Methods add-on for locked summary dataset and load models.
+manuscript/sections/results.tex,changed,phase3_results_text,true,Compact Results add-on.
+manuscript/supplement/figures/FigS10_external_summary_load_sensitivity.svg,added,phase3_supplemental_figure_asset,true,Copied Phase 2b figure under a new manuscript asset name.
+manuscript/supplement/figures_pdf/FigS10_external_summary_load_sensitivity.pdf,added,phase3_supplemental_figure_asset,true,Copied Phase 2b figure under a new manuscript asset name.
+manuscript/supplement/sections/external_summary_anchors.tex,added,phase3_supplemental_section,true,New supplemental figure/caption section.
+manuscript/supplement/supplement.tex,changed,phase3_supplemental_include_update,true,Supplement includes the new external summary anchor section.

@@ -1,0 +1,9 @@
+boundary_item,observed,expected,status,notes
+public_release_changed,False,False,PASS,Mode A forbids public-release mutation.
+submission_package_changed,False,False,PASS,Mode A did not edit submission package.
+github_release_attempted,False,False,PASS,Mode A forbids GitHub release attempt.
+zenodo_attempted,False,False,PASS,Mode A forbids Zenodo action.
+doi_metadata_inserted,False,False,PASS,No verified DOI and no approval.
+preprint_state_changed,False,False,PASS,No preprint action.
+journal_submission_state_changed,False,False,PASS,No journal submission.
+forbidden_scientific_claims_introduced,False,False,PASS,Static claim audit required.

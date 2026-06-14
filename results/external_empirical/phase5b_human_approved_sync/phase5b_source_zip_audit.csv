@@ -1,0 +1,11 @@
+audit_item,status,path_or_entry,evidence,notes
+source_zip_exists,PASS,submission/nature_neuroscience/source_files.zip,5f0e3ac5826c78e658330ea08caf3f875ce86444845a34d4623b6676d6e8a78f,196 entries
+forbidden_entries_absent,PASS,submission/nature_neuroscience/source_files.zip,,No raw/private/env/checkpoint/public-release/local-path entries.
+required_entry_present,PASS,sections/results.tex,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,sections/methods.tex,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,sections/discussion.tex,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,supplement/sections/external_summary_anchors.tex,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,supplement/figures/FigS10_external_summary_load_sensitivity.svg,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,supplement/figures_pdf/FigS10_external_summary_load_sensitivity.pdf,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,figures/FigS10_external_summary_load_sensitivity.pdf,present,Current source/Figure S10 entry required in source_files.zip.
+required_entry_present,PASS,figures_publication/FigS10_external_summary_load_sensitivity.pdf,present,Current source/Figure S10 entry required in source_files.zip.

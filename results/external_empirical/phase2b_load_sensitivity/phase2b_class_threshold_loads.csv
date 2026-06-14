@@ -1,0 +1,4 @@
+row_id,citation_short,R_neck_MOhm,high_if_load_le_MOhm,intermediate_if_load_gt_MOhm,intermediate_if_load_le_MOhm,low_if_load_gt_MOhm,source_native_load_MOhm,source_native_class,threshold_interpretation
+harnett_2012_summary_model_anchor,Harnett et al. 2012 Nature,500,666.6666667,666.6666667,2000,2000,125,high_gte_0p75,Harnett remains high through the recovered/common loads up to 564 MOhm; the diagnostic 666.667 MOhm value sits just beyond the exact high boundary.
+popovic_2015_measured_summary_anchor,Popovic et al. 2015 Nat Commun,27,36,36,108,108,275,low_lt_0p25,"A high classification would require load <= 36 MOhm, outside the bounded recovered/common-load set used here."
+popovic_2015_model_fit_reference,Popovic et al. 2015 Nat Commun,40.5,54,54,162,162,564,low_lt_0p25,"A high classification would require load <= 54 MOhm, outside the bounded recovered/common-load set used here."

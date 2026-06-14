@@ -1,0 +1,96 @@
+{
+  "timestamp_local": "2026-06-13T16:38:08-04:00",
+  "csv_parse": {
+    "source_acquisition_ledger.csv": {
+      "rows": 13,
+      "status": "passed"
+    },
+    "extracted_value_ledger.csv": {
+      "rows": 25,
+      "status": "passed"
+    },
+    "candidate_external_spine_measurements.csv": {
+      "rows": 5,
+      "status": "passed"
+    },
+    "dataset_feasibility_matrix.csv": {
+      "rows": 5,
+      "status": "passed"
+    },
+    "automated_digitization_qc.csv": {
+      "rows": 5,
+      "status": "passed"
+    },
+    "preliminary_route1_sanity_checks.csv": {
+      "rows": 3,
+      "status": "passed"
+    },
+    "protected_hashes_before.csv": {
+      "rows": 1630,
+      "status": "passed"
+    },
+    "protected_hashes_after.csv": {
+      "rows": 1630,
+      "status": "passed"
+    },
+    "protected_hash_comparison.csv": {
+      "rows": 1630,
+      "status": "passed"
+    }
+  },
+  "json_parse": {
+    "go_no_go_decision.json": {
+      "status": "passed",
+      "missing_keys": []
+    }
+  },
+  "schema": {
+    "source_acquisition_ledger.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "extracted_value_ledger.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "candidate_external_spine_measurements.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "dataset_feasibility_matrix.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "automated_digitization_qc.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "preliminary_route1_sanity_checks.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "protected_hashes_before.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "protected_hashes_after.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    },
+    "protected_hash_comparison.csv": {
+      "missing_columns": [],
+      "status": "passed"
+    }
+  },
+  "row_level": [
+    "extracted_value_required_fields_passed",
+    "candidate_load_and_qualitative_rules_passed",
+    "automated_digitization_qc_linkage_passed"
+  ],
+  "protected_hash_comparison": {
+    "total_rows": 1630,
+    "non_unchanged_rows": 0,
+    "status": "passed"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,3 @@
+pdf_path,page_number,render_path,tool,status,notes
+manuscript/target_journal.pdf,8,results/external_empirical/phase4_final_qa_sync_gate/pdf_renders/target_journal_page_8.png,pdftoppm,PASS_RENDERED,Rendered page containing external add-on/S10 text for human review.
+manuscript/supplement/supplement.pdf,13,results/external_empirical/phase4_final_qa_sync_gate/pdf_renders/supplement_page_13.png,pdftoppm,PASS_RENDERED,Rendered page containing external add-on/S10 text for human review.

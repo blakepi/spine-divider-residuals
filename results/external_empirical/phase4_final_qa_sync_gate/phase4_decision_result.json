@@ -1,0 +1,18 @@
+{
+  "biological_validation_claim_allowed": false,
+  "controversy_resolution_claim_allowed": false,
+  "doi_action_authorized": false,
+  "human_visual_review_required": true,
+  "manuscript_qa_passed": true,
+  "one_paragraph_rationale": "Phase 4 source, claim, citation, PDF-text, and traceability audits passed for the summary-level external empirical add-on. The Nature submission package and public-release mirror are stale relative to the current manuscript/source state, but Phase 4 does not authorize syncing, public release, DOI, preprint, or submission actions. Human visual review remains required before any package sync or approval packet.",
+  "pdf_static_qa_passed": true,
+  "per_spine_claim_allowed": false,
+  "phase": "External Empirical Phase 4",
+  "phase4_final_classification": "QA_PASS_SYNC_AND_PATCH_RELEASE_RECOMMENDED_AFTER_HUMAN_APPROVAL",
+  "public_patch_release_recommended_after_human_approval": true,
+  "public_release_action_authorized": false,
+  "recommended_next_phase": "External Empirical Phase 5 - Submission Package Sync and Human Approval Packet",
+  "submission_action_authorized": false,
+  "submission_package_sync_recommended": true,
+  "timestamp_local": "2026-06-13T19:04:32-04:00"
+}

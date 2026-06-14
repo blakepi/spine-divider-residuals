@@ -1,0 +1,4 @@
+row_id,source_id,data_level,R_neck_MOhm,load_value_MOhm,rho_L,Gamma_div,load_provenance,analysis_status,notes
+harnett_2012_summary_model_proxy,harnett_2012,summary_model,500,125,4,0.2,model_assumed,feasibility_only_not_manuscript_ready,Rough sanity check only; not a final decision-gate analysis.
+popovic_2015_measured_mean_Rneck_Zdendrite,popovic_2015,summary_measured,27,275,0.0981818,0.910596,measured_same_source,feasibility_only_not_manuscript_ready,Rough sanity check only; not a final decision-gate analysis.
+popovic_2015_model_fit_Rneck_Zdendrite,popovic_2015,summary_model,40.5,564,0.0718085,0.933002,model_assumed,feasibility_only_not_manuscript_ready,Rough sanity check only; not a final decision-gate analysis.

@@ -2,7 +2,7 @@
 
 \subsection{Reference circuit and load-normalized ratio}
 
-SPINE was implemented in Python using project-local equations, matrix assembly, solvers, metrics, and validation scripts. General scientific Python libraries are used for numerical linear algebra and analysis, but no prebuilt neuroscience simulator or copied model code is used as the runtime foundation. Baseline, plausibility-revised, active-extension, and exploratory configurations are separated so that extensions are not silently folded into the baseline reference track.
+SPINE was implemented in Python using project-local equations, matrix assembly, solvers, metrics, and validation scripts. General scientific Python libraries are used for numerical linear algebra and analysis, but the runtime implementation does not rely on a prebuilt neural simulation engine. Baseline, plausibility-revised, active-extension, and exploratory configurations are separated so that extensions are not silently folded into the baseline reference track.
 
 The baseline reference model contains a spine head $h$, a parent dendrite compartment $d$, and a soma/load compartment $s$. For a cylindrical spine neck with length $L_n$, radius $r_n$, and intracellular resistivity $\rho_i$,
 \begin{equation}
@@ -13,9 +13,9 @@ with geometry converted to centimeters before resistance is computed. The baseli
 
 The dendrite-soma input resistance $\Rin$ is measured after removing the stimulated spine and neck edge. A small current perturbation is applied to the dendrite-soma subcircuit, and $\Delta V_d/\Delta I_d$ is computed from the steady-state passive linear system with a perturbation simulation check. We then define the load-normalized spine-neck ratio
 \begin{equation}
-\SMI=\frac{\Rneck}{\Rin}.
+\rhoload=\frac{\Rneck}{\Rin}.
 \end{equation}
-This spine-omitted definition avoids normalizing a neck by a load that already contains the same neck. Phase 2 and Phase 4 one-port reconstructions showed that attached-versus-omitted $\Rin$ differences were numerically negligible for the compact passive-head model family, but the omitted definition remains conceptually cleaner.
+The code and some provenance tables retain SMI as a legacy shorthand for $\rhoload$. This spine-omitted definition avoids normalizing a neck by a load that already contains the same neck. One-port reconstructions showed that attached-versus-omitted $\Rin$ differences were numerically negligible for the compact passive-head model family, but the omitted definition remains conceptually cleaner.
 
 \subsection{Analytic divider and residual target}
 
@@ -23,7 +23,7 @@ The analytic local reference is the DC small-signal voltage divider:
 \begin{equation}
 \Gamma_{\mathrm{div}}=
 \frac{\Rin}{\Rneck+\Rin}
-=\frac{1}{1+\SMI}.
+=\frac{1}{1+\rhoload}.
 \label{eq:divider}
 \end{equation}
 This equation is treated as classical circuit logic, not as a novel result. The manuscript's main diagnostic quantity is the residual between the simulated peak local transfer and this divider expectation:
@@ -31,7 +31,7 @@ This equation is treated as classical circuit logic, not as a novel result. The 
 \Delta_{\mathrm{div}}=\Ghd-\Gamma_{\mathrm{div}}.
 \label{eq:divider_residual}
 \end{equation}
-Here $\Ghd=A_d/\Ah$ is measured from transient conductance-based simulations over the predefined metric window. Because $\Gamma_{\mathrm{div}}$ is a DC low-frequency reference and $\Ghd$ is a peak transient ratio, nonzero residuals are expected whenever capacitance, changing synaptic driving force, morphology, impedance, active state, or downstream coupling matters.
+Here $\Ghd=A_d/\Ah$ is measured from transient conductance-based simulations over the analysis-defined metric window. In the primary residual table, $\Ah$, $A_d$, and $A_s$ are baseline-subtracted maxima measured over the same 50 ms post-event window but not required to occur at the same time. Thus $\Ghd$ is a separate-peak transient summary, whereas $\Gamma_{\mathrm{div}}$ is a DC low-frequency reference. Nonzero residuals are expected whenever peak timing, capacitance, changing synaptic driving force, morphology, impedance, active state, or downstream coupling matters. Matched-time and area-under-curve ratios are therefore reported only as targeted controls, not as replacements for the manuscript's primary peak residual.
 
 \subsection{Passive equations and numerical solution}
 
@@ -70,27 +70,35 @@ The synapse is conductance based:
 \begin{equation}
 I_{\mathrm{syn},h}(t,V_h)=\gsyn(t)(V_h-\Esyn),
 \end{equation}
-where $\gsyn(t)$ is a normalized double exponential with peak conductance $g_{\max}$. Peak depolarizations $\Ah$, $A_d$, and $A_s$ are measured over a predefined 50 ms post-event window. Attenuation ratios are $\Ghd=A_d/\Ah$ and $\Ghs=A_s/\Ah$. $\Ghd$ measures local transfer across the neck, $\Ghs$ combines local transfer with downstream dendrite-to-soma filtering, and $\Ah$ measures local voltage excursion.
+where $\gsyn(t)$ is a normalized double exponential with peak conductance $g_{\max}$. Peak depolarizations $\Ah$, $A_d$, and $A_s$ are measured after subtracting the pre-event baseline over an analysis-defined 50 ms post-event window. Attenuation ratios are $\Ghd=A_d/\Ah$ and $\Ghs=A_s/\Ah$. $\Ghd$ measures local transfer across the neck, $\Ghs$ combines local transfer with downstream dendrite-to-soma filtering, and $\Ah$ measures local voltage excursion.
 
 \subsection{Challenge suites and descriptor comparisons}
 
-Passive morphology analyses generalize the reference circuit to compartment trees assembled from nodes and axial edges. Frequency-domain analyses solve the linearized passive system to estimate input impedance, transfer impedance, gain, phase, and dynamic SMI variants. Active and NMDA mechanisms are disabled in the baseline reference configuration and enabled only in active-extension protocols. These active conductances are generic stress tests using literature-traceable current forms \citep{HodgkinHuxley1952,MayerWestbrookGuthrie1984,JahrStevens1990,Magee1998,Magee1999,ConnorStevens1971,HuguenardMcCormick1992}, not calibrated cell-type-specific channel densities.
+Passive morphology analyses generalize the reference circuit to compartment trees assembled from nodes and axial edges. Frequency-domain analyses solve the linearized passive system to estimate input impedance, transfer impedance, gain, phase, and dynamic ratio variants. Active and NMDA mechanisms are disabled in the baseline reference configuration and enabled only in active-extension protocols. These active conductances are generic stress tests using literature-traceable current forms \citep{HodgkinHuxley1952,MayerWestbrookGuthrie1984,JahrStevens1990,Magee1998,Magee1999,ConnorStevens1971,HuguenardMcCormick1992}, not calibrated cell-type-specific channel densities.
 
-Descriptor comparisons were performed on existing derived rows. We compared raw $\SMI$, the analytic divider transform $\Gamma_{\mathrm{div}}$, component resistances $\Rneck$ and $\Rin$, log-component models, impedance and dynamic descriptors, transfer gain, and synaptic conductance scale where available. These comparisons were interpreted by target and descriptor family. Exact winner labels were avoided when near-tied or correlated predictors made the ranking unstable.
+Descriptor comparisons were performed on existing derived rows. We compared raw $\rhoload$, the analytic divider transform $\Gamma_{\mathrm{div}}$, component resistances $\Rneck$ and $\Rin$, log-component models, impedance and dynamic descriptors, transfer gain, and synaptic conductance scale where available. These comparisons were interpreted by target and descriptor family. Exact winner labels were avoided when near-tied or correlated predictors made the ranking unstable.
 
-Designed counterexamples tested logical sufficiency. Iso-SMI cases ask whether equal ratio implies equivalent voltage responses; iso-neck-resistance cases ask whether equal $\Rneck$ can change under different loads; iso-transfer cases ask whether similar transfer can arise from different ratios. These experiments were designed to expose limitations as well as successes.
+Designed counterexamples tested logical sufficiency. Equal-$\rhoload$ cases ask whether equal ratio implies equivalent voltage responses; iso-neck-resistance cases ask whether equal $\Rneck$ can change under different loads; iso-transfer cases ask whether similar transfer can arise from different ratios. These experiments were designed to expose limitations as well as successes.
 
 \subsection{Deterministic uncertainty and reporting language}
 
-Uncertainty analyses used deterministic Latin-hypercube ensembles and progressive sample sizes of N=96, 192, 384, and 768. The global uncertainty seed was 202605; progressive ensembles used $202605+5100+N$. Radius-only uncertainty was analyzed separately because $\Rneck\propto1/r_n^2$, using 25 deterministic offsets spanning $\pm2$ SD with SD $=0.018$ $\mu$m and clipping measured radius to 0.06--0.22 $\mu$m. Heuristic SMI classes were low $<0.25$, intermediate 0.25 to $<0.75$, and high $\geq0.75$.
+Uncertainty analyses used deterministic Latin-hypercube ensembles and progressive sample sizes of N=96, 192, 384, and 768. The global uncertainty seed was 202605; progressive ensembles used $202605+5100+N$. Radius-only uncertainty was analyzed separately because $\Rneck\propto1/r_n^2$, using 25 deterministic offsets spanning $\pm2$ SD with SD $=0.018$ $\mu$m and clipping measured radius to 0.06--0.22 $\mu$m. Heuristic ratio classes were low $<0.25$, intermediate 0.25 to $<0.75$, and high $\geq0.75$.
 
-All uncertainty fractions are reported as deterministic design fractions over sampled parameter combinations. They are not biological rates and are not treated as inferential population intervals. The N=768 ensemble contained 757 low-SMI rows, 11 intermediate-SMI rows, and zero high-SMI rows, so high-SMI uncertainty claims are explicitly scoped to reference and designed challenge rows rather than to the main uncertainty ensemble.
+All uncertainty fractions are reported as deterministic design fractions over sampled parameter combinations. They are not biological rates and are not treated as inferential population intervals. The N=768 ensemble contained 757 low-$\rhoload$ rows, 11 intermediate-$\rhoload$ rows, and zero high-$\rhoload$ rows, so high-ratio uncertainty claims are explicitly scoped to reference, designed challenge rows, and the labeled targeted high-$\rhoload$ extension rather than to the main uncertainty ensemble.
+
+\subsection{External summary-anchor decision gate}
+
+External summary rows were taken only from the locked Phase 1 summary dataset generated by a Codex-only acquisition gate. No manual transcription, figure digitization, new source acquisition, per-spine reconstruction, or hidden load imputation was used. Row eligibility required a machine-recovered summary or model value for both $\Rneck$ and a local dendritic load. This admitted three summary-usable rows: Harnett model/summary, Popovic measured summary, and Popovic model-fit \citep{Harnett2012SpineAmplification,Popovic2015}. Kwon and Cornejo remained context/exclusion rows because no accepted paired $\Rneck$/load coordinate was available \citep{Kwon2017,Cornejo2022}.
+
+For each eligible row, source-native coordinates were computed as $\rhoload=\Rneck/\mathrm{load}$ and $\Gamma_{\mathrm{div}}=1/(1+\rhoload)$. Load sensitivity used source-native loads, fixed/recovered common loads of 144.487, 125, 275, and 564 M$\Omega$, and a deterministic diagnostic grid from 75 to 666.667 M$\Omega$; these load choices are stress-test references, not a biological distribution. Classes used the same heuristic thresholds as the deterministic uncertainty analysis: low $<0.25$, intermediate 0.25 to $<0.75$, and high $\geq0.75$. For a fixed $\Rneck$, the high-threshold load is $\Rneck/0.75$ and the low-threshold load is $\Rneck/0.25$. Source-reported uncertainty was propagated only for the Popovic measured row, using the locked $27\pm6$ M$\Omega$ neck resistance and $275\pm27$ M$\Omega$ load envelope; no uncertainty was invented for Harnett or the Popovic model-fit row. External transfer ratios were retained only as proxy compatibility checks and not SPINE residuals.
 
 \subsection{Computational credibility checks}
 
-Numerical credibility was assessed at three levels. First, internal checks covered units, current signs, synaptic normalization, limiting cases, timestep refinement, sparse/dense passive assembly, impedance validation, and Backward Euler versus Crank-Nicolson peak differences. Second, Phase 4 added an independent direct-matrix benchmark that separately assembled the baseline passive three-compartment equations and compared against existing SPINE trace outputs without calling the production passive simulation function as its benchmark engine. Third, DC analytic checks tested the two-node dendrite-soma input resistance, divider formula, limiting cases, and attached-versus-omitted one-port behavior.
+Numerical credibility was assessed at three levels. First, internal checks covered units, current signs, synaptic normalization, limiting cases, timestep refinement, sparse/dense passive assembly, impedance verification, and Backward Euler versus Crank-Nicolson peak differences. Second, an independent direct-matrix benchmark separately assembled the baseline passive three-compartment equations and compared against existing SPINE trace outputs without calling the production passive simulation function as its benchmark engine. Third, DC analytic checks tested the two-node dendrite-soma input resistance, divider formula, limiting cases, and attached-versus-omitted one-port behavior.
 
-NEURON availability was checked during Phase 4. It was not available in the bundled runtime, no installation was attempted, and no NEURON result is claimed. The executed validation therefore supports the passive reference implementation through independent direct-matrix and analytic benchmarks, not through a community-simulator cross-validation.
+NEURON and Brian2 importability were checked in the default project runtime. NEURON was unavailable and is not claimed. Brian2 was unavailable in that runtime but was installed in a project-local optional validation environment, where it was used with explicit units, a Brian2 clock/state container, and an independent SI backward-Euler update. The Brian2-hosted scoped checks covered the three passive baseline cases, one cylindrical distributed-neck passive case, and one AMPA/NMDA synapse-only case. Native Brian2 state updaters were attempted but not retained because explicit/RK updates were unstable for the stiff compact head-neck system and the coupled symbolic linear updater was not practical in this local environment. The executed checks therefore support representative computational credibility within scope; they do not validate all rows, restrained active channels, or biological calibration.
+
+Environment, optional Brian2 versions, solver method, timestep, analysis window, deterministic seeds, release tag, and DOI are summarized in Supplementary Table S7.
 
 \subsection{Traceability}
 

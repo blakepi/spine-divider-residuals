@@ -1,0 +1,8 @@
+check_name,status,observed_value,expected_value,details
+phase0_1_go_summary_only,passed,GO_SUMMARY_ONLY,GO_SUMMARY_ONLY,Phase 0.1 permits summary-only use.
+phase2a_summary_signal,passed,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,Phase 2a supports hypothesis-level reframing only.
+phase2b_manuscript_addon_gate,passed,PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON,PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON,Phase 2b allows controlled manuscript add-on work.
+exact_three_usable_summary_rows,passed,harnett_2012_summary_model_anchor;popovic_2015_measured_summary_anchor;popovic_2015_model_fit_reference,harnett_2012_summary_model_anchor;popovic_2015_measured_summary_anchor;popovic_2015_model_fit_reference,"Three usable rows are Harnett model/summary, Popovic measured summary, and Popovic model-fit."
+zero_per_spine_rows,passed,usable=[]; data_level=[],usable=[]; data_level=[],No accepted per-spine row exists.
+phase2b_forbids_validation_and_resolution_claims,passed,per_spine=False; biological_validation=False; controversy_resolution=False,all false,Forbidden claim booleans are false.
+kwon_cornejo_excluded,passed,all_sources;cornejo_2022;harnett_2012;kwon_2017,kwon_2017; cornejo_2022,Kwon and Cornejo remain context/exclusion rows without accepted rho_L coordinates.

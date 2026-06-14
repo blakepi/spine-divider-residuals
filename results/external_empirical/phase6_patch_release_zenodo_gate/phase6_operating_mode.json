@@ -1,0 +1,9 @@
+{
+  "approval_marker_overbroad": false,
+  "approval_marker_present": false,
+  "approval_marker_valid": false,
+  "mode_rationale": "Approval marker absent or not release-authorizing; create release decision packet only.",
+  "operating_mode": "MODE_A_RELEASE_DECISION_PACKET_ONLY",
+  "phase": "External Empirical Phase 6",
+  "timestamp_local": "2026-06-14T13:12:31-04:00"
+}

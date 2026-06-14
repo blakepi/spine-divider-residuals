@@ -1,0 +1,9 @@
+{
+  "doi_action_authorized": false,
+  "patch_release_recommended_after_human_approval": true,
+  "phase": "External Empirical Phase 4",
+  "public_release_action_authorized": false,
+  "public_release_sync_needed_for_exact_archive_identity": true,
+  "reason": "Public release lacks or differs from Phase 3 external empirical add-on assets/results, but Phase 4 authorizes no public-release, tag, DOI, preprint, or submission action.",
+  "timestamp_local": "2026-06-13T19:04:32-04:00"
+}

@@ -1,0 +1,16 @@
+command,exit_code,status,output,notes
+git status --short --branch,0,PASS_CLEAN_START,## external-empirical-phase4-final-qa-sync-gate,Executed manually before creating the Phase 5 branch and before Phase 5 artifacts were written.
+git rev-parse --show-toplevel,0,PASS,C:/Research/SPINE_Codex_Starter,Root Git repository confirmed.
+git branch --show-current,0,PASS,external-empirical-phase4-final-qa-sync-gate,Start branch contained Phase 4 commit.
+git log -1 --oneline,0,PASS,27149d5 External empirical Phase 4 final QA and sync decision gate,Phase 4 commit present at start.
+git switch -c external-empirical-phase5-submission-sync-human-approval,0,PASS,Switched to a new branch 'external-empirical-phase5-submission-sync-human-approval',Branch created after clean preflight.
+git branch --show-current (during Phase 5),0,PASS,external-empirical-phase5-submission-sync-human-approval,Phase 5 branch recorded.
+git status --short --branch (during Phase 5),0,INFO,"## external-empirical-phase5-submission-sync-human-approval
+?? reports/PHASE_5_BUILD_AND_VALIDATION_REPORT.md
+?? reports/PHASE_5_FIGURE_S10_VISUAL_REVIEW_PACKET.md
+?? reports/PHASE_5_NEXT_PHASE_HANDOFF.md
+?? reports/PHASE_5_PATCH_RELEASE_AND_ZENODO_DECISION_REPORT.md
+?? reports/PHASE_5_SUBMISSION_PACKAGE_SYNC_REPORT.md
+?? reports/PHASE_5_SUBMISSION_SYNC_AND_HUMAN_APPROVAL_PACKET.md
+?? results/external_empirical/phase5_submission_sync_human_approval/
+?? scripts/external_empirical/phase5_submission_sync_human_approval.py",May include Phase 5 artifacts after generation starts.

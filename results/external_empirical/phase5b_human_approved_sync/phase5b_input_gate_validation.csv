@@ -1,0 +1,17 @@
+gate_item,status,observed,expected,notes
+git_root,PASS,C:/Research/SPINE_Codex_Starter,C:/Research/SPINE_Codex_Starter,git rev-parse --show-toplevel
+current_branch,PASS,external-empirical-phase5b-human-approved-sync,external-empirical-phase5b-human-approved-sync,git branch --show-current
+latest_phase5_commit,PASS,dd88a70 Complete external empirical Phase 5 submission sync human approval packet,dd88a70 Complete external empirical Phase 5 submission sync human approval packet,git log -1 --oneline
+phase5_commit_contained,PASS,contains_phase5_commit,dd88a7060961064f3349b4fbd5b4a45403876524,git merge-base --is-ancestor phase5 HEAD
+clean_start_state,PASS,## external-empirical-phase5b-human-approved-sync,## external-empirical-phase5b-human-approved-sync,Verified immediately after branch creation and before Phase 5b artifacts were written.
+approval_marker_present,PASS,True,True,submission/human_approval/PHASE5_HUMAN_APPROVAL.md
+approval_marker_exact,PASS,"{""FIGURE_S10_VISUAL_APPROVED"": ""yes"", ""JOURNAL_SUBMISSION_APPROVED"": ""no"", ""PUBLIC_PATCH_RELEASE_APPROVED"": ""no"", ""SUBMISSION_PACKAGE_SYNC_APPROVED"": ""yes"", ""ZENODO_VERSION_DOI_APPROVED"": ""no""}","{""FIGURE_S10_VISUAL_APPROVED"": ""yes"", ""JOURNAL_SUBMISSION_APPROVED"": ""no"", ""PUBLIC_PATCH_RELEASE_APPROVED"": ""no"", ""SUBMISSION_PACKAGE_SYNC_APPROVED"": ""yes"", ""ZENODO_VERSION_DOI_APPROVED"": ""no""}",Exact fields and values required.
+approval_marker_not_overbroad,PASS,False,False,"Public patch release, Zenodo DOI, and journal submission must remain no."
+phase4_classification,PASS,QA_PASS_SYNC_AND_PATCH_RELEASE_RECOMMENDED_AFTER_HUMAN_APPROVAL,QA_PASS_SYNC_AND_PATCH_RELEASE_RECOMMENDED_AFTER_HUMAN_APPROVAL,results/external_empirical/phase4_final_qa_sync_gate/phase4_decision_result.json
+phase5_classification,PASS,AWAITING_HUMAN_APPROVAL_PACKET_CREATED,AWAITING_HUMAN_APPROVAL_PACKET_CREATED,results/external_empirical/phase5_submission_sync_human_approval/phase5_decision_result.json
+phase5_submission_not_synced,PASS,False,False,Phase 5 was approval-packet only.
+phase5_tests_previously_passed,PASS,63 passed in 5.84s via python -m pytest -p no:cacheprovider --tb=short,passed,results/external_empirical/phase5_submission_sync_human_approval/phase5_validation_summary.json
+per_spine_claim_allowed,PASS,False,False,Forbidden claim class remains disallowed.
+biological_validation_claim_allowed,PASS,False,False,Forbidden claim class remains disallowed.
+prevalence_claim_allowed,PASS,False,False,Forbidden claim class remains disallowed.
+controversy_resolution_claim_allowed,PASS,False,False,Forbidden claim class remains disallowed.

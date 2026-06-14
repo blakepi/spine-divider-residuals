@@ -1,0 +1,188 @@
+{
+  "phase": "Phase 1 external empirical summary dataset and schema lock",
+  "timestamp_local": "2026-06-13T16:57:11-04:00",
+  "governing_phase0_1_classification": "GO_SUMMARY_ONLY",
+  "curated_rows": 7,
+  "usable_summary_route1_rows": [
+    "harnett_2012_summary_model_anchor",
+    "popovic_2015_measured_summary_anchor",
+    "popovic_2015_model_fit_reference"
+  ],
+  "usable_per_spine_route1_rows": [],
+  "excluded_or_context_rows": [
+    "harnett_2012_long_neck_subset_context",
+    "kwon_2017_excluded_no_numeric_row",
+    "cornejo_2022_contrast_only_no_rho_coordinate",
+    "zecevic_2023_interpretive_context"
+  ],
+  "source_rows": 5,
+  "exclusion_rows": 4,
+  "native_calculations": [
+    {
+      "row_id": "harnett_2012_summary_model_anchor",
+      "rho_L_source_native": "4",
+      "Gamma_div_source_native": "0.2",
+      "rho_L_class_source_native": "high_gte_0p75"
+    },
+    {
+      "row_id": "popovic_2015_measured_summary_anchor",
+      "rho_L_source_native": "0.0981818182",
+      "Gamma_div_source_native": "0.910596026",
+      "rho_L_class_source_native": "low_lt_0p25"
+    },
+    {
+      "row_id": "popovic_2015_model_fit_reference",
+      "rho_L_source_native": "0.0718085106",
+      "Gamma_div_source_native": "0.933002481",
+      "rho_L_class_source_native": "low_lt_0p25"
+    }
+  ],
+  "validation_status": "passed",
+  "validation_rows": [
+    {
+      "validation_name": "phase0_1_final_classification",
+      "status": "passed",
+      "details": "final_classification=GO_SUMMARY_ONLY"
+    },
+    {
+      "validation_name": "phase0_1_no_human_work_remaining",
+      "status": "passed",
+      "details": "required_human_work_remaining=[]"
+    },
+    {
+      "validation_name": "phase0_1_no_accepted_automated_digitization",
+      "status": "passed",
+      "details": "accepted_digitization_rows=0"
+    },
+    {
+      "validation_name": "schema_json_required_columns",
+      "status": "passed",
+      "details": "columns=54"
+    },
+    {
+      "validation_name": "curated_dataset_required_columns",
+      "status": "passed",
+      "details": "rows=7"
+    },
+    {
+      "validation_name": "data_dictionary_covers_all_columns",
+      "status": "passed",
+      "details": "dictionary_columns=54"
+    },
+    {
+      "validation_name": "controlled_vocab_dataset_role",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_route1_status",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_data_level",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_measured_or_model",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_R_neck_method",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_load_method",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_load_definition",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_load_provenance",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_attenuation_definition",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_recommended_plot_role",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_recommended_marker_group",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "controlled_vocab_rho_L_class_source_native",
+      "status": "passed",
+      "details": "bad_values=[]"
+    },
+    {
+      "validation_name": "row_required_fields",
+      "status": "passed",
+      "details": "all rows populated"
+    },
+    {
+      "validation_name": "no_per_spine_data_levels",
+      "status": "passed",
+      "details": "per_spine_rows=[]"
+    },
+    {
+      "validation_name": "per_spine_usability_false_for_all_rows",
+      "status": "passed",
+      "details": "bad_rows=[]"
+    },
+    {
+      "validation_name": "numeric_rows_have_phase0_refs",
+      "status": "passed",
+      "details": "missing_refs=[]"
+    },
+    {
+      "validation_name": "assumed_load_not_measured_same_source",
+      "status": "passed",
+      "details": "bad_rows=[]"
+    },
+    {
+      "validation_name": "harnett_no_paired_measured_claim",
+      "status": "passed",
+      "details": "bad_rows=[]"
+    },
+    {
+      "validation_name": "cornejo_not_summary_usable_without_pairing",
+      "status": "passed",
+      "details": "bad_rows=[]"
+    },
+    {
+      "validation_name": "kwon_has_no_unbacked_numeric_row",
+      "status": "passed",
+      "details": "kwon_numeric_rows=[]"
+    },
+    {
+      "validation_name": "native_calculation_rules",
+      "status": "passed",
+      "details": "bad_calculations=[]"
+    },
+    {
+      "validation_name": "protected_hash_comparison",
+      "status": "passed",
+      "details": "non_unchanged_rows=0; total=1630"
+    }
+  ],
+  "protected_hash_comparison": {
+    "total_rows": 1630,
+    "non_unchanged_rows": 0
+  },
+  "next_recommended_phase": "Phase 2a decision-gate overlay design using summary-only rows."
+}

@@ -1,0 +1,19 @@
+command,exit_code,status,output,notes
+git status --short --branch,0,PASS_CLEAN_START,## main...origin/main,Executed before Phase 4 branch creation and before Phase 4 artifacts were written.
+git rev-parse --show-toplevel,0,PASS,C:/Research/SPINE_Codex_Starter,Root Git repository confirmed.
+git branch --show-current,0,PASS,main,Start branch before Phase 4 branch creation.
+git log -1 --oneline,0,PASS,f8d781e Track legacy scientific outputs and external empirical Phase 3 baseline,Start commit before Phase 4 branch creation.
+git diff --stat,0,PASS_EMPTY,,No tracked diff at phase start.
+git diff --name-status,0,PASS_EMPTY,,No tracked name-status diff at phase start.
+git switch -c external-empirical-phase4-final-qa-sync-gate,0,PASS,Switched to a new branch 'external-empirical-phase4-final-qa-sync-gate',Phase 4 branch created after clean preflight.
+git branch --show-current (post-branch),0,PASS,external-empirical-phase4-final-qa-sync-gate,Recorded during Phase 4 audit.
+git status --short --branch (during Phase 4),0,INFO,"## external-empirical-phase4-final-qa-sync-gate
+?? reports/PHASE_4_BUILD_AND_VALIDATION_REPORT.md
+?? reports/PHASE_4_FINAL_QA_AND_SYNC_DECISION_GATE.md
+?? reports/PHASE_4_NEXT_PHASE_HANDOFF.md
+?? reports/PHASE_4_PATCH_RELEASE_DECISION_GATE.md
+?? reports/PHASE_4_PDF_AND_VISUAL_QA_PRECHECK.md
+?? reports/PHASE_4_STATIC_LANGUAGE_AND_CLAIM_AUDIT.md
+?? reports/PHASE_4_SUBMISSION_PACKAGE_SYNC_DECISION.md
+?? results/external_empirical/phase4_final_qa_sync_gate/
+?? scripts/external_empirical/phase4_final_qa_sync_gate.py",Includes Phase 4 artifacts after audit starts; clean-start evidence is recorded separately above.

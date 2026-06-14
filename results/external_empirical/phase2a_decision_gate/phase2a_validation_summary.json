@@ -1,0 +1,77 @@
+{
+  "phase": "Phase 2a summary Route 1 decision-gate overlay validation",
+  "timestamp_local": "2026-06-13T17:14:45-04:00",
+  "validation_status": "passed",
+  "validation_rows": [
+    {
+      "validation_name": "phase0_1_final_classification",
+      "status": "passed",
+      "details": "final_classification=GO_SUMMARY_ONLY"
+    },
+    {
+      "validation_name": "phase1_dataset_row_count",
+      "status": "passed",
+      "details": "csv_rows=7; phase1_summary_rows=7"
+    },
+    {
+      "validation_name": "exactly_three_summary_usable_rows",
+      "status": "passed",
+      "details": "summary_ids=['harnett_2012_summary_model_anchor', 'popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']"
+    },
+    {
+      "validation_name": "no_per_spine_rows",
+      "status": "passed",
+      "details": "usable_bad=[]; levels=[]"
+    },
+    {
+      "validation_name": "source_native_calculation_rules",
+      "status": "passed",
+      "details": "bad=[]"
+    },
+    {
+      "validation_name": "load_model_definition_count",
+      "status": "passed",
+      "details": "load_models=['source_native', 'common_SPINE_baseline_144p487', 'common_Harnett_model_125', 'common_Popovic_measured_275']"
+    },
+    {
+      "validation_name": "load_model_calculation_count",
+      "status": "passed",
+      "details": "rows=12"
+    },
+    {
+      "validation_name": "load_model_calculation_rules",
+      "status": "passed",
+      "details": "bad=[]"
+    },
+    {
+      "validation_name": "summary_anchor_separation_preserved",
+      "status": "passed",
+      "details": "preserved=['true', 'true', 'true', 'true']; min_harnett_to_popovic_measured=18.51851852"
+    },
+    {
+      "validation_name": "transfer_proxy_only_no_residuals",
+      "status": "passed",
+      "details": "proxy_rows=['popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']; residual_bad=[]; forbidden_cols=[]"
+    },
+    {
+      "validation_name": "figure_data_traces_calculations",
+      "status": "passed",
+      "details": "plotted_missing=0; panel_b_missing_source=[]"
+    },
+    {
+      "validation_name": "figure_files_exist",
+      "status": "passed",
+      "details": "missing_or_empty=[]"
+    },
+    {
+      "validation_name": "decision_json_claim_boundaries",
+      "status": "passed",
+      "details": "classification=SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS"
+    },
+    {
+      "validation_name": "protected_hash_comparison",
+      "status": "passed",
+      "details": "non_unchanged_rows=0; total=1630"
+    }
+  ]
+}

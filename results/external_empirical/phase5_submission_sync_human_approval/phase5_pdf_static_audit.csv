@@ -1,0 +1,5 @@
+pdf_path,exists,text_path,text_extraction_status,external_addon_text_present,forbidden_uncaveated_hits,status,notes
+manuscript/main_unblinded.pdf,True,submission/human_approval_packet/package_review/pdf_text/main_unblinded.txt,PASS,True,,PASS,text extracted
+manuscript/main_blinded.pdf,True,submission/human_approval_packet/package_review/pdf_text/main_blinded.txt,PASS,True,,PASS,text extracted
+manuscript/target_journal.pdf,True,submission/human_approval_packet/package_review/pdf_text/target_journal.txt,PASS,True,,PASS,text extracted
+manuscript/supplement/supplement.pdf,True,submission/human_approval_packet/package_review/pdf_text/supplement.txt,PASS,True,,PASS,text extracted

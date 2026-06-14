@@ -1,0 +1,7 @@
+audit_item,citation_key,status,location,details
+all_used_keys_exist,,PASS,manuscript TeX corpus,32 keys used; 0 missing from references.bib.
+external_empirical_key_present,Harnett2012SpineAmplification,PASS,external empirical manuscript add-on,Key is cited and present in bibliography.
+external_empirical_key_present,Popovic2015,PASS,external empirical manuscript add-on,Key is cited and present in bibliography.
+external_empirical_key_present,Kwon2017,PASS,external empirical manuscript add-on,Key is cited and present in bibliography.
+external_empirical_key_present,Cornejo2022,PASS,external empirical manuscript add-on,Key is cited and present in bibliography.
+kwon_cornejo_numeric_scope,Kwon2017;Cornejo2022,PASS,manuscript/sections/methods.tex,Kwon and Cornejo are described as context/exclusion rows without accepted paired Rneck/load coordinates.

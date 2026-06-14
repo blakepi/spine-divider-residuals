@@ -5,24 +5,40 @@
 \input{../preamble}
 
 \begin{document}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\captionsetup{labelsep=period}
 
 \begin{center}
 {\Large Supplementary Materials}\\[0.5em]
 \begin{minipage}{0.9\textwidth}
 \centering
-{\large Residual Limits of a Load-Normalized Spine-Neck Ratio in Compartmental Models}
+{\large Residuals from a Load-Normalized Spine-Neck Divider Reveal Limits of Scalar Isolation Metrics}
 \end{minipage}
 \end{center}
 
 \input{sections/extended_equations}
 \input{sections/numerical_validation}
+\input{sections/release_environment_and_provenance}
 \input{sections/uncertainty_identifiability}
 \input{sections/active_mechanisms}
 \input{sections/exploratory_phase06}
 \input{sections/reproducibility_commands}
+\input{sections/external_summary_anchors}
 \input{sections/extended_limitations}
 
 \bibliographystyle{\spinebibstyle}
 \bibliography{../references}
+
+
+\input{tables/validation_coverage_by_row_class}
+\input{tables/row_provenance_reconciled}
+\input{tables/residual_metric_controls_expanded}
+\input{tables/residual_rowclass_summary}
+\input{tables/high_rhol_stress_test_summary}
+\input{tables/environment_versions}
+\input{tables/active_mechanism_reproducibility_map}
 
 \end{document}

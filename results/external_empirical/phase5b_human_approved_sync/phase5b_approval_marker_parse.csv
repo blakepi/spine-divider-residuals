@@ -1,0 +1,6 @@
+field,required_value,observed_value,status,approval_marker_path
+FIGURE_S10_VISUAL_APPROVED,yes,yes,PASS,submission/human_approval/PHASE5_HUMAN_APPROVAL.md
+SUBMISSION_PACKAGE_SYNC_APPROVED,yes,yes,PASS,submission/human_approval/PHASE5_HUMAN_APPROVAL.md
+PUBLIC_PATCH_RELEASE_APPROVED,no,no,PASS,submission/human_approval/PHASE5_HUMAN_APPROVAL.md
+ZENODO_VERSION_DOI_APPROVED,no,no,PASS,submission/human_approval/PHASE5_HUMAN_APPROVAL.md
+JOURNAL_SUBMISSION_APPROVED,no,no,PASS,submission/human_approval/PHASE5_HUMAN_APPROVAL.md

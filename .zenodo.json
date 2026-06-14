@@ -1,0 +1,34 @@
+{
+  "creators": [
+    {
+      "affiliation": "Department of Neurology; Department of Biomedical and Translational Sciences, Macon & Joan Brock Virginia Health Sciences Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA",
+      "name": "Pierpoint, Gregory",
+      "orcid": "https://orcid.org/0000-0001-8288-8549"
+    },
+    {
+      "affiliation": "Department of Neurology; Department of Biomedical and Translational Sciences, Macon & Joan Brock Virginia Health Sciences Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA",
+      "name": "Musto, Alberto",
+      "orcid": "https://orcid.org/0000-0002-0877-8883"
+    }
+  ],
+  "description": "Machine-recoverable Harnett and Popovic summary anchors occupy distinct load-normalized regimes under source-native and bounded common-load calculations, supporting only a summary-level load-normalization hypothesis. This local staging draft does not claim per-spine reanalysis, biological validation, prevalence estimation, or controversy resolution. No new DOI is inserted by Phase 6b.",
+  "keywords": [
+    "dendritic spines",
+    "compartmental modeling",
+    "cable theory",
+    "voltage divider",
+    "reproducible modeling",
+    "external empirical summary",
+    "load-normalization hypothesis"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/blakepi/spine-divider-residuals",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "title": "SPINE v1.0.1 external summary add-on",
+  "upload_type": "software"
+}

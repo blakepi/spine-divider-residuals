@@ -1,0 +1,74 @@
+Phase 4 Git preflight and branch audit
+Timestamp local: 2026-06-13T19:04:23-04:00
+
+Command: git status --short --branch
+Exit code: 0
+Status: PASS_CLEAN_START
+Output:
+## main...origin/main
+Notes: Executed before Phase 4 branch creation and before Phase 4 artifacts were written.
+
+Command: git rev-parse --show-toplevel
+Exit code: 0
+Status: PASS
+Output:
+C:/Research/SPINE_Codex_Starter
+Notes: Root Git repository confirmed.
+
+Command: git branch --show-current
+Exit code: 0
+Status: PASS
+Output:
+main
+Notes: Start branch before Phase 4 branch creation.
+
+Command: git log -1 --oneline
+Exit code: 0
+Status: PASS
+Output:
+f8d781e Track legacy scientific outputs and external empirical Phase 3 baseline
+Notes: Start commit before Phase 4 branch creation.
+
+Command: git diff --stat
+Exit code: 0
+Status: PASS_EMPTY
+Output:
+[empty]
+Notes: No tracked diff at phase start.
+
+Command: git diff --name-status
+Exit code: 0
+Status: PASS_EMPTY
+Output:
+[empty]
+Notes: No tracked name-status diff at phase start.
+
+Command: git switch -c external-empirical-phase4-final-qa-sync-gate
+Exit code: 0
+Status: PASS
+Output:
+Switched to a new branch 'external-empirical-phase4-final-qa-sync-gate'
+Notes: Phase 4 branch created after clean preflight.
+
+Command: git branch --show-current (post-branch)
+Exit code: 0
+Status: PASS
+Output:
+external-empirical-phase4-final-qa-sync-gate
+Notes: Recorded during Phase 4 audit.
+
+Command: git status --short --branch (during Phase 4)
+Exit code: 0
+Status: INFO
+Output:
+## external-empirical-phase4-final-qa-sync-gate
+?? reports/PHASE_4_BUILD_AND_VALIDATION_REPORT.md
+?? reports/PHASE_4_FINAL_QA_AND_SYNC_DECISION_GATE.md
+?? reports/PHASE_4_NEXT_PHASE_HANDOFF.md
+?? reports/PHASE_4_PATCH_RELEASE_DECISION_GATE.md
+?? reports/PHASE_4_PDF_AND_VISUAL_QA_PRECHECK.md
+?? reports/PHASE_4_STATIC_LANGUAGE_AND_CLAIM_AUDIT.md
+?? reports/PHASE_4_SUBMISSION_PACKAGE_SYNC_DECISION.md
+?? results/external_empirical/phase4_final_qa_sync_gate/
+?? scripts/external_empirical/phase4_final_qa_sync_gate.py
+Notes: Includes Phase 4 artifacts after audit starts; clean-start evidence is recorded separately above.

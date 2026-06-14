@@ -1,0 +1,3 @@
+pdf_path,exists,text_path,text_extraction_status,external_addon_text_present,figure_s10_reference_present,required_caveats_present,missing_required_concepts,forbidden_uncaveated_hits,status,notes
+submission/nature_neuroscience/main_unblinded.pdf,True,results/external_empirical/phase5b_human_approved_sync/pdf_text/main_unblinded.txt,PASS,True,True,True,,,PASS,
+submission/nature_neuroscience/supplement.pdf,True,results/external_empirical/phase5b_human_approved_sync/pdf_text/supplement.txt,PASS,True,True,True,,,PASS,

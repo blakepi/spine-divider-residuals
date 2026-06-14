@@ -1,0 +1,81 @@
+{
+  "phase": "Phase 2a summary-level Route 1 decision-gate overlay",
+  "timestamp_local": "2026-06-13T17:14:01-04:00",
+  "governing_phase0_1_classification": "GO_SUMMARY_ONLY",
+  "phase1_rows_total": 7,
+  "usable_summary_route1_rows": [
+    "harnett_2012_summary_model_anchor",
+    "popovic_2015_measured_summary_anchor",
+    "popovic_2015_model_fit_reference"
+  ],
+  "usable_per_spine_route1_rows": [],
+  "decision_gate_classification": "SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS",
+  "summary_route1_overlay_useful": true,
+  "per_spine_empirical_claim_allowed": false,
+  "biological_validation_claim_allowed": false,
+  "controversy_resolved_claim_allowed": false,
+  "source_native_values": [
+    {
+      "row_id": "harnett_2012_summary_model_anchor",
+      "rho_L": "4",
+      "Gamma_div": "0.2",
+      "rho_L_class": "high_gte_0p75"
+    },
+    {
+      "row_id": "popovic_2015_measured_summary_anchor",
+      "rho_L": "0.0981818182",
+      "Gamma_div": "0.910596026",
+      "rho_L_class": "low_lt_0p25"
+    },
+    {
+      "row_id": "popovic_2015_model_fit_reference",
+      "rho_L": "0.0718085106",
+      "Gamma_div": "0.933002481",
+      "rho_L_class": "low_lt_0p25"
+    }
+  ],
+  "load_model_ids": [
+    "source_native",
+    "common_SPINE_baseline_144p487",
+    "common_Harnett_model_125",
+    "common_Popovic_measured_275"
+  ],
+  "separation_preserved_under_all_load_models": true,
+  "minimum_harnett_to_popovic_measured_rho_ratio": "18.51851852",
+  "minimum_harnett_to_popovic_model_rho_ratio": "12.34567901",
+  "load_model_calculation_rows": 12,
+  "transfer_proxy_rows_computed": [
+    "popovic_2015_measured_summary_anchor",
+    "popovic_2015_model_fit_reference"
+  ],
+  "transfer_proxy_max_abs_difference_not_residual": "0.003002481",
+  "transfer_residuals_allowed": false,
+  "recommended_manuscript_shape": "Shape_A_plus_reframing_hypothesis_only",
+  "recommended_next_phase": "Phase 2b - Bounded Summary-Level Load-Sensitivity and Manuscript Add-On Draft",
+  "recommended_use": "Use as a cautious hypothesis-reframing figure/memo: summary anchors are compatible with the load-normalized framing, but the evidence remains summary-only and proxy-limited.",
+  "forbidden_claims": [
+    "per-spine empirical validation",
+    "population prevalence",
+    "Harnett measured paired row recovery",
+    "external biological validation of SPINE",
+    "controversy resolution",
+    "exact transient or nonlinear prediction"
+  ],
+  "key_caveats": [
+    "Harnett is a model/proxy high-isolation anchor, not a native measured paired row.",
+    "Popovic measured and model-fit rows are summary-level and kept separate.",
+    "Kwon and Cornejo remain nonnumeric for rho_L in this dataset.",
+    "Transfer comparisons are proxy-only; no SPINE residuals are computed.",
+    "The four load models are a decision gate, not the full Phase 2b sensitivity sweep."
+  ],
+  "output_files": {
+    "source_native_calculations": "results/external_empirical/phase2a_decision_gate/phase2a_source_native_calculations.csv",
+    "load_model_definitions": "results/external_empirical/phase2a_decision_gate/phase2a_load_model_definitions.csv",
+    "load_model_calculations": "results/external_empirical/phase2a_decision_gate/phase2a_load_model_calculations.csv",
+    "summary_anchor_separation": "results/external_empirical/phase2a_decision_gate/phase2a_summary_anchor_separation.csv",
+    "transfer_metric_compatibility_audit": "results/external_empirical/phase2a_decision_gate/phase2a_transfer_metric_compatibility_audit.csv",
+    "figure_data": "results/external_empirical/phase2a_decision_gate/phase2a_summary_route1_decision_gate_figure_data.csv",
+    "figure_manifest": "results/external_empirical/phase2a_decision_gate/phase2a_figure_manifest.csv",
+    "decision_json": "results/external_empirical/phase2a_decision_gate/phase2a_decision_gate_result.json"
+  }
+}

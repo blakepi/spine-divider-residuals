@@ -1,0 +1,4 @@
+attempt_type,attempted,status,command_or_api,result
+github_release,False,NOT_ATTEMPTED_MODE_A,,No approval marker for external release.
+zenodo_version,False,NOT_ATTEMPTED_MODE_A,,No approval marker for Zenodo action.
+doi_metadata_insertion,False,NOT_ATTEMPTED_MODE_A,,No verified DOI and no insertion approval.

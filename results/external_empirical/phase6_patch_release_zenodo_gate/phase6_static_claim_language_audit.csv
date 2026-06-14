@@ -1,0 +1,10 @@
+file,term,context,classification,status,notes
+results/external_empirical/phase6_patch_release_zenodo_gate/phase6_release_notes_draft.md,biological validation,"ain proxy-only compatibility checks and not SPINE residuals. - The release would make no per-spine inference and is not biological validation, not a population estimate, and not a controversy resolution.  Operational boundary:  - No GitHub ",caveated_or_contextual,PASS,Forbidden phrase appears only in a negated/caveated boundary statement.
+results/external_empirical/phase6_patch_release_zenodo_gate/phase6_zenodo_metadata_draft.json,biological validation,"lations, supporting only a summary-level load-normalization hypothesis. This draft does not claim per-spine reanalysis, biological validation, prevalence estimation, or controversy resolution."",   ""doi_action"": ""none_no_approval"",   ""notes""",caveated_or_contextual,PASS,Forbidden phrase appears only in a negated/caveated boundary statement.
+results/external_empirical/phase6_patch_release_zenodo_gate/phase6_zenodo_metadata_draft.json,per-spine reanalysis,"nded common-load calculations, supporting only a summary-level load-normalization hypothesis. This draft does not claim per-spine reanalysis, biological validation, prevalence estimation, or controversy resolution."",   ""doi_action"": ""none_n",caveated_or_contextual,PASS,Forbidden phrase appears only in a negated/caveated boundary statement.
+phase6_outputs_combined,summary-level anchors,,required_safe_language_present,PASS,Required safe-language guardrail.
+phase6_outputs_combined,load-normalization hypothesis,,required_safe_language_present,PASS,Required safe-language guardrail.
+phase6_outputs_combined,not SPINE residuals,,required_safe_language_present,PASS,Required safe-language guardrail.
+phase6_outputs_combined,no per-spine inference,,required_safe_language_present,PASS,Required safe-language guardrail.
+phase6_outputs_combined,not biological validation,,required_safe_language_present,PASS,Required safe-language guardrail.
+phase6_outputs_combined,not a population estimate,,required_safe_language_present,PASS,Required safe-language guardrail.

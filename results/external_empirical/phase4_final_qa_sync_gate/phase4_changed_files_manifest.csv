@@ -1,0 +1,47 @@
+relative_path,artifact_type,phase4_role,mutation_scope
+scripts/external_empirical/phase4_final_qa_sync_gate.py,py,deterministic Phase 4 audit script,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/manuscript_hash_comparison.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/manuscript_hashes_after.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/manuscript_hashes_before.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/pdf_renders,directory,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/pdf_text,directory,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_changed_files_manifest.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_citation_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_claim_ledger_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_decision_result.json,json,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_external_empirical_traceability_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_figure_manifest_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_git_diff_summary.txt,txt,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_git_status_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_input_gate_validation.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_latex_build_or_static_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_patch_release_decision_gate.json,json,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_pdf_inventory.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_pdf_page_render_manifest.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_pdf_text_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_public_release_sync_gap.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_static_language_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_submission_package_sync_gap.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_sync_decision_matrix.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_table_manifest_audit.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/phase4_visual_review_checklist.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/protected_core_hash_comparison.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/protected_core_hashes_after.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/protected_core_hashes_before.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/public_release_hash_comparison.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/public_release_hashes_after.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/public_release_hashes_before.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/submission_package_hash_comparison.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/submission_package_hashes_after.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+results/external_empirical/phase4_final_qa_sync_gate/submission_package_hashes_before.csv,csv,Phase 4 result artifact,Phase 4 artifact only
+reports/PHASE_4_FINAL_QA_AND_SYNC_DECISION_GATE.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_STATIC_LANGUAGE_AND_CLAIM_AUDIT.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_PDF_AND_VISUAL_QA_PRECHECK.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_SUBMISSION_PACKAGE_SYNC_DECISION.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_PATCH_RELEASE_DECISION_GATE.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_BUILD_AND_VALIDATION_REPORT.md,md,Phase 4 report or documentation update,Documentation/artifact only
+reports/PHASE_4_NEXT_PHASE_HANDOFF.md,md,Phase 4 report or documentation update,Documentation/artifact only
+docs/PROJECT_STATE.md,md,Phase 4 report or documentation update,Documentation/artifact only
+docs/DECISION_LOG.md,md,Phase 4 report or documentation update,Documentation/artifact only
+checkpoints/SPINE_phase_4_final_qa_sync_gate_checkpoint_20260613_190510.zip,zip,Phase 4 checkpoint archive,Phase 4 artifact only
+checkpoints/SPINE_phase_4_final_qa_sync_gate_checkpoint_20260613_190510.zip.sha256,txt,Phase 4 checkpoint SHA-256 sidecar,Phase 4 artifact only

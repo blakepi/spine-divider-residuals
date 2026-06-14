@@ -1,0 +1,17 @@
+audit_item,status,location,details
+summary_level_external_gate,passed,manuscript tex corpus,required pattern: summary-level external decision gate
+three_summary_rows,passed,manuscript tex corpus,required pattern: three summary-usable rows
+harnett_model_summary_anchor,passed,manuscript tex corpus,required pattern: Harnett model/summary
+popovic_measured_and_model_fit_separate,passed,manuscript tex corpus,required pattern: Popovic measured summary.*Popovic model-fit
+source_native_distinct_regimes,passed,manuscript tex corpus,required pattern: source-native.*distinct
+bounded_common_load_persists,passed,manuscript tex corpus,required pattern: fixed/recovered common loads
+popovic_uncertainty_low,passed,manuscript tex corpus,required pattern: Popovic measured uncertainty envelope remained low
+transfer_not_residuals,passed,manuscript tex corpus,required pattern: transfer prox(?:y|ies).*not SPINE residuals
+no_per_spine_reanalysis,passed,manuscript tex corpus,required pattern: not a per-spine reanalysis
+no_biological_validation,passed,manuscript tex corpus,required pattern: not biological validation
+no_controversy_resolution,passed,manuscript tex corpus,required pattern: not.*controversy resolution
+forbidden_validates_spine,passed,,forbidden pattern absent: (?<!not )biological(?:ly)? validates? SPINE
+forbidden_resolves_controversy,passed,,forbidden pattern absent: resolves? the .*controversy|controversy is resolved
+forbidden_per_spine_validation,passed,,forbidden pattern absent: per-spine (?:published )?data validate|per-spine empirical validation|per-spine validation of SPINE
+forbidden_population_prevalence,passed,,forbidden pattern absent: population prevalence
+forbidden_exact_residual_proxy,passed,,forbidden pattern absent: SPINE residuals? from transfer prox

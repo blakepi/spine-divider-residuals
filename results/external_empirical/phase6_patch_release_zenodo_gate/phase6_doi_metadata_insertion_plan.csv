@@ -1,0 +1,6 @@
+metadata_target,current_value,proposed_value_if_verified,approval_required,verified_value_available,phase6_action,status
+README.md,unchanged,,True,False,none,DEFERRED_NO_VERIFIED_DOI_OR_APPROVAL
+CITATION.cff,unchanged,,True,False,none,DEFERRED_NO_VERIFIED_DOI_OR_APPROVAL
+.zenodo.json,unchanged,,True,False,none,DEFERRED_NO_VERIFIED_DOI_OR_APPROVAL
+submission/nature_neuroscience metadata,unchanged,,True,False,none,DEFERRED_NO_VERIFIED_DOI_OR_APPROVAL
+public_release/spine-divider-residuals metadata,unchanged,,True,False,none,DEFERRED_NO_VERIFIED_DOI_OR_APPROVAL

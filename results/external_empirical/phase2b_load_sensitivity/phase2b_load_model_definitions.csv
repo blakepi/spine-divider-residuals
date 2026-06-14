@@ -1,0 +1,19 @@
+load_model_id,load_value_MOhm,load_model_type,source_row_id,source_citation_short,measured_or_reference,assumption_note,use_in_main_figure,use_in_supplement,inclusion_status
+source_native,125,source_native,harnett_2012_summary_model_anchor,Harnett et al. 2012 Nature,row_native_measured_or_model_as_curated,Uses each row's locked Phase 1 source-native load.,true,true,included
+source_native,275,source_native,popovic_2015_measured_summary_anchor,Popovic et al. 2015 Nat Commun,row_native_measured_or_model_as_curated,Uses each row's locked Phase 1 source-native load.,true,true,included
+source_native,564,source_native,popovic_2015_model_fit_reference,Popovic et al. 2015 Nat Commun,row_native_measured_or_model_as_curated,Uses each row's locked Phase 1 source-native load.,true,true,included
+common_SPINE_baseline_144p487,144.487,fixed_common_reference,,,computational_reference,"Computational reference load, not a biological measurement.",true,true,included
+common_Harnett_model_125,125,recovered_source_common,harnett_2012_summary_model_anchor,Harnett et al. 2012 Nature,model_reported_reference,Harnett model Rdend carried from Phase 1; not universal.,true,true,included
+common_Popovic_measured_275,275,recovered_source_common,popovic_2015_measured_summary_anchor,Popovic et al. 2015 Nat Commun,measured_summary_reference,Popovic measured Zdendrite reused as a common reference; not universal.,true,true,included
+common_Popovic_model_fit_564,564,recovered_source_common,popovic_2015_model_fit_reference,Popovic et al. 2015 Nat Commun,model_fit_reference,Popovic model-fit load carried from Phase 1; not universal.,true,true,included
+diagnostic_common_load_grid_75,75,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_100,100,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_108,108,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_125,125,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_144p487,144.487,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_162,162,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_200,200,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_275,275,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_400,400,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_564,564,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included
+diagnostic_common_load_grid_666p667,666.667,diagnostic_grid,,,diagnostic_common_grid,Deterministic diagnostic load value; not a biological distribution.,true,true,included

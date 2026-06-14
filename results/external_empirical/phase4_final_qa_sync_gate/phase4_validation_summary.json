@@ -1,0 +1,28 @@
+{
+  "csv_files_parsed": 29,
+  "doi_action_authorized": false,
+  "json_files_parsed": 3,
+  "manuscript_hash_result": {
+    "unchanged": 339
+  },
+  "manuscript_qa_passed": true,
+  "parse_errors": [],
+  "parse_validation_passed": true,
+  "pdf_static_qa_passed": true,
+  "phase": "External Empirical Phase 4",
+  "phase4_final_classification": "QA_PASS_SYNC_AND_PATCH_RELEASE_RECOMMENDED_AFTER_HUMAN_APPROVAL",
+  "protected_core_hash_result": {
+    "unchanged": 261
+  },
+  "public_release_action_authorized": false,
+  "public_release_hash_result": {
+    "unchanged": 772
+  },
+  "pytest_status": "passed",
+  "pytest_summary": "63 tests passed via PYTHONDONTWRITEBYTECODE=1; PYTHONPATH=src; python -m pytest -q -p no:cacheprovider",
+  "submission_action_authorized": false,
+  "submission_package_hash_result": {
+    "unchanged": 198
+  },
+  "timestamp_local": "2026-06-13T19:06:22-04:00"
+}

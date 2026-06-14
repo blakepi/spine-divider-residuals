@@ -1,0 +1,26 @@
+{
+  "approval_marker_present": false,
+  "approval_marker_valid": false,
+  "biological_validation_claim_allowed": false,
+  "controversy_resolution_claim_allowed": false,
+  "figure_s10_human_visual_review_passed": false,
+  "final_classification": "AWAITING_HUMAN_APPROVAL_PACKET_CREATED",
+  "git_precondition_passed": true,
+  "human_visual_review_packet_created": true,
+  "journal_submission_performed": false,
+  "one_paragraph_rationale": "The explicit Phase 5 approval marker was absent or invalid, so Phase 5 created a human approval packet and sync plan only. The Nature submission package, public-release mirror, DOI metadata, preprint state, and journal-submission state were not changed. Figure S10 human visual review remains pending until the exact approval marker is created.",
+  "per_spine_claim_allowed": false,
+  "phase": "External Empirical Phase 5",
+  "phase4_classification_confirmed": true,
+  "phase5_mode": "approval_packet_only",
+  "public_patch_release_performed": false,
+  "recommended_next_phase": "External Empirical Phase 5b - Human-Approved Submission Package Sync",
+  "required_human_actions": [
+    "Review Figure S10 packet and readability assets.",
+    "If approving future sync, create submission/human_approval/PHASE5_HUMAN_APPROVAL.md with the exact required fields.",
+    "Run a future approved package-sync phase before any release, DOI, preprint, or submission action."
+  ],
+  "submission_package_synced": false,
+  "timestamp_local": "2026-06-13T19:25:44-04:00",
+  "zenodo_action_performed": false
+}

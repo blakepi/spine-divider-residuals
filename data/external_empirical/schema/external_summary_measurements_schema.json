@@ -1,0 +1,654 @@
+{
+  "schema_name": "external_summary_measurements",
+  "phase": "Phase 1",
+  "version": "1.0",
+  "created_datetime_local": "2026-06-13T16:54:54-04:00",
+  "governing_phase0_1_classification": "GO_SUMMARY_ONLY",
+  "interpretation_lock": "summary-level external empirical dataset; no per-spine inference",
+  "required_columns": [
+    "row_id",
+    "source_id",
+    "citation_short",
+    "doi",
+    "dataset_role",
+    "route1_status",
+    "data_level",
+    "extraction_method",
+    "source_figure_table_or_section",
+    "source_local_path",
+    "source_ledger_row_ids",
+    "extracted_value_ledger_row_ids",
+    "provenance_note",
+    "species",
+    "age_or_preparation",
+    "brain_region",
+    "cell_type",
+    "dendritic_compartment",
+    "distance_from_soma_um",
+    "n_spines",
+    "n_cells",
+    "n_animals",
+    "measured_or_model",
+    "R_neck_MOhm",
+    "R_neck_uncertainty_MOhm",
+    "R_neck_uncertainty_type",
+    "R_neck_statistic_type",
+    "R_neck_method",
+    "load_value_MOhm",
+    "load_uncertainty_MOhm",
+    "load_uncertainty_type",
+    "load_statistic_type",
+    "load_method",
+    "load_definition",
+    "load_assumed",
+    "load_provenance",
+    "attenuation_or_AR",
+    "attenuation_uncertainty",
+    "attenuation_uncertainty_type",
+    "attenuation_definition",
+    "attenuation_method",
+    "neck_length_um",
+    "neck_radius_um",
+    "neck_diameter_um",
+    "geometry_source",
+    "usable_for_summary_route1",
+    "usable_for_per_spine_route1",
+    "exclusion_reason",
+    "recommended_plot_role",
+    "recommended_marker_group",
+    "rho_L_source_native",
+    "Gamma_div_source_native",
+    "rho_L_class_source_native",
+    "calculation_note"
+  ],
+  "controlled_vocabularies": {
+    "dataset_role": [
+      "harnett_high_isolation_anchor",
+      "popovic_low_isolation_anchor",
+      "kwon_low_isolation_excluded",
+      "cornejo_voltage_contrast",
+      "zecevic_interpretive_context"
+    ],
+    "route1_status": [
+      "usable_summary_anchor",
+      "usable_model_anchor",
+      "context_only",
+      "contrast_only_no_rho_coordinate",
+      "excluded_no_machine_paired_rows",
+      "excluded_no_machine_numeric_row",
+      "excluded_source_unavailable_or_blocked"
+    ],
+    "data_level": [
+      "summary_measured",
+      "summary_model",
+      "summary_reported",
+      "context_only",
+      "contrast_only",
+      "qualitative_only",
+      "metadata_only",
+      "excluded_no_numeric_route1_row"
+    ],
+    "measured_or_model": [
+      "measured_summary",
+      "model_summary",
+      "reported_summary",
+      "qualitative_context",
+      "metadata_only",
+      "excluded"
+    ],
+    "R_neck_method": [
+      "direct_electrical_inferred",
+      "voltage_attenuation_inferred",
+      "optical_electrophysiology_inferred",
+      "geometry_cylindrical_inferred",
+      "model_code_inferred",
+      "reported_summary",
+      "not_reported"
+    ],
+    "load_method": [
+      "R_d_EPSC_native",
+      "dendritic_impedance_Zdendrite",
+      "dendritic_input_resistance_reported",
+      "model_Rdend_reported",
+      "imported_harnett",
+      "common_reference_SPINE_baseline",
+      "model_assumed",
+      "not_reported",
+      "not_applicable"
+    ],
+    "load_definition": [
+      "Harnett_model_Rdend",
+      "Popovic_Zdendrite",
+      "source_reported_dendritic_load",
+      "imported_or_assumed_load",
+      "not_reported",
+      "not_applicable"
+    ],
+    "load_provenance": [
+      "measured_same_source",
+      "model_reported_same_source",
+      "reported_same_source_unclear_measured_or_model",
+      "imported_from_harnett",
+      "common_reference_assumed",
+      "not_reported",
+      "not_applicable"
+    ],
+    "attenuation_definition": [
+      "spine_to_dendrite_amplitude_ratio",
+      "dendrite_to_spine_attenuation",
+      "amplification_ratio",
+      "voltage_gradient",
+      "qualitative_only",
+      "not_reported",
+      "not_applicable"
+    ],
+    "recommended_plot_role": [
+      "high_isolation_summary_anchor",
+      "low_isolation_summary_anchor",
+      "model_fit_reference",
+      "context_not_plotted",
+      "excluded_not_plotted"
+    ],
+    "recommended_marker_group": [
+      "Harnett_summary_model",
+      "Popovic_measured_summary",
+      "Popovic_model_fit",
+      "Kwon_excluded",
+      "Cornejo_contrast_only",
+      "Zecevic_context"
+    ],
+    "rho_L_class_source_native": [
+      "low_lt_0p25",
+      "intermediate_0p25_to_lt_0p75",
+      "high_gte_0p75",
+      "not_calculated"
+    ]
+  },
+  "fields": [
+    {
+      "name": "row_id",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Stable Phase 1 row identifier."
+    },
+    {
+      "name": "source_id",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source identifier inherited from Phase 0.1."
+    },
+    {
+      "name": "citation_short",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Short source label."
+    },
+    {
+      "name": "doi",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source DOI."
+    },
+    {
+      "name": "dataset_role",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "harnett_high_isolation_anchor",
+        "popovic_low_isolation_anchor",
+        "kwon_low_isolation_excluded",
+        "cornejo_voltage_contrast",
+        "zecevic_interpretive_context"
+      ],
+      "description": "Phase 1 role in the summary external empirical dataset."
+    },
+    {
+      "name": "route1_status",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "usable_summary_anchor",
+        "usable_model_anchor",
+        "context_only",
+        "contrast_only_no_rho_coordinate",
+        "excluded_no_machine_paired_rows",
+        "excluded_no_machine_numeric_row",
+        "excluded_source_unavailable_or_blocked"
+      ],
+      "description": "Whether and how the row may be used in summary Route 1."
+    },
+    {
+      "name": "data_level",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "summary_measured",
+        "summary_model",
+        "summary_reported",
+        "context_only",
+        "contrast_only",
+        "qualitative_only",
+        "metadata_only",
+        "excluded_no_numeric_route1_row"
+      ],
+      "description": "Summary/model/context/exclusion level; never per-spine."
+    },
+    {
+      "name": "extraction_method",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Phase 0.1 extraction method supporting the row."
+    },
+    {
+      "name": "source_figure_table_or_section",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source figure, table, or section cue inherited from Phase 0.1."
+    },
+    {
+      "name": "source_local_path",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Local source text/file path inherited from Phase 0.1 when safe to record."
+    },
+    {
+      "name": "source_ledger_row_ids",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Phase 0.1 acquisition ledger row references supporting this source."
+    },
+    {
+      "name": "extracted_value_ledger_row_ids",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Phase 0.1 extracted-value ledger row references supporting this row."
+    },
+    {
+      "name": "provenance_note",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Short provenance and interpretation note."
+    },
+    {
+      "name": "species",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source species or not_extracted."
+    },
+    {
+      "name": "age_or_preparation",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Preparation/age information recovered in Phase 0.1."
+    },
+    {
+      "name": "brain_region",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Brain region."
+    },
+    {
+      "name": "cell_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Cell type."
+    },
+    {
+      "name": "dendritic_compartment",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Dendritic compartment or context."
+    },
+    {
+      "name": "distance_from_soma_um",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Distance from soma in micrometers, if available."
+    },
+    {
+      "name": "n_spines",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Summary sample size in spines when recoverable."
+    },
+    {
+      "name": "n_cells",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Summary sample size in cells when recoverable."
+    },
+    {
+      "name": "n_animals",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Summary sample size in animals when recoverable."
+    },
+    {
+      "name": "measured_or_model",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "measured_summary",
+        "model_summary",
+        "reported_summary",
+        "qualitative_context",
+        "metadata_only",
+        "excluded"
+      ],
+      "description": "Whether the row is measured summary, model summary, context, metadata, or excluded."
+    },
+    {
+      "name": "R_neck_MOhm",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Spine-neck resistance in MOhm."
+    },
+    {
+      "name": "R_neck_uncertainty_MOhm",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "R_neck uncertainty in MOhm."
+    },
+    {
+      "name": "R_neck_uncertainty_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Uncertainty interpretation, such as reported_plus_minus."
+    },
+    {
+      "name": "R_neck_statistic_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Statistic type for R_neck."
+    },
+    {
+      "name": "R_neck_method",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "direct_electrical_inferred",
+        "voltage_attenuation_inferred",
+        "optical_electrophysiology_inferred",
+        "geometry_cylindrical_inferred",
+        "model_code_inferred",
+        "reported_summary",
+        "not_reported"
+      ],
+      "description": "Method category for R_neck."
+    },
+    {
+      "name": "load_value_MOhm",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Dendritic load/impedance value in MOhm."
+    },
+    {
+      "name": "load_uncertainty_MOhm",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Load uncertainty in MOhm."
+    },
+    {
+      "name": "load_uncertainty_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Uncertainty interpretation for load."
+    },
+    {
+      "name": "load_statistic_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Statistic type for load."
+    },
+    {
+      "name": "load_method",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "R_d_EPSC_native",
+        "dendritic_impedance_Zdendrite",
+        "dendritic_input_resistance_reported",
+        "model_Rdend_reported",
+        "imported_harnett",
+        "common_reference_SPINE_baseline",
+        "model_assumed",
+        "not_reported",
+        "not_applicable"
+      ],
+      "description": "Method category for the load quantity."
+    },
+    {
+      "name": "load_definition",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "Harnett_model_Rdend",
+        "Popovic_Zdendrite",
+        "source_reported_dendritic_load",
+        "imported_or_assumed_load",
+        "not_reported",
+        "not_applicable"
+      ],
+      "description": "Definition of the load quantity."
+    },
+    {
+      "name": "load_assumed",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "true if the load is model/proxy/assumed rather than measured same-source."
+    },
+    {
+      "name": "load_provenance",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "measured_same_source",
+        "model_reported_same_source",
+        "reported_same_source_unclear_measured_or_model",
+        "imported_from_harnett",
+        "common_reference_assumed",
+        "not_reported",
+        "not_applicable"
+      ],
+      "description": "Where the load comes from."
+    },
+    {
+      "name": "attenuation_or_AR",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Attenuation/amplification value or short expression."
+    },
+    {
+      "name": "attenuation_uncertainty",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Attenuation/amplification uncertainty."
+    },
+    {
+      "name": "attenuation_uncertainty_type",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Uncertainty interpretation for attenuation/amplification."
+    },
+    {
+      "name": "attenuation_definition",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "spine_to_dendrite_amplitude_ratio",
+        "dendrite_to_spine_attenuation",
+        "amplification_ratio",
+        "voltage_gradient",
+        "qualitative_only",
+        "not_reported",
+        "not_applicable"
+      ],
+      "description": "Definition of attenuation/amplification quantity."
+    },
+    {
+      "name": "attenuation_method",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Method category for attenuation/amplification."
+    },
+    {
+      "name": "neck_length_um",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Neck length in micrometers, if available."
+    },
+    {
+      "name": "neck_radius_um",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Neck radius in micrometers, if available."
+    },
+    {
+      "name": "neck_diameter_um",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Neck diameter in micrometers, if available."
+    },
+    {
+      "name": "geometry_source",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source for geometry fields."
+    },
+    {
+      "name": "usable_for_summary_route1",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "true only for summary/model rows usable in a later Route 1 overlay."
+    },
+    {
+      "name": "usable_for_per_spine_route1",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Always false in Phase 1."
+    },
+    {
+      "name": "exclusion_reason",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Reason a row is excluded or limited."
+    },
+    {
+      "name": "recommended_plot_role",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "high_isolation_summary_anchor",
+        "low_isolation_summary_anchor",
+        "model_fit_reference",
+        "context_not_plotted",
+        "excluded_not_plotted"
+      ],
+      "description": "Recommended later plotting role."
+    },
+    {
+      "name": "recommended_marker_group",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "Harnett_summary_model",
+        "Popovic_measured_summary",
+        "Popovic_model_fit",
+        "Kwon_excluded",
+        "Cornejo_contrast_only",
+        "Zecevic_context"
+      ],
+      "description": "Recommended later marker group."
+    },
+    {
+      "name": "rho_L_source_native",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Source-native R_neck/load feasibility ratio."
+    },
+    {
+      "name": "Gamma_div_source_native",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "1/(1+rho_L_source_native), feasibility-only."
+    },
+    {
+      "name": "rho_L_class_source_native",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [
+        "low_lt_0p25",
+        "intermediate_0p25_to_lt_0p75",
+        "high_gte_0p75",
+        "not_calculated"
+      ],
+      "description": "Threshold class for source-native rho_L."
+    },
+    {
+      "name": "calculation_note",
+      "type": "string",
+      "required_column": true,
+      "controlled_vocabulary": [],
+      "description": "Calculation caveat; source-native feasibility only."
+    }
+  ],
+  "calculation_rules": {
+    "rho_L_source_native": "R_neck_MOhm / load_value_MOhm when both are available",
+    "Gamma_div_source_native": "1 / (1 + rho_L_source_native)",
+    "rho_L_class_source_native": {
+      "low_lt_0p25": "rho_L < 0.25",
+      "intermediate_0p25_to_lt_0p75": "0.25 <= rho_L < 0.75",
+      "high_gte_0p75": "rho_L >= 0.75",
+      "not_calculated": "missing R_neck or load"
+    }
+  },
+  "forbidden_claims": [
+    "per-spine empirical sample",
+    "measured Harnett paired rows",
+    "population prevalence",
+    "resolved the controversy",
+    "validated SPINE biologically",
+    "human digitization pending"
+  ]
+}

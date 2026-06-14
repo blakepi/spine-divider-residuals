@@ -1,0 +1,32 @@
+{
+  "abstract_changed": false,
+  "checks": {
+    "citation_audit_passed": true,
+    "exactly_eight_claims_audited": true,
+    "figure_assets_present": true,
+    "gate_validation_passed": true,
+    "latex_audit_available": true,
+    "manuscript_changes_classified": true,
+    "protected_core_unchanged": true,
+    "static_language_audit_passed": true,
+    "supplement_section_present": true,
+    "unsupported_claims_explicitly_rejected": true
+  },
+  "claim_scope": "summary-level load-normalization hypothesis only",
+  "failed_checks": [],
+  "figure_route": "supplemental_figure_s10",
+  "manuscript_hash_status_counts": {
+    "added": 6,
+    "changed": 6,
+    "unchanged": 303
+  },
+  "next_phase_recommendation": "Stop after Phase 3; any submission/public-release update requires a separate explicit phase.",
+  "overall_status": "passed",
+  "phase": "Phase 3 - Controlled Summary-Level Manuscript Add-On Integration",
+  "protected_core_hash_status_counts": {
+    "unchanged": 1325
+  },
+  "pytest_command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m pytest -q -p no:cacheprovider",
+  "pytest_status": "passed",
+  "timestamp_local": "2026-06-13T18:05:35-04:00"
+}

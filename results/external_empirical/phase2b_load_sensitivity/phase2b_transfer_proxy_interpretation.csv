@@ -1,0 +1,8 @@
+row_id,citation_short,attenuation_or_AR,attenuation_definition,observed_transfer_proxy,Gamma_div_source_native,proxy_minus_Gamma_div,residual_allowed,interpretation_class,explanation
+harnett_2012_summary_model_anchor,Harnett et al. 2012 Nature,1.5 to 45 fold amplification range,amplification_ratio,,0.2,,false,proxy_incompatible_or_ambiguous,Metric is not compatible with exact residual analysis in this phase.
+harnett_2012_long_neck_subset_context,Harnett et al. 2012 Nature,,not_reported,,,,false,not_reported,No numeric transfer proxy was reported or accepted.
+popovic_2015_measured_summary_anchor,Popovic et al. 2015 Nat Commun,1.10,spine_to_dendrite_amplitude_ratio,0.9090909091,0.910596026,-0.0015051169,false,proxy_consistent_with_divider_coordinate,Proxy-only compatibility check; numerically close to source-native Gamma_div but not a SPINE residual.
+popovic_2015_model_fit_reference,Popovic et al. 2015 Nat Commun,10/9.3,spine_to_dendrite_amplitude_ratio,0.93,0.933002481,-0.003002481,false,proxy_consistent_with_divider_coordinate,Proxy-only compatibility check; numerically close to source-native Gamma_div but not a SPINE residual.
+kwon_2017_excluded_no_numeric_row,Kwon et al. 2017 Cell Reports,,not_reported,,,,false,not_reported,No numeric transfer proxy was reported or accepted.
+cornejo_2022_contrast_only_no_rho_coordinate,Cornejo et al. 2022 Science,,voltage_gradient,,,,false,proxy_incompatible_or_ambiguous,Metric is not compatible with exact residual analysis in this phase.
+zecevic_2023_interpretive_context,Zecevic 2023 Biophys J,,qualitative_only,,,,false,proxy_incompatible_or_ambiguous,Metric is not compatible with exact residual analysis in this phase.

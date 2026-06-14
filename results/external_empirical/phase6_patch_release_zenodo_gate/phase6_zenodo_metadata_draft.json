@@ -1,0 +1,43 @@
+{
+  "concept_doi": "",
+  "current_root_zenodo_metadata": {
+    "creators": [
+      {
+        "affiliation": "Department of Neurology; Department of Biomedical and Translational Sciences, Macon & Joan Brock Virginia Health Sciences Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA",
+        "name": "Pierpoint, Gregory",
+        "orcid": "https://orcid.org/0000-0001-8288-8549"
+      },
+      {
+        "affiliation": "Department of Neurology; Department of Biomedical and Translational Sciences, Macon & Joan Brock Virginia Health Sciences Eastern Virginia Medical School at Old Dominion University, Norfolk, VA, USA",
+        "name": "Musto, Alberto",
+        "orcid": "https://orcid.org/0000-0002-0877-8883"
+      }
+    ],
+    "description": "SPINE submission release for reproducible residual-domain analysis of a load-normalized spine-neck ratio.",
+    "keywords": [
+      "dendritic spines",
+      "compartmental modeling",
+      "cable theory",
+      "voltage divider",
+      "reproducible modeling"
+    ],
+    "license": "MIT",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/blakepi/spine-divider-residuals",
+        "relation": "isSupplementTo",
+        "resource_type": "software"
+      }
+    ],
+    "title": "Residuals from a Load-Normalized Spine-Neck Divider Reveal Limits of Scalar Isolation Metrics",
+    "upload_type": "software"
+  },
+  "description": "Machine-recoverable Harnett and Popovic summary anchors occupy distinct load-normalized regimes under source-native and bounded common-load calculations, supporting only a summary-level load-normalization hypothesis. This draft does not claim per-spine reanalysis, biological validation, prevalence estimation, or controversy resolution.",
+  "doi_action": "none_no_approval",
+  "notes": "Never submit this draft without a later exact approval marker and verified release/DOI workflow.",
+  "operating_mode": "MODE_A_RELEASE_DECISION_PACKET_ONLY",
+  "phase": "External Empirical Phase 6",
+  "status": "draft_only_not_submitted",
+  "title": "SPINE divider-residuals patch release draft for summary-level external empirical add-on",
+  "version_doi": ""
+}

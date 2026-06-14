@@ -1,0 +1,9 @@
+field,observed_value,status,notes
+PUBLIC_PATCH_RELEASE_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+LOCAL_PATCH_STAGING_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+GITHUB_RELEASE_EXECUTION_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+ZENODO_VERSION_DOI_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+DOI_METADATA_INSERTION_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+JOURNAL_SUBMISSION_APPROVED,,MODE_A_MISSING,Absent marker selects Mode A.
+PATCH_RELEASE_TAG,,MODE_A_MISSING,Absent marker selects Mode A.
+PATCH_RELEASE_TITLE,,MODE_A_MISSING,Absent marker selects Mode A.

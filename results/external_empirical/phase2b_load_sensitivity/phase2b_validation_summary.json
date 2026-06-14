@@ -1,0 +1,77 @@
+{
+  "phase": "Phase 2b bounded summary-level load sensitivity validation",
+  "timestamp_local": "2026-06-13T17:36:44-04:00",
+  "validation_status": "passed",
+  "validation_rows": [
+    {
+      "validation_name": "input_gate_validation_rows",
+      "status": "passed",
+      "details": "rows=7"
+    },
+    {
+      "validation_name": "exact_summary_rows",
+      "status": "passed",
+      "details": "summary_rows=['harnett_2012_summary_model_anchor', 'popovic_2015_measured_summary_anchor', 'popovic_2015_model_fit_reference']"
+    },
+    {
+      "validation_name": "no_per_spine_rows",
+      "status": "passed",
+      "details": "all rows false"
+    },
+    {
+      "validation_name": "transfer_residuals_false",
+      "status": "passed",
+      "details": "all rows residual_allowed=false"
+    },
+    {
+      "validation_name": "load_model_calculations",
+      "status": "passed",
+      "details": "bad=[]; rows=48"
+    },
+    {
+      "validation_name": "class_threshold_formulas",
+      "status": "passed",
+      "details": "bad=[]"
+    },
+    {
+      "validation_name": "uncertainty_uses_source_reported_only",
+      "status": "passed",
+      "details": "bad=[]"
+    },
+    {
+      "validation_name": "candidate_claims_required_rows",
+      "status": "passed",
+      "details": "missing=[]"
+    },
+    {
+      "validation_name": "allowed_claims_have_safer_replacements",
+      "status": "passed",
+      "details": "forbidden_with_replacements=6"
+    },
+    {
+      "validation_name": "decision_json_claim_boundaries",
+      "status": "passed",
+      "details": "recommendation=PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON"
+    },
+    {
+      "validation_name": "figure_data_backed_by_tables",
+      "status": "passed",
+      "details": "missing=[]"
+    },
+    {
+      "validation_name": "figure_files_exist",
+      "status": "passed",
+      "details": "missing=[]"
+    },
+    {
+      "validation_name": "report_static_language_audit",
+      "status": "passed",
+      "details": "bad_occurrences=[]"
+    },
+    {
+      "validation_name": "protected_hash_comparison",
+      "status": "passed",
+      "details": "non_unchanged_rows=0; total=1630"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "checkpoint_path": "checkpoints/SPINE_phase_6_patch_release_zenodo_gate_checkpoint_20260614_131339.zip",
+  "checkpoint_sha256": "641B65F1D2908FFE1C4C7A3ED081E6D0DCCDCA01FF3256E3F450C9AB14803C55",
+  "core_hash_result": {
+    "unchanged": 202
+  },
+  "csv_files_parsed": 21,
+  "input_gate_passed": true,
+  "json_files_parsed": 5,
+  "operating_mode": "MODE_A_RELEASE_DECISION_PACKET_ONLY",
+  "overall_status": "passed",
+  "package_boundary_audit_passed": true,
+  "parse_errors": [],
+  "parse_validation_passed": true,
+  "phase": "External Empirical Phase 6",
+  "public_release_hash_result": {
+    "unchanged": 772
+  },
+  "pytest_status": "passed",
+  "pytest_summary": "63 passed in 5.24s via python -m pytest -p no:cacheprovider --tb=short",
+  "release_delta_inventory_written": true,
+  "release_notes_draft_written": true,
+  "static_claim_language_audit_passed": true,
+  "submission_hash_result": {
+    "unchanged": 207
+  },
+  "timestamp_local": "2026-06-14T13:13:39-04:00",
+  "zenodo_metadata_draft_parseable": true
+}

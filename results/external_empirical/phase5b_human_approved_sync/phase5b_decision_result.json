@@ -1,0 +1,22 @@
+{
+  "approval_marker_valid": true,
+  "biological_validation_claim_allowed": false,
+  "controversy_resolution_claim_allowed": false,
+  "doi_metadata_changed": false,
+  "figure_s10_visual_approved": true,
+  "final_classification": "SUBMISSION_PACKAGE_SYNCED_HUMAN_APPROVED",
+  "journal_submission_approved": false,
+  "journal_submission_state_changed": false,
+  "mode": "human_approved_submission_package_sync",
+  "one_paragraph_rationale": "The exact human approval marker authorized Figure S10 visual approval and Nature submission-package sync only. Phase 5b synchronized the package with the controlled summary-level external empirical add-on, rebuilt and audited source_files.zip, verified package PDF/static language and Figure S10 traceability, and confirmed that public release, DOI metadata, preprint state, and journal-submission state remained unchanged.",
+  "per_spine_claim_allowed": false,
+  "phase": "External Empirical Phase 5b",
+  "preprint_state_changed": false,
+  "prevalence_claim_allowed": false,
+  "public_patch_release_approved": false,
+  "public_release_changed": false,
+  "recommended_next_phase": "External Empirical Phase 6 - Patch Release and Zenodo Decision Gate, only if human approval later authorizes public patch release and DOI/version synchronization.",
+  "submission_package_synced": true,
+  "timestamp_local": "2026-06-14T12:45:28-04:00",
+  "zenodo_version_doi_approved": false
+}

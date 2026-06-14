@@ -1,0 +1,31 @@
+{
+  "approval_marker_valid": true,
+  "checkpoint_path": "checkpoints/SPINE_phase_5b_human_approved_submission_sync_checkpoint_20260614_124528.zip",
+  "checkpoint_sha256": "67DC75A462347E0F651542CB35AF9418D2957F7EFCB138BFC700EDC67367E6BA",
+  "core_protected_hash_result": {
+    "unchanged": 356
+  },
+  "csv_files_parsed": 17,
+  "figure_s10_package_audit_passed": true,
+  "input_gate_passed": true,
+  "json_files_parsed": 2,
+  "overall_status": "passed",
+  "parse_errors": [],
+  "parse_validation_passed": true,
+  "pdf_text_audit_passed": true,
+  "phase": "External Empirical Phase 5b",
+  "public_release_hash_result": {
+    "unchanged": 772
+  },
+  "pytest_status": "passed",
+  "pytest_summary": "63 passed in 5.82s via python -m pytest -p no:cacheprovider --tb=short",
+  "source_zip_audit_passed": true,
+  "static_claim_language_audit_passed": true,
+  "submission_package_hash_result": {
+    "added": 9,
+    "changed": 10,
+    "unchanged": 188
+  },
+  "sync_manifest_passed": true,
+  "timestamp_local": "2026-06-14T12:45:28-04:00"
+}

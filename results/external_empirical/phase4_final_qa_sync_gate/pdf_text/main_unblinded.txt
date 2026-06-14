@@ -1,0 +1,776 @@
+   Residuals from a Load-Normalized Spine-Neck Divider Reveal
+
+                            Limits of Scalar Isolation Metrics
+
+                                               1                                      1
+                          Gregory Pierpoint        and Alberto Musto, MD, PhD
+
+    1
+        Department of Neurology; Department of Biomedical and Translational Sciences, Macon & Joan
+         Brock Virginia Health Sciences Eastern Virginia Medical School at Old Dominion University,
+                                             Norfolk, VA, USA
+            Correspondence should be addressed to Alberto Musto, MD, PhD (mustoae@odu.edu).
+                  Eastern Virginia Medical School, P.O. Box 1980, Norfolk, VA 23501, USA
+             ORCID: Gregory Pierpoint, https://orcid.org/0000-0001-8288-8549; Alberto Musto,
+                                   https://orcid.org/0000-0002-0877-8883.
+
+
+                                                    Abstract
+           Spine-neck resistance is meaningful only relative to dendrite-soma load. We dene ρL =
+        Rneck /Rin,d , with Rin,d measured after omitting the stimulated spine, and use Γdiv = 1/(1 + ρL )
+        as the classical DC divider reference. Across 3,718 deterministic design-derived rows, peak local-
+        transfer residuals were negative in 3,680/3,718 rows; pooled summaries are descriptive of the
+        design table. Matched-time and integrated controls showed residual metric dependence. De-
+        scriptor comparisons indicated that ρL is a compact local-divider coordinate, whereas residuals,
+        head amplitude, and somatic transfer require component, impedance, conductance, active-state,
+        and downstream-ltering descriptors. The N=768 uncertainty ensemble lacked high-ρL rows,
+        so a bounded high-ρL stress test probed that regime without population inference. Direct-
+        matrix/DC and scoped Brian2-hosted checks supported representative implementation behavior
+        within scope. SPINE discourages inferring electrical isolation from spine-neck geometry alone.
+
+Keywords:      dendritic spines; compartmental modeling; cable theory; voltage divider; electrical
+isolation; impedance; reproducible modeling
+    Dendritic spines place excitatory synapses in small postsynaptic compartments connected to
+the parent dendrite by narrow necks. These necks can impede current ow, alter local voltage, and
+separate spine-head depolarization from parent-dendrite or somatic impact [19]. A neck resistance
+by itself, however, is incomplete: the same series resistance has dierent consequences depending
+on the load presented by the dendritic and somatic circuit.
+    The rst-order electrical expectation is the classical voltage divider. If a spine-head voltage
+drives a series neck resistance Rneck into a dendrite-soma load with input resistance Rin,d , the DC
+small-signal local transfer is
+                                               Rin,d             1
+                                  Γdiv =                 =                  .                                (1)
+                                           Rneck + Rin,d   1 + Rneck /Rin,d
+
+For compact notation, we denote the load-normalized spine-neck ratio Rneck /Rin,d as ρL . The
+abbreviation SMI is retained in some code paths, tables, and provenance les as author-dened
+shorthand for the same ratio, not as a claim that the ratio is a eld-standard morphology index or
+a new cable-theory law.
+   This distinction matters because the divider expectation is not the same as a transient synaptic
+peak response. Conductance-based excitation changes driving force while the response evolves; ca-
+
+                                                        1
+pacitance, local impedance, dendrite-to-soma ltering, active conductances, morphology, and mea-
+surement uncertainty can all alter observed voltages [1014]. A scalar ratio can be useful when
+the target is local low-frequency isolation, yet fail for head amplitude, somatic voltage, nonlinear
+response, or categorical class assignment.
+    The present study therefore reframes SPINE around the residual from the analytic divider:
+
+                                        ∆div = Γh→d − Γdiv .                                     (2)
+
+The ratio denes the expected local divider coordinate; the residual tests where the full simulated
+response leaves that coordinate. This treats departures from the divider as domain-of-validity infor-
+mation rather than failed conrmation. Large residuals, equal-ratio nonequivalence, and amplitude
+failures identify the electrical variables that the compact ratio cannot contain.
+     We ask ve bounded questions. First, do the workow-specied low-, intermediate-, and high-
+isolation reference cases reproduce the intended passive responses? Second, how far do observed
+peak local transfers depart from Γdiv across existing passive, active, uncertainty, and exploratory
+rows? Third, when is the ratio more useful than its component resistances, and when do compo-
+nent, impedance, dynamic, or conductance descriptors carry additional information? Fourth, how
+should deterministic uncertainty and radius-error screens be reported without implying population
+inference? Fifth, do independent matrix and analytic benchmarks support the computational cred-
+ibility of the from-scratch passive implementation? The resulting thesis is deliberately scoped: the
+load-normalized ratio recovers the classical local divider expectation, and SPINE maps the residual
+domains where a single scalar is insucient.
+     The practical implication is that experimental and modeling reports should not treat spine-neck
+geometry alone as evidence for electrical isolation. They should report neck resistance together with
+dendrite-soma load, use Γdiv as a transparent rst-order reference, prefer continuous ratio values
+when radius uncertainty makes threshold classes fragile, and add timing, impedance, conductance,
+and downstream-load descriptors before interpreting head amplitude or somatic impact.
+
+
+1     Results
+1.1   Reference cases reproduce the intended passive ordering
+
+The baseline reference conguration generated the intended progression from near-isopotential head-
+dendrite responses to strong local isolation (Figures 1 and 2). The simulations used the baseline
+parameters in Table 1, ∆t = 0.01 ms, a single head synapse at 20 ms, and the analysis-dened
+50 ms metric window. All nine low-, intermediate-, and high-isolation target values passed the
+workow-specied tolerance rule.
+    The low-ρL case produced ρL = 0.00881, Γh→d = 0.984, Γh→s = 0.357, and Ah = 1.82 mV. The
+intermediate case produced ρL = 0.115, Γh→d = 0.751, Γh→s = 0.273, and Ah = 2.36 mV. The
+high-ρL case produced ρL = 1.32, Γh→d = 0.102, Γh→s = 0.0376, and Ah = 15.1 mV. These target
+cases support implementation consistency for the reference equations, units, synaptic normalization,
+solver, and metric denitions in the compact passive architecture; they do not calibrate the model
+to a specic biological neuron.
+    The same traces show why the divider residual is needed. The baseline divider predictions were
+0.991, 0.897, and 0.431 for the low, intermediate, and high cases. The corresponding residuals
+Γh→d − Γdiv were -0.00729, -0.1458, and -0.3286. The low case was close to the DC divider, whereas
+the intermediate and high transient peak ratios fell well below it.
+
+
+
+                                                 2
+Figure 1: SPINE reference architecture and residual workow. A conductance-based excitatory
+input drives an explicit spine head coupled to the parent dendrite through a geometry-derived neck
+resistance. The dendrite-soma input resistance is measured after omitting the stimulated spine, yielding
+ρL = Rneck /Rin,d and the analytic local divider expectation Γdiv = 1/(1 + ρL ). SMI is retained only as
+legacy shorthand in code and provenance les.
+
+
+
+
+Figure 2: Baseline passive reference traces. Low-, intermediate-, and high-ρL traces show the
+intended local coupling progression. The reference cases also demonstrate that target-case ordering does
+not imply exact equality to the DC divider: residuals are small for the low case and larger for
+intermediate/high transient peak responses.
+
+
+
+                                                     3
+      1.2                            The analytic divider is a reference, not the peak-response result
+
+     Across 3,718 deterministic design-derived residual rows, the median absolute residual from the
+     divider was 0.0548, the mean absolute residual was 0.0734, and the root-mean-square residual was
+     0.103. The maximum absolute residual was 0.492. Residuals were negative in 3,680/3,718 rows and
+     positive in 38 rows, so the DC divider overpredicted this separate-peak conductance-based transfer
+     metric in most designed rows (Figure 3). Pooled values describe this deterministic design table
+     rather than a biological population.
+         The largest departures were consistent with the intended distinction between a DC reference
+     and a transient conductance-driven peak response. The matched-neck heterogeneous-load sweep
+     produced the largest absolute separate-peak residual, with ρL = 0.452, observed Γh→d = 0.196,
+     divider prediction 0.689, and residual -0.492. Fixed-load high-ρL rows also showed large relative
+     departures.
+         Matched-time and integrated controls showed that residual magnitude is metric-dependent. In
+     the three baseline reference cases, area-under-curve residuals were closer to the divider for interme-
+     diate/high cases than the primary separate-peak residual, whereas the matched-head-peak control
+     emphasized timing and downstream ltering. The largest matched-neck heterogeneous-load case
+     showed the same metric dependence: the separate-peak residual was -0.492, the matched-head-peak
+     residual was -0.637, and the AUC residual was -0.101. Thus the divider overprediction statement
+     applies to this separate-peak conductance-response metric, not to every possible transfer summary.
+         Excluding exploratory rows left the same conclusion: 3584 non-exploratory rows had median
+     absolute residual 0.0563, mean absolute residual 0.0748, and only two positive residual rows. The
+     divider relation therefore remains the correct analytic baseline, but the residual eld is a design-
+     specic simulation-domain map.
+                      A                                                                                         B
+                               1.0
+                                                                                                                 0.0
+Observed peak local transfer
+
+
+
+
+                                                                                 Residual: observed - divider
+
+
+
+
+                               0.8
+                                                                                                                −0.1
+                               0.6
+                                                                                                                −0.2
+
+                               0.4       Fixed-load sweep
+                                         Matched-load sweep                                                     −0.3
+                                         Passive morphology
+                                         Active stress tests
+                               0.2       Uncertainty rows                                                       −0.4
+                                         Exploratory rows
+                                         Baseline targets
+                                         1/(1 + ρL)                                                             −0.5
+                               0.0
+                                          10−2                 10−1        100                                         10−2        10−1           100
+                                                       ρL = Rneck/Rin, d                                                      ρL = Rneck/Rin, d
+
+     Figure 3: Analytic divider overlay and residual domain. Observed peak local transfer is compared
+     with the DC divider expectation Γdiv = 1/(1 + ρL ) across 3,718 deterministic design-derived rows. Most
+     points fall below the divider curve for the separate-peak metric, and the residual panel makes the
+     design-specic domain visible. Baseline targets are highlighted; exploratory rows are included only as
+     separated stress-test context.
+
+
+
+
+                                                                                       4
+1.3   Load normalization is useful but compact
+
+The xed-load geometry sweep behaved as a constructional sanity check. Longer and narrower necks
+increased Rneck , increased head depolarization, and decreased downstream transfer. Because Rin,d
+was xed, ρL and Rneck had identical rank ordering. This result should not be read as evidence that
+the ratio adds information under xed-load conditions.
+    The matched-neck experiment held Rneck = 100 MΩ while varying dendritic leak from 0.1 to
+30 nS (Figure 4). Under this manipulation, neck resistance alone could not rank the cases because
+there was only one neck-resistance value. Changing the dendritic load changed Rin,d , and therefore
+changed ρL and downstream transfer. The load term is therefore mechanistically meaningful, but
+only within the target it was designed to represent.
+    Descriptor comparisons made this compactness explicit. For non-exploratory local transfer, the
+load-normalized ratio and Γdiv had the same absolute Spearman association because the divider is
+a monotone transform of the ratio, but the analytic divider was the better direct scalar prediction
+(cross-validated RMSE 0.052 versus 0.091 for raw ρL ). The log component pair improved on raw ρL
+but did not outperform the analytic divider for rst-order local transfer. Thus the ratio is useful as
+the coordinate dening the divider, not as a universally superior scalar.
+
+
+
+
+Figure 4: Fixed-load and matched-neck controls. At xed dendritic input resistance, ρL is a scaled
+neck-resistance coordinate. When Rneck is held xed and dendritic load changes, the ratio changes with
+Rin,d and separates cases that neck resistance alone cannot order.
+
+
+
+                                                    5
+External summary anchors as a bounded load-normalization decision gate.                   A Codex-
+only external-data gate recovered summary-level external data, not paired per-spine Harnett mea-
+sured rows. Three summary-usable rows were eligible: a Harnett model/summary high-isolation
+anchor, a Popovic measured summary anchor, and a Popovic model-t reference [6, 13]. Source-
+native calculations placed the Harnett anchor at ρL = 4 and Γdiv = 0.200 (high), the Popovic
+measured summary at ρL = 0.0982 and Γdiv = 0.911 (low), and the Popovic model-t row at
+ρL = 0.0718 and Γdiv = 0.933 (low), so the anchors occupied distinct source-native ρL regimes. The
+separation persisted under xed/recovered common loads: Harnett remained high, Popovic mea-
+sured remained low, and Popovic model-t remained low or intermediate. The Popovic measured
+uncertainty envelope remained low. Transfer ratios were treated only as compatibility proxies and
+not SPINE residuals. These results support a summary-level load-normalization hypothesis for part
+of the apparent high- versus low-isolation contrast, but they are not a per-spine reanalysis, not
+biological validation, not a prevalence estimate, and not a controversy resolution (Supplementary
+Figure S10).
+
+1.4   Residuals, amplitude, and somatic transfer require richer descriptors
+
+The residual analysis separated local-divider usefulness from broader prediction. For signed
+and absolute divider residuals, the dynamic ratio descriptor recorded as dynamic_SMI_abs in
+code/provenance tables was the strongest available scalar by rank association (absolute Spearman
+0.853), while Rneck exceeded raw ρL (about 0.765 versus 0.704). In rows with synaptic conductance
+scale, conductance plus log-component models sharply reduced residual prediction error. Residuals
+are therefore better treated as a dynamic/conductance/impedance problem than as evidence that
+the DC ratio alone is sucient.
+    Head amplitude depended on a dierent descriptor family. Across non-exploratory rows, synaptic
+conductance scale had absolute Spearman association 0.982 with Ah , whereas raw ρL was only 0.143.
+Somatic transfer depended on downstream ltering: transfer gain and transfer impedance exceeded
+raw ρL for Γh→s in the descriptor summary. These results support a target-specic descriptor
+interpretation: local divider reasoning, head amplitude, residuals, and somatic transfer require
+dierent descriptor families.
+    Designed passive counterexamples sharpened this interpretation. Passive equal-ρL cases with
+dierent morphology produced relative spread 0.28 in Γh→d and 0.61 in Ah , both exceeding the
+analysis-dened 20% failure threshold. Equal ρL is therefore not electrical equivalence, because the
+same ratio can hide dierent absolute resistances, capacitances, impedance spectra, synaptic drives,
+and downstream morphologies.
+
+1.5   Active and NMDA stress tests preserve scope limits
+
+Active-mechanism verication passed all 12 analysis-dened rows, including AMPA peak normal-
+ization, NMDA magnesium-block monotonicity, NMDA current-voltage relief, active-current signs,
+bounded gates, resting-state stability, timestep renement, limiting-case solver comparison, strong-
+drive stability, and unit conversion checks. Active mechanisms were disabled in the reference baseline
+and enabled only in active-extension protocols.
+    In the designed active nonlinear suite, ρL remained strongly associated with local Γh→d , but
+active mechanisms did not make the static ratio a general amplitude or somatic-transfer predictor
+(Figure 6). For active Γh→s , input impedance at 50 Hz exceeded raw ρL (0.764 versus 0.339). For
+active Ah , frozen-gate transfer gain exceeded raw ρL (0.736 versus 0.236). AMPA+NMDA protocols
+with full restrained active conductances produced equal-ρL relative spread 0.86 in Ah and 0.35 in
+
+
+                                                  6
+Figure 5: Passive limits of the compact ratio. Passive challenge rows show that local-divider
+information does not automatically transfer to head amplitude or somatic voltage. Component, impedance,
+transfer-gain, and synaptic-drive descriptors retain information that the ratio discards.
+
+
+
+
+                                                  7
+Γh→d , exceeding the analysis-dened active stress-test thresholds.
+    Thus active mechanisms do not overturn the divider framing; they make its scope more impor-
+tant. Voltage-dependent current and active state add response variables that are not contained in
+a static morphology/load ratio.
+
+
+
+
+Figure 6: Active and NMDA stress-test boundaries. Active and NMDA-enabled protocols retain
+local ratio ordering in designed cases but increase nonequivalence for amplitude and other response targets.
+These rows are generic stress tests rather than cell-type-calibrated active reconstructions.
+
+
+1.6    Deterministic uncertainty stabilizes sampled low/intermediate behavior but
+       not high-ratio claims
+
+Progressive uncertainty analysis resolved the small-sample instability seen in the original 48-versus-
+96 comparison. By N=768, nal ρL median convergence passed: the 384-to-768 relative change was
+0.012, below the analysis-dened 0.10 threshold. The maximum nal median relative change across
+tracked outputs was 0.029. Exact top-predictor ranking remained less stable than descriptor-family
+interpretation.
+    The N=768 ensemble does not support high-ρL uncertainty claims. It contained 757 low-ρL
+rows, 11 intermediate-ρL rows, and zero high-ρL rows. A bounded high-ρL extension added in
+the nal revision sampled 41 true high-ratio parameter combinations and 205 deterministic radius-
+measurement rows; 16 crossed below ρL = 0.75, giving a design ip fraction of 0.078, and the
+median peak residual remained negative at -0.3245. This extension samples the missing regime
+as a deterministic stress test, but it is not a replacement for a full uncertainty ensemble. High-
+isolation conclusions therefore rest on baseline reference, designed challenge rows, and explicitly
+
+
+                                                     8
+labeled targeted checks.
+   Radius-only uncertainty produced 184 class ips out of 768 sampled parameter combinations,
+a design fraction of 24.0%. Low-class combinations ipped in 22.9% of cases, all 11 intermediate
+combinations ipped, and no high-ρL combinations were present. Because Rneck scales as 1/rn2 ,
+continuous ratio values with explicit radius uncertainty are safer than treating low, intermediate,
+and high labels as sharply separated biological states.
+
+
+
+
+Figure 7: Deterministic uncertainty and radius sensitivity. Progressive sampling stabilized
+continuous low/intermediate ρL summaries by N=768, while radius-error propagation exposed
+threshold-class fragility. Fractions are design fractions over sampled parameter combinations, not biological
+rates.
+
+
+1.7    Independent benchmarks support computational credibility within scope
+
+Computational credibility was assessed beyond internal scheme agreement. An independently writ-
+ten direct-matrix implementation of the same passive three-compartment baseline reproduced exist-
+ing SPINE baseline traces to numerical round-o: the maximum all-trace absolute voltage dierence
+was 1.25 × 10−13 mV, the maximum head-amplitude dierence was 1.42 × 10−14 mV, and the maxi-
+mum Γh→d dierence was 7.55 × 10−15 . DC analytic checks reproduced the two-node spine-omitted
+Rin,d value of 144.486692 MΩ to round-o and conrmed the divider limits.
+    Backward Euler versus Crank-Nicolson peak dierences were small in the baseline reference cases:
+maximum peak dierences were 0.00203 mV for Ah , 0.000534 mV for Ad , 0.000189 mV for As , and
+
+
+                                                     9
+0.000500 for Γh→d . These are internal numerical self-consistency checks. Brian2 was installed as
+an optional project-local validation dependency and used for Brian2-hosted scoped checks of the
+three baseline cases, one distributed-neck passive case, and one AMPA/NMDA synapse-only case;
+all compared metrics passed predened tolerances. Because the successful path used Brian2 for the
+validation environment and state hosting rather than native Brian2 integration of the full SPINE
+model, these checks are not all-row or active-channel cross-simulator validation. NEURON remains
+unavailable and is not claimed.
+    The nal package includes manifest and checksum workows and points to the veried public
+release at https://github.com/blakepi/spine-divider-residuals, release tag v1.0.0-submission, and
+archival DOI https://doi.org/10.5281/zenodo.20672333.
+Table 1: Baseline reference passive parameters. Values are taken from the manuscript-faithful
+baseline conguration and the three analysis-dened reference neck geometries. Parameters are idealized
+passive-reference values chosen to span low, intermediate, and high load-normalized ratio regimes, not
+cell-type-calibrated biological estimates.
+
+ Parameter            Meaning                                          Value
+ EL                   leak reversal                                    -70 mV
+ Esyn                 excitatory reversal                              0 mV
+ cm                   specic capacitance                              0.01 pF µm−2
+ ḡL                  head specic leak                                3 × 10−6 nS µm−2
+ rh                   head radius                                      0.35 µm
+ Cd , Cs              dendrite and soma capacitance                    120 pF, 220 pF
+ gL,d , gL,s          dendrite and soma leak                           2.5 nS, 7.0 nS
+ gds                  dendrite-soma coupling                           12.0 nS
+ ρi                   intracellular resistivity                        100 Ω cm
+ gmax                 peak synaptic conductance                        1.4 nS
+ τr , τd              rise and decay constants                         0.3 ms, 3.0 ms
+ t0 , ∆t              event time and time step                         20 ms, 0.01 ms
+ T                    metric window                                    50 ms
+ Rin,d                spine-omitted dendrite-soma input resistance     144.487 MΩ
+ low neck             Ln , rn , Rneck                                  0.25 µm, 0.25 µm, 1.273 MΩ
+ intermediate neck    Ln , rn , Rneck                                  0.75 µm, 0.12 µm, 16.579 MΩ
+ high neck            Ln , rn , Rneck                                  1.50 µm, 0.05 µm, 190.986 MΩ
+
+
+
+2    Discussion
+SPINE now supports a residual-domain interpretation of the load-normalized spine-neck ratio. The
+ratio ρL = Rneck /Rin,d encodes the classical local divider expectation Γdiv = 1/(1+ρL ); SMI remains
+only as legacy shorthand for this quantity in code-facing outputs. The scientic work begins after
+that analytic reference is stated: transient conductance-based simulations usually produced peak
+local transfer below the DC divider, and the residuals identify where a single scalar loses information.
+    This reframing is important because it separates a true but limited electrical expectation from
+broader prediction. The low-ρL reference case was close to the divider limit, while intermediate and
+high reference cases were substantially below the divider in peak transfer. Across the full derived
+table, residuals were usually negative and sometimes large for the separate-peak metric. That
+pattern is not a failure to reproduce the divider; it is evidence that the divider is the low-frequency
+baseline and that peak synaptic responses live in a richer dynamic system.
+
+                                                   10
+     The practical use pattern is therefore two-step. Use the load-normalized ratio to report rst-pass
+local head-to-dendrite divider context. Then report residuals, component resistances, impedance,
+transfer gain, synaptic conductance scale, active state, morphology, and uncertainty whenever the
+target is peak transfer, head amplitude, somatic voltage, nonlinear response, class membership,
+or electrical equivalence. For experimental interpretation, that means reporting neck resistance
+together with dendritic/somatic load rather than geometry alone, and treating Γdiv as a transparent
+reference rather than as evidence that an observed transient response has been explained.
+     The ratio succeeds locally because it compares a series neck resistance with the load driven by
+that resistance. This is the classical cable-theoretic intuition for spine-neck isolation [1, 2, 4, 10]. It
+also explains why the matched-neck control is meaningful: when Rneck is xed, dierent dendritic
+loads produce dierent divider expectations.
+     The same logic explains why the ratio fails outside its target. Head amplitude depends on abso-
+lute synaptic conductance, driving-force reduction, local capacitance, and input impedance. Somatic
+transfer adds dendrite-to-soma ltering, a distinction related to location-dependent dendritic prop-
+agation and somatic EPSP normalization [15]. Active state, NMDA voltage dependence, clustered
+input, and timing can change voltage trajectories without changing the morphology-derived ratio.
+Equal ρL cannot imply electrical equivalence because many circuits share a ratio while diering in
+absolute RC constants, impedance phase, conductance drive, and morphology.
+     This does not make the ratio useless. It makes it conditional. A scalar descriptor can be valuable
+when its target is explicit and its residuals are measured. It becomes misleading only when the local
+divider coordinate is stretched into an amplitude, somatic, nonlinear, or categorical claim.
+     The radius audit highlights a measurement boundary. Because Rneck ∝ 1/rn2 , modest radius error
+can produce large resistance and ratio error, and spine-neck geometry is itself plastic and dicult
+to measure precisely [16, 17]. The N=768 radius screen produced a 24.0% design-fraction class
+ip, with all 11 intermediate-ρL combinations crossing a class boundary. This supports continuous
+reporting with explicit uncertainty more strongly than thresholded low/intermediate/high labels.
+     The same N=768 ensemble contained no high-ρL rows. This absence should be treated as a
+design limitation. The targeted high-ρL extension added here is useful as a bounded stress test, but
+it is not a substitute for a full uncertainty ensemble spanning that regime. High-isolation behavior
+is therefore supported by reference cases, designed challenge rows, and targeted checks, whereas
+uncertainty stability is supported only for sampled low/intermediate combinations.
+     The from-scratch passive implementation is computationally credible within the scope tested. In-
+ternal unit, current-balance, limiting-case, timestep, impedance, and BE-versus-CN checks support
+numerical self-consistency. More importantly for external credibility, an independent direct-matrix
+implementation reproduced baseline passive traces and metrics to round-o, and DC analytic bench-
+marks checked the dendrite-soma load and divider limits.
+     Brian2 added a useful optional implementation-check anchor, but the scope remains narrow.
+Brian2 was installed in an isolated validation environment and the Brian2-hosted scoped checks re-
+produced representative passive baselines, one distributed-neck passive case, and one AMPA/NMDA
+synapse-only case within predened tolerances. However, native Brian2 state updaters were not the
+nal successful integration path for the sti compact circuit, and restrained active channels were
+not reproduced in Brian2. The strongest supported statement is therefore narrower than global
+simulator validation: the passive reference equations are consistent with independent matrix/DC
+benchmarks and representative Brian2-hosted checks. Extending native cross-simulator checks to
+broader morphologies, active protocols, and uncertainty rows remains useful future work.
+     The results t naturally with mixed experimental evidence about spine electrical isolation.
+Some optical and uncaging studies support substantial compartmentalization in particular contexts,
+whereas other work emphasizes modest isolation, indicator limits, and context-dependent interpre-
+
+                                                    11
+tation [5, 7, 9, 13, 14]. A manuscript that reports only a single ratio would atten these dierences.
+A manuscript that reports the ratio, divider expectation, residuals, and target-specic descriptors
+can connect morphology to physiology without overclaiming.
+    The summary-level external decision gate reinforces the reporting lesson without broadening
+the validation claim. The machine-recoverable Harnett and Popovic anchors suggest that some
+apparent high- versus low-isolation contrast can be reframed in load-normalized coordinates, but the
+evidence remains summary-level only: Harnett is a model/summary anchor rather than recovered
+paired measured per-spine data, Popovic measured and model-t rows are kept separate, Kwon
+and Cornejo remain context/exclusion rows, and transfer proxies are not SPINE residuals. The
+overlay motivates reporting dendritic load together with neck resistance, but it is not a per-spine
+reanalysis, not biological validation, not a prevalence estimate, and not a controversy resolution.
+A true empirical test would require paired same-spine Rneck , local dendritic load, and transfer
+denitions from the same preparation.
+    The current framework remains intentionally limited. The baseline soma is a lumped down-
+stream load, passive morphologies are procedural rather than cell-specic reconstructions, active
+conductances are generic stress tests rather than calibrated densities, and uncertainty ensembles
+are deterministic sensitivity designs rather than posterior biological distributions. SPINE focuses
+on electrical behavior and does not model biochemical calcium reaction-diusion, receptor track-
+ing, signaling cascades, or structural plasticity.
+    The most valuable next studies would combine voltage imaging, morphology measurements,
+and electrophysiology in preparations where neck-radius uncertainty can be propagated explicitly.
+Modeling extensions should prioritize calibrated cell-type active conductances, morphology-diverse
+posterior inference, analysis-dened high-ρL uncertainty coverage, and fuller native cross-simulator
+checks. Accordingly, the strongest supported claim is that the divider is expected and the residuals
+are informative.
+    The load-normalized spine-neck ratio is therefore a compact coordinate for the classical local
+voltage divider, not a universal electrical phenotype. Its most defensible use is to state the expected
+low-frequency head-to-dendrite transfer and then measure the residual from that expectation. In
+SPINE, those residuals show when transient conductance dynamics, impedance, synaptic drive,
+active state, morphology, downstream ltering, and measurement uncertainty make the scalar de-
+scriptor incomplete.
+
+
+3     Online Methods
+3.1   Reference circuit and load-normalized ratio
+
+SPINE was implemented in Python using project-local equations, matrix assembly, solvers, metrics,
+and validation scripts. General scientic Python libraries are used for numerical linear algebra
+and analysis, but the runtime implementation does not rely on a prebuilt neural simulation engine.
+Baseline, plausibility-revised, active-extension, and exploratory congurations are separated so that
+extensions are not silently folded into the baseline reference track.
+    The baseline reference model contains a spine head h, a parent dendrite compartment d, and a
+soma/load compartment s. For a cylindrical spine neck with length Ln , radius rn , and intracellular
+resistivity ρi ,
+                                                     ρi Ln
+                                             Rneck =       ,                                      (3)
+                                                      πrn2
+with geometry converted to centimeters before resistance is computed. The baseline target neck
+geometries are listed in Table 1. The head area is approximated as 4πrh2 and sets head capacitance
+
+                                                  12
+and leak; dendrite and soma capacitances and leaks are lumped. The soma is therefore a compact
+downstream load rather than a reconstructed full neuron.
+    The dendrite-soma input resistance Rin,d is measured after removing the stimulated spine and
+neck edge. A small current perturbation is applied to the dendrite-soma subcircuit, and ∆Vd /∆Id
+is computed from the steady-state passive linear system with a perturbation simulation check. We
+then dene the load-normalized spine-neck ratio
+                                                      Rneck
+                                               ρL =         .                                    (4)
+                                                      Rin,d
+
+The code and some provenance tables retain SMI as a legacy shorthand for ρL . This spine-omitted
+denition avoids normalizing a neck by a load that already contains the same neck. One-port
+reconstructions showed that attached-versus-omitted Rin,d dierences were numerically negligible
+for the compact passive-head model family, but the omitted denition remains conceptually cleaner.
+
+3.2   Analytic divider and residual target
+
+The analytic local reference is the DC small-signal voltage divider:
+                                                 Rin,d          1
+                                    Γdiv =                 =        .                            (5)
+                                             Rneck + Rin,d   1 + ρL
+
+This equation is treated as classical circuit logic, not as a novel result. The manuscript's main
+diagnostic quantity is the residual between the simulated peak local transfer and this divider expec-
+tation:
+                                        ∆div = Γh→d − Γdiv .                                      (6)
+Here Γh→d = Ad /Ah is measured from transient conductance-based simulations over the analysis-
+dened metric window. In the primary residual table, Ah , Ad , and As are baseline-subtracted
+maxima measured over the same 50 ms post-event window but not required to occur at the same
+time. Thus Γh→d is a separate-peak transient summary, whereas Γdiv is a DC low-frequency reference.
+Nonzero residuals are expected whenever peak timing, capacitance, changing synaptic driving force,
+morphology, impedance, active state, or downstream coupling matters. Matched-time and area-
+under-curve ratios are therefore reported only as targeted controls, not as replacements for the
+manuscript's primary peak residual.
+
+3.3   Passive equations and numerical solution
+
+Passive voltages obey conductance-balance equations for leak, synaptic, head-dendrite, and dendrite-
+soma terms:
+                      dVh
+                   Ch     = −gL,h (Vh − EL ) − gsyn (t)(Vh − Esyn ) + ghd (Vd − Vh ),            (7)
+                       dt
+                      dVd
+                   Cd     = −gL,d (Vd − EL ) + ghd (Vh − Vd ) + gds (Vs − Vd ),                  (8)
+                       dt
+                      dVs
+                   Cs     = −gL,s (Vs − EL ) + gds (Vd − Vs ).                                   (9)
+                       dt
+Letting V = (Vh , Vd , Vs )T and C = diag(Ch , Cd , Cs ) gives
+
+                                           dV
+                                       C       = −G(t)V + b(t),                                 (10)
+                                            dt
+
+                                                    13
+where                                                                       
+                           gL,h + gsyn (t) + ghd       −ghd            0
+                   G(t) =        −ghd           gL,d + ghd + gds   −gds  .                     (11)
+                                    0                  −gds       gL,s + gds
+Backward Euler advances the passive state by solving
+                                         
+                              C                      C
+                                 + Gn+1 Vn+1 =          Vn + bn+1 .                              (12)
+                              ∆t                     ∆t
+Crank-Nicolson comparisons are used as internal numerical self-consistency checks, not as indepen-
+dent external validation.
+   The synapse is conductance based:
+                                 Isyn,h (t, Vh ) = gsyn (t)(Vh − Esyn ),                         (13)
+where gsyn (t) is a normalized double exponential with peak conductance gmax . Peak depolarizations
+Ah , Ad , and As are measured after subtracting the pre-event baseline over an analysis-dened 50 ms
+post-event window. Attenuation ratios are Γh→d = Ad /Ah and Γh→s = As /Ah . Γh→d measures local
+transfer across the neck, Γh→s combines local transfer with downstream dendrite-to-soma ltering,
+and Ah measures local voltage excursion.
+
+3.4     Challenge suites and descriptor comparisons
+
+Passive morphology analyses generalize the reference circuit to compartment trees assembled from
+nodes and axial edges. Frequency-domain analyses solve the linearized passive system to estimate
+input impedance, transfer impedance, gain, phase, and dynamic ratio variants. Active and NMDA
+mechanisms are disabled in the baseline reference conguration and enabled only in active-extension
+protocols. These active conductances are generic stress tests using literature-traceable current forms
+[1824], not calibrated cell-type-specic channel densities.
+    Descriptor comparisons were performed on existing derived rows. We compared raw ρL , the
+analytic divider transform Γdiv , component resistances Rneck and Rin,d , log-component models,
+impedance and dynamic descriptors, transfer gain, and synaptic conductance scale where avail-
+able. These comparisons were interpreted by target and descriptor family. Exact winner labels were
+avoided when near-tied or correlated predictors made the ranking unstable.
+    Designed counterexamples tested logical suciency. Equal-ρL cases ask whether equal ratio
+implies equivalent voltage responses; iso-neck-resistance cases ask whether equal Rneck can change
+under dierent loads; iso-transfer cases ask whether similar transfer can arise from dierent ratios.
+These experiments were designed to expose limitations as well as successes.
+
+3.5     Deterministic uncertainty and reporting language
+
+Uncertainty analyses used deterministic Latin-hypercube ensembles and progressive sample sizes
+of N=96, 192, 384, and 768. The global uncertainty seed was 202605; progressive ensembles used
+202605 + 5100 + N . Radius-only uncertainty was analyzed separately because Rneck ∝ 1/rn2 , using
+25 deterministic osets spanning ±2 SD with SD = 0.018 µm and clipping measured radius to
+0.060.22 µm. Heuristic ratio classes were low < 0.25, intermediate 0.25 to < 0.75, and high ≥ 0.75.
+    All uncertainty fractions are reported as deterministic design fractions over sampled parameter
+combinations. They are not biological rates and are not treated as inferential population intervals.
+The N=768 ensemble contained 757 low-ρL rows, 11 intermediate-ρL rows, and zero high-ρL rows,
+so high-ratio uncertainty claims are explicitly scoped to reference, designed challenge rows, and the
+labeled targeted high-ρL extension rather than to the main uncertainty ensemble.
+
+                                                   14
+3.6   External summary-anchor decision gate
+
+External summary rows were taken only from the locked Phase 1 summary dataset generated by a
+Codex-only acquisition gate. No manual transcription, gure digitization, new source acquisition,
+per-spine reconstruction, or hidden load imputation was used. Row eligibility required a machine-
+recovered summary or model value for both Rneck and a local dendritic load. This admitted three
+summary-usable rows: Harnett model/summary, Popovic measured summary, and Popovic model-t
+[6, 13]. Kwon and Cornejo remained context/exclusion rows because no accepted paired Rneck /load
+coordinate was available [7, 9].
+    For each eligible row, source-native coordinates were computed as ρL = Rneck /load and Γdiv =
+1/(1 + ρL ). Load sensitivity used source-native loads, xed/recovered common loads of 144.487, 125,
+275, and 564 MΩ, and a deterministic diagnostic grid from 75 to 666.667 MΩ; these load choices
+are stress-test references, not a biological distribution. Classes used the same heuristic thresholds
+as the deterministic uncertainty analysis: low < 0.25, intermediate 0.25 to < 0.75, and high ≥ 0.75.
+For a xed Rneck , the high-threshold load is Rneck /0.75 and the low-threshold load is Rneck /0.25.
+Source-reported uncertainty was propagated only for the Popovic measured row, using the locked
+27 ± 6 MΩ neck resistance and 275 ± 27 MΩ load envelope; no uncertainty was invented for Harnett
+or the Popovic model-t row. External transfer ratios were retained only as proxy compatibility
+checks and not SPINE residuals.
+
+3.7   Computational credibility checks
+
+Numerical credibility was assessed at three levels. First, internal checks covered units, current
+signs, synaptic normalization, limiting cases, timestep renement, sparse/dense passive assembly,
+impedance verication, and Backward Euler versus Crank-Nicolson peak dierences. Second, an
+independent direct-matrix benchmark separately assembled the baseline passive three-compartment
+equations and compared against existing SPINE trace outputs without calling the production pas-
+sive simulation function as its benchmark engine. Third, DC analytic checks tested the two-node
+dendrite-soma input resistance, divider formula, limiting cases, and attached-versus-omitted one-
+port behavior.
+    NEURON and Brian2 importability were checked in the default project runtime. NEURON
+was unavailable and is not claimed. Brian2 was unavailable in that runtime but was installed in
+a project-local optional validation environment, where it was used with explicit units, a Brian2
+clock/state container, and an independent SI backward-Euler update. The Brian2-hosted scoped
+checks covered the three passive baseline cases, one cylindrical distributed-neck passive case, and
+one AMPA/NMDA synapse-only case. Native Brian2 state updaters were attempted but not re-
+tained because explicit/RK updates were unstable for the sti compact head-neck system and the
+coupled symbolic linear updater was not practical in this local environment. The executed checks
+therefore support representative computational credibility within scope; they do not validate all
+rows, restrained active channels, or biological calibration.
+    Environment, optional Brian2 versions, solver method, timestep, analysis window, deterministic
+seeds, release tag, and DOI are summarized in Supplementary Table S7.
+
+3.8   Traceability
+
+All manuscript-facing values are rounded for readability while exact values remain in machine-
+readable CSV outputs and ledgers. The claim-to-source ledger links major quantitative statements
+to source reports and CSV rows, following model-sharing and FAIR-data principles [25, 26]. Figure
+
+
+
+                                                 15
+and table manifests record provenance for publication assets. Exploratory perturbation scenarios
+remain supplemental stress tests and are not used to support primary biological mechanism claims.
+
+
+Disclosures
+Funding: This work received no external funding.
+    Competing interests: The authors declare no competing interests.
+    Ethics statement: This manuscript reports mathematical and computational modeling using
+repository simulations and no new human participants or animal experiments.
+    Author contributions: Gregory Pierpoint: Methodology; Software; Formal analysis; Investiga-
+tion; Validation; Visualization; Data curation; Writing  original draft; Writing  review & editing.
+Alberto Musto: Conceptualization; Methodology; Supervision; Project administration; Writing 
+review & editing; Scientic interpretation; Final manuscript approval.
+    AI-use disclosure: Generative-AI tools were used for editorial organization, code-development
+assistance, revision planning, and manuscript-formatting support. The authors retain responsibility
+for study conception, model interpretation, validation, numerical verication, reference verication,
+and nal manuscript content. No generative-AI tool is listed as an author.
+
+
+Data Availability
+This study uses mathematical and computational modeling and generated no new human partici-
+pant or animal data. Manuscript-facing derived data, validation outputs, gure/table source data,
+and provenance ledgers are included in the SPINE release package. Code, release metadata, and
+manuscript-facing derived data are archived at https://github.com/blakepi/spine-divider-residuals
+and https://doi.org/10.5281/zenodo.20672333. The release tag is v1.0.0-submission.
+    Manuscript claim provenance is recorded in manuscript/CLAIM_TO_SOURCE_LEDGER.csv.
+Figure and table provenance are recorded in manuscript/FIGURE_SOURCE_MANIFEST.csv and
+manuscript/TABLE_SOURCE_MANIFEST.csv. These ledgers are traceability aids and do not replace
+the manuscript's scoped claims.
+
+
+Code Availability
+The SPINE Python code, conguration les, analysis scripts, tests, validation scripts, environment
+instructions, release manifests, and manuscript-facing derived data are available at https://github.
+com/blakepi/spine-divider-residuals and archived at https://doi.org/10.5281/zenodo.20672333
+[27]. The release tag is v1.0.0-submission. Code is released under the MIT License. Derived
+manuscript-facing data, gures, tables, and documentation are released under CC BY 4.0 unless
+otherwise stated.
+
+
+References
+ [1] Wilfrid Rall. Theoretical signicance of dendritic trees for neuronal input-output relations. In
+     Neural Theory and Modeling, pages 7397. Stanford University Press, Stanford, CA, 1964. doi:
+     10.7551/mitpress/6743.003.0015.
+
+ [2] Idan Segev and Wilfrid Rall. Computational study of an excitable dendritic spine. Journal of
+     Neurophysiology, 60(2):499523, 1988. doi: 10.1152/jn.1988.60.2.499.
+
+                                                 16
+ [3] David Tsay and Rafael Yuste. On the electrical function of dendritic spines. Trends in Neuro-
+     sciences, 27(2):7783, 2004. doi: 10.1016/j.tins.2003.11.008.
+ [4] Rafael Yuste. Electrical compartmentalization in dendritic spines. Annual Review of Neuro-
+     science, 36:429449, 2013. doi: 10.1146/annurev-neuro-062111-150455.
+ [5] Roberto Araya, Jiang Jiang, Kenneth B. Eisenthal, and Rafael Yuste. The spine neck lters
+     membrane potentials. Proceedings of the National Academy of Sciences of the United States of
+     America, 103(47):1796117966, 2006. doi: 10.1073/pnas.0608755103.
+ [6] Mark T. Harnett, Judit K. Makara, Nelson Spruston, William L. Kath, and Jerey C. Magee.
+     Synaptic amplication by dendritic spines enhances input cooperativity. Nature, 491(7425):
+     599602, 2012. doi: 10.1038/nature11554.
+ [7] Taekyung Kwon, Miki Sakamoto, Darcy S. Peterka, and Rafael Yuste. Attenuation of synaptic
+     potentials in dendritic spines. Cell Reports, 20(5):11001110, 2017. doi: 10.1016/j.celrep.2017.
+     07.012.
+ [8] L. Beaulieu-Laroche and Mark T. Harnett. Dendritic spines prevent synaptic voltage clamp.
+     Neuron, 97(1):7582.e3, 2018. doi: 10.1016/j.neuron.2017.11.016.
+ [9] Victor Hugo Cornejo, Netanel Ofer, and Rafael Yuste. Voltage compartmentalization in den-
+     dritic spines in vivo. Science, 375(6576):8286, 2022. doi: 10.1126/science.abg0501.
+[10] Jerey C. Magee. Dendritic integration of excitatory synaptic input. Nature Reviews Neuro-
+     science, 1(3):181190, 2000. doi: 10.1038/35044552.
+[11] Michael London and Michael Hausser. Dendritic computation. Annual Review of Neuroscience,
+     28:503532, 2005. doi: 10.1146/annurev.neuro.28.061604.135703.
+[12] Greg J. Stuart and Nelson Spruston. Dendritic integration: 60 years of progress. Nature
+     Neuroscience, 18(12):17131721, 2015. doi: 10.1038/nn.4157.
+[13] Marko A. Popovic, Nicholas Carnevale, Balazs Rozsa, and Dejan Zecevic. Electrical behaviour
+     of dendritic spines as revealed by voltage imaging. Nature Communications, 6:8436, 2015. doi:
+     10.1038/ncomms9436.
+[14] Dejan Zecevic. Electrical properties of dendritic spines. Biophysical Journal, 122(22):43034315,
+     2023. doi: 10.1016/j.bpj.2023.10.008.
+[15] Jerey C. Magee and Erik P. Cook. Somatic epsp amplitude is independent of synapse location
+     in hippocampal pyramidal neurons. Nature Neuroscience, 3(9):895903, 2000. doi: 10.1038/
+     78800.
+[16] Jan Tønnesen, Gergely Katona, Balázs Rózsa, and U. Valentin Nägerl. Spine neck plasticity
+     regulates compartmentalization of synapses. Nature Neuroscience, 17(5):678685, 2014. doi:
+     10.1038/nn.3682.
+[17] Jan Tønnesen and U. Valentin Nägerl. Dendritic spines as tunable regulators of synaptic signals.
+     Frontiers in Psychiatry, 7:101, 2016. doi: 10.3389/fpsyt.2016.00101.
+[18] Alan L. Hodgkin and Andrew F. Huxley. A quantitative description of membrane current
+     and its application to conduction and excitation in nerve. The Journal of Physiology, 117(4):
+     500544, 1952. doi: 10.1113/jphysiol.1952.sp004764.
+
+                                                 17
+[19] Mark L. Mayer, Gary L. Westbrook, and Peter B. Guthrie. Voltage-dependent block by mg2+
+     of nmda responses in spinal cord neurones. Nature, 309:261263, 1984. doi: 10.1038/309261a0.
+
+[20] Craig E. Jahr and Charles F. Stevens. A quantitative description of nmda receptor-channel
+     kinetic behavior. The Journal of Neuroscience, 10(6):18301837, 1990. doi: 10.1523/
+     JNEUROSCI.10-06-01830.1990.
+
+[21] Jerey C. Magee. Dendritic hyperpolarization-activated currents modify the integrative prop-
+     erties of hippocampal ca1 pyramidal neurons. The Journal of Neuroscience, 18(19):76137624,
+     1998. doi: 10.1523/JNEUROSCI.18-19-07613.1998.
+
+[22] Jerey C. Magee. Dendritic ih normalizes temporal summation in hippocampal ca1 neurons.
+     Nature Neuroscience, 2(6):508514, 1999. doi: 10.1038/9158.
+[23] John A. Connor and Charles F. Stevens. Prediction of repetitive ring behaviour from voltage
+     clamp data on an isolated neurone soma. The Journal of Physiology, 213(1):3153, 1971. doi:
+     10.1113/jphysiol.1971.sp009366.
+
+[24] John R. Huguenard and David A. McCormick. Simulation of the currents involved in rhythmic
+     oscillations in thalamic relay neurons. Journal of Neurophysiology, 68(4):13731383, 1992. doi:
+     10.1152/jn.1992.68.4.1373.
+
+[25] Michael L. Hines, Thomas Morse, Michele Migliore, Nicholas T. Carnevale, and Gordon M.
+     Shepherd. Modeldb: A database to support computational neuroscience. Journal of Computa-
+     tional Neuroscience, 17(1):711, 2004. doi: 10.1023/B:JCNS.0000023869.22017.2e.
+[26] Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles
+     Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E.
+     Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier
+     Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alas-
+     dair J. G. Gray, Paul Groth, Carole Goble, Jerey S. Grethe, Jaap Heringa, Peter A. C. 't
+     Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone,
+     Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van
+     Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn,
+     Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra
+     Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, and Barend Mons. The
+     fair guiding principles for scientic data management and stewardship. Scientic Data, 3(1):
+     160018, 2016. doi: 10.1038/sdata.2016.18.
+
+[27] Gregory Blake Pierpoint and Alberto E. Musto. Spine: reproducible compartmental-model
+     analyses of residual limits of a load-normalized spine-neck divider coordinate, 2026. URL
+     https://doi.org/10.5281/zenodo.20672333.
+
+
+
+
+                                                18
+

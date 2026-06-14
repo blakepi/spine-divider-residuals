@@ -1,0 +1,29 @@
+{
+  "approval_marker_present": false,
+  "approval_marker_valid": false,
+  "claim_language_audit_passed": true,
+  "core_protected_hash_result": {
+    "unchanged": 218
+  },
+  "csv_files_parsed": 15,
+  "final_classification": "AWAITING_HUMAN_APPROVAL_PACKET_CREATED",
+  "journal_submission_performed": false,
+  "json_files_parsed": 3,
+  "parse_errors": [],
+  "parse_validation_passed": true,
+  "pdf_static_audit_passed": true,
+  "phase": "External Empirical Phase 5",
+  "phase5_mode": "approval_packet_only",
+  "public_patch_release_performed": false,
+  "public_release_hash_result": {
+    "unchanged": 772
+  },
+  "pytest_status": "passed",
+  "pytest_summary": "63 passed in 5.84s via python -m pytest -p no:cacheprovider --tb=short",
+  "submission_package_hash_result": {
+    "unchanged": 198
+  },
+  "submission_package_synced": false,
+  "timestamp_local": "2026-06-13T19:25:58-04:00",
+  "zenodo_action_performed": false
+}

@@ -1,0 +1,581 @@
+                                    Supplementary Materials
+       Residuals from a Load-Normalized Spine-Neck Divider Reveal Limits of Scalar
+                                             Isolation Metrics
+
+
+1 Extended Equations and Unit Notes
+The implementation uses SI units internally at solver boundaries. Voltages are converted from mV
+to V, capacitances from pF to F, conductances from nS to S, currents from pA to A, and time from
+ms to s. Geometry-derived neck resistance uses centimeters for ρi compatibility:
+                                                              ρi Ln
+                                               Rneck =              .                               (1)
+                                                              πrn2
+
+For nonuniform neck proles the code evaluates
+                                                     Z Ln
+                                                                ρi
+                                           Rneck =                   dx                             (2)
+                                                      0       πr(x)2
+
+by numerical quadrature. Tapered, constricted, and prole-based necks preserve the intended ge-
+ometry and report an eective resistance for comparison with lumped approximations.
+    The spine-omitted dendrite-soma load is a two-node DC circuit in the baseline reference case.
+With dendrite leak gL,d , soma leak gL,s , and dendrite-soma coupling gds , direct linear solution gives
+the dendritic one-port input resistance used in the main text:
+                                                             −1
+                                                    gds gL,s
+                                    Rin,d = gL,d +                .                                 (3)
+                                                   gds + gL,s
+
+Using the baseline values gives Rin,d = 144.486692 MΩ, matching the independent direct DC solve
+to round-o.
+    The analytic local divider is therefore
+
+                                 Rneck                        Rin,d          1
+                          ρL =         ,       Γdiv =                   =        ,                  (4)
+                                 Rin,d                    Rneck + Rin,d   1 + ρL
+
+and the manuscript residual is
+                                            ∆div = Γh→d − Γdiv .                                    (5)
+These equations dene a DC small-signal reference. SMI is retained in code-facing outputs as legacy
+shorthand for ρL . The monotone relation between ρL and Γdiv is analytic by construction and is
+not an empirical discovery. These equations do not assert that transient conductance-based peak
+transfer must equal the divider value.
+    The passive matrix in the main manuscript generalizes to an arbitrary passive tree as
+                                 dV
+                             C       = − (GL + GA + Gsyn (t)) V + b(t),                             (6)
+                                  dt
+where GA is assembled from axial edges. Each edge with conductance gij contributes +gij to
+both diagonal entries and −gij to the symmetric o-diagonal entries. This construction preserves
+reciprocity in passive linear systems.
+
+
+
+
+                                                          1
+Figure S1. Fixed-load head-to-soma transfer heatmap. Baseline validation sweep complementing
+the main-text load-normalization controls by showing the two-parameter neck-geometry grid.
+
+
+
+
+                                                   2
+2 Numerical Verication and Benchmarks
+The passive baseline was checked against geometry identities, synaptic normalization, current
+signs, matrix limits, timestep renement, high-synapse stability, and Backward Euler versus
+Crank-Nicolson agreement. The baseline verication script generated the passive source data
+and classied all representative reference target values as passing workow-specied target-case
+tolerances. The most stringent target-case tolerance class means absolute error ≤ 0.005 or relative
+error ≤ 2%, not bitwise equality.
+    An independent direct-matrix benchmark was added for the passive three-compartment baseline
+reference cases. The benchmark independently parsed the baseline parameters, recomputed capac-
+itance/leak/neck terms and the double-exponential synaptic conductance, assembled the passive
+matrices, and solved the Backward Euler system without calling the production passive simula-
+tion function as its benchmark engine. Compared with existing SPINE trace CSVs, the maximum
+all-trace absolute dierence was 1.25 × 10−13 mV, the maximum head-amplitude dierence was
+1.42 × 10−14 mV, and the maximum Γh→d dierence was 7.55 × 10−15 .
+    DC analytic limits were also checked. The spine-omitted two-node load formula gave Rin,d =
+144.48669201520912 MΩ, and the direct DC solve gave 144.48669201520914 MΩ. Divider predictions
+for the low, intermediate, and high reference cases were 0.9912648, 0.8970688, and 0.4306959. The
+zero-neck and very-large-neck limiting cases approached local transfer values of 1 and 0, respectively.
+    The BE-versus-CN reference-case comparison remains an internal scheme-consistency check.
+Across the three baseline reference cases, the maximum peak dierences were 0.00203 mV for Ah ,
+0.000534 mV for Ad , 0.000189 mV for As , 0.000500 for Γh→d , and 0.000180 for Γh→s . The maximum
+trace voltage dierence was 0.112 mV in the high-ρL case.
+    Passive morphology verication included sparse versus dense equivalence, spatial convergence,
+sinusoidal impedance checks, logarithmic-chirp impedance checks, and distributed-neck compar-
+isons. Sinusoidal checks produced maximum relative amplitude error 0.0054. Chirp checks produced
+maximum relative amplitude error 0.072. Spatial convergence passed at the 16-versus-32 segment
+comparison with relative Γh→s dierence 0.014.
+    Active-mechanism verication included AMPA peak normalization, NMDA magnesium-block
+monotonicity, NMDA current-voltage relief, active-current sign checks, gate bounds, positive gate
+time constants, resting-state stability, timestep renement, limiting-case solver comparison, strong-
+drive stability, and active unit checks. All 12 active verication rows passed.
+    NEURON was not importable in the project runtime and no NEURON result is claimed. Brian2
+was installed only in a project-local optional validation environment and used for Brian2-hosted
+scoped checks of the three passive baseline cases, one cylindrical distributed-neck passive case, and
+one AMPA/NMDA synapse-only case. These checks used Brian2 as a unit, clock, and state host
+with an independent SI backward-Euler update. They passed predened tolerances and provide
+representative implementation-check support, but they do not validate all rows, restrained active
+channels, or biological calibration. Brian2 is not a required SPINE runtime dependency.
+
+
+
+
+                                                  3
+Figure S2. Timestep convergence. Baseline-reference intermediate condition showing head-amplitude
+absolute dierence relative to the nest audited timestep on log-scaled axes.
+
+
+
+
+                                                     4
+Figure S3. Spatial convergence. Passive morphology-engine convergence shown as relative
+head-to-soma transfer dierence against the 32-segment reference.
+
+
+
+
+                                                    5
+Figure S4. Lumped and distributed neck-model comparisons. Eective neck resistance contrasted
+with local transfer for audited passive neck variants.
+
+
+
+
+                                                         6
+3 Release, Environment, and Residual-Control Provenance
+Residual timing controls, row provenance, validation coverage, high-ρL stress-test summaries, and
+environment metadata are reported once in the tables at the end of this supplement. The residual-
+control table reports the manuscript's separate-peak metric alongside matched-head-peak and area-
+under-curve controls, because the DC divider is a low-frequency reference and the simulated traces
+are transient conductance-driven responses.
+    The reconciled row-provenance table is the authoritative denominator accounting. It reports
+3,718 included deterministic design-derived residual rows, with 3,584 non-exploratory rows and 134
+exploratory stress-test rows. The original N=96 uncertainty screen is retained only as archived
+provenance when listed separately; it has denominator contribution 0 in that listing because adding
+it again would create the erroneous 3,910-row total.
+    The environment table separates the default project/document runtime from the optional Brian2
+validation environment. Package availability therefore should be read by context, not as a statement
+that every dependency was importable in every runtime or required by the SPINE solver.
+
+
+4 Uncertainty, Identiability, and Predictor Stability
+The uncertainty analysis used deterministic Latin-hypercube ensembles and deterministic resam-
+pling diagnostics. A robustness audit extended this to progressive N=96, 192, 384, and 768 ensem-
+bles. The global uncertainty seed was 202605; progressive-sampling ensembles used deterministic
+osets 202605 + 5100 + N . The original 48-versus-96 ρL convergence failure was preserved and
+interpreted as a small-sample warning in a skewed ρL distribution. By N=768, nal ρL median con-
+vergence passed with relative change 0.012, and nal all-median convergence passed with maximum
+relative change 0.029.
+    Radius uncertainty was analyzed independently because of the quadratic radius term in Rneck .
+The radius audit used 25 deterministic osets spanning ±2 SD, with SD = 0.018 µm and clipping to
+0.060.22 µm. At N=768, 184 of 768 sampled parameter combinations changed ρL class under the
+analysis-dened radius-error model, a design fraction of 24.0%. Low-class combinations ipped in
+22.9% of cases, all 11 intermediate combinations ipped, and no high-ρL combinations were present.
+The median radius-induced ρL fold range was 3.44. These values are deterministic design summaries,
+not biological rates.
+    High-ρL uncertainty coverage is absent in the main N=768 deterministic ensemble. The ensemble
+contains 757 low-ρL combinations, 11 intermediate combinations, and zero high-ρL combinations.
+High-ratio behavior in the manuscript is therefore supported by reference, designed challenge cases,
+and targeted extension rows rather than by the N=768 uncertainty ensemble.
+    Predictor comparisons used Pearson association, Spearman association, deterministic resampling
+summaries, cross-validated RMSE, and multivariable diagnostics. Exact top predictor labels were
+not fully stable because near-tied dynamic-ratio variants changed order. The manuscript therefore
+emphasizes descriptor families and mechanistic interpretation.
+
+
+
+
+                                                 7
+Figure S5. Continuous ρ uncertainty-width convergence. Progressive sample counts for the
+                           L
+continuous-width check complement the main-text radius class-ip design fraction.
+
+
+
+
+                                                   8
+5 Active and Nonlinear Mechanism Notes
+AMPA and NMDA synapses are opt-in extensions. NMDA includes a voltage-dependent magne-
+sium block based on established reduced forms [1, 2]. Na and delayed-rectier K conductances follow
+Hodgkin-Huxley-style conductance-current logic [3]. HCN, A-type K, and restrained calcium con-
+ductances are included as generic active-state stressors with provenance from dendritic physiology
+literature [47].
+    These conductances are not cell-type-calibrated densities. They are disabled in the baseline
+reference conguration and should not be interpreted as tted biological parameters. Their purpose
+in this manuscript is to test whether passive load-ratio conclusions survive nonlinear and active stress
+tests. The implementation map below links each mechanism to its parameterization; source-code
+functions are listed in the accompanying reproducibility reports and public release manifest.
+Table S1. Active-extension parameter audit. All mechanisms are disabled in the baseline reference
+conguration and enabled only through active-extension congurations or explicit protocols.
+Mechanism   Main parameters              Values                             Units                      Provenance/status
+AMPA        gmax ; τr ; τd ; Erev        1.4; 0.3; 3.0; 0                   nS; ms; ms; mV             active-extension double exponential
+NMDA        gmax ; τr ; τd ; Mg; η ; γ   0.7; 2.0; 80.0; 1.0; 3.57; 0.062   nS; ms; ms; mM; mM; mV−1   reduced magnesium block family
+Na          ḡ ; Erev ; gates            6.0; 55; m3 h                      nS; mV; dimensionless      restrained HH-style extension
+KDR         ḡ ; Erev ; gates            1.5; -90; n4                       nS; mV; dimensionless      restrained HH-style extension
+HCN         ḡ ; Erev ; gates            0.05; -30; r                       nS; mV; dimensionless      generic subthreshold HCN approximation
+A-type K    ḡ ; Erev ; gates            0.5; -90; a3 b                     nS; mV; dimensionless      restrained transient potassium extension
+CaT         ḡ ; Erev ; gates            0.05; 120; p2 q                    nS; mV; dimensionless      electrical-only restrained calcium extension
+
+
+
+
+Figure S6. Active AMPA and AMPA+NMDA strength-sweep protocol. Head-amplitude
+responses across analysis-dened conductance scales for the active-extension protocol library.
+
+
+
+                                                                             9
+Figure S7. Exploratory frozen-gate operating-point impedance. Operating-point impedance
+estimates used as exploratory active-context descriptors.
+
+
+
+
+                                                    10
+6 Exploratory Perturbation Scenarios
+The separated exploratory module uses restrained perturbation scenarios involving morphology,
+HCN, potassium, AMPA/NMDA, clustering, synchrony, combined perturbations, and conicting
+directions [812]. The source rows explicitly mark these scenarios as exploratory-only and make no
+diagnostic or therapeutic claim.
+    The exploratory uncertainty screen uses N=8 sampled combinations per scenario. It is a sen-
+sitivity screen rather than a biological uncertainty estimate or rare-tail analysis. The exploratory
+scenarios are best cited as examples showing that synaptic strength, active state, clustering, and
+timing can alter voltage outcomes without changing morphology-dened ρL .
+
+
+
+
+Figure S8. Exploratory perturbation scenarios. ρ versus head amplitude for cases separated from
+                                                       L
+the general model and not used to support primary claims.
+
+
+
+
+                                                  11
+Figure S9. Scenario-level ρ uncertainty screen. Intervals summarize exploratory perturbation
+                              L
+scenarios and are presented as context rather than primary validation evidence.
+
+7 Reproducibility Commands
+The following commands reproduce the validated software checks and manuscript source-data gen-
+eration in a local development environment. Broad primary ensembles should not be rerun casually
+during review unless the authors intentionally regenerate the source data.
+    Windows PowerShell:
+$env:PYTHONPATH='src'
+python -m unittest discover -s tests -p 'test_*.py'
+python -m spine.cli smoke configs\manuscript_faithful\baseline.toml `
+  --output-csv results\phase01_smoke_trace.csv
+python scripts\reproduce_manuscript.py
+python scripts\revision_restart\phase4_validation_runner.py
+python scripts\revision_restart\phase7_generate_divider_residual_figure.py
+
+   Unix shell:
+PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
+PYTHONPATH=src python -m spine.cli smoke configs/manuscript_faithful/baseline.toml \
+  --output-csv results/phase01_smoke_trace.csv
+PYTHONPATH=src python scripts/reproduce_manuscript.py
+PYTHONPATH=src python scripts/revision_restart/phase4_validation_runner.py
+PYTHONPATH=src python scripts/revision_restart/phase7_generate_divider_residual_figure.py
+
+    The public submission release is available at https://github.com/blakepi/spine-divider-residuals,
+tagged as v1.0.0-submission, and archived at https://doi.org/10.5281/zenodo.20672333. Code is
+released under the MIT License; manuscript-facing derived data, gures, tables, and documentation
+are released under CC BY 4.0 unless otherwise stated.
+
+
+                                                   12
+8 External Summary Anchor Decision Gate
+                                                                 Phase 2b bounded summary-level load sensitivity
+                                A. Source-native divider placement
+                                summary-level anchors; points lie on divider by definition                                B. Class stability across load grid
+                          1.0
+                                                                                                                Harnett     4    6.7      5     4.6      4     3.5     3.1     2.5     1.8     1.2     0.89   0.75
+                                                                                                                 model
+                          0.8
+
+                          0.6
+              Gamma_div
+
+
+
+
+                                                                                                                Popovic 0.098 0.36       0.27   0.25    0.22   0.19    0.17    0.14   0.098 0.068 0.048       0.04
+                                                                                                               measured
+                          0.4
+
+                          0.2         Harnett model/summary                                                     Popovic 0.072 0.54       0.41   0.38    0.32   0.28    0.25    0.2     0.15    0.1    0.072 0.061
+                                                                                                                 model
+                                      Popovic measured
+                                      Popovic model fit
+                          0.0
+                                          10−1                   100
+
+
+
+
+                                                                                                                         e
+
+                                                                                                                                75
+
+                                                                                                                                         0
+
+                                                                                                                                                8
+
+                                                                                                                                                            5
+
+                                                                                                                                                           87
+
+                                                                                                                                                                       2
+
+                                                                                                                                                                               0
+
+                                                                                                                                                                                       5
+
+                                                                                                                                                                                               0
+
+                                                                                                                                                                                                           4
+
+                                                                                                                                                                                                          67
+                                                                                                                      tiv
+
+
+
+                                                                                                                                       10
+
+                                                                                                                                              10
+
+                                                                                                                                                          12
+
+
+
+                                                                                                                                                                     16
+
+                                                                                                                                                                             20
+
+                                                                                                                                                                                     27
+
+                                                                                                                                                                                             40
+
+                                                                                                                                                                                                         56
+                                                                                                                                                        4.4
+
+
+
+
+                                                                                                                                                                                                       6.6
+                                                  rho_L = R_neck / load
+
+
+
+
+                                                                                                                     na
+
+
+
+
+                                                                                                                                                      14
+
+
+
+
+                                                                                                                                                                                                     66
+                                  red: high; yellow: intermediate; green: low; black dot: source-native load
+                                C. Analytic class-threshold loads
+      Popovic model fit
+
+
+
+
+     Popovic measured
+
+
+
+
+Harnett model/summary
+                                                                                      102                                                                                     103
+                                                                                                               Load (MOhm)
+
+Figure S10. Bounded summary-level load sensitivity for external Route 1 anchors.
+Source-native summary anchors are plotted on the analytic divider relationship Γdiv = 1/(1 + ρL ), and
+points lie on the divider by denition rather than as residual validation. The Harnett point is a
+model/summary anchor, not recovered paired measured per-spine data. Popovic measured summary and
+Popovic model-t rows are kept separate. Class stability is shown across source-native, xed/recovered
+common-load, and deterministic diagnostic-load calculations; the diagnostic grid is not a biological
+distribution. Threshold bars show the loads required for each row to cross low/intermediate/high ρL
+classes. These rows support only a summary-level load-normalization hypothesis; no per-spine inference,
+biological validation, prevalence estimate, controversy resolution, or SPINE residual claim from transfer
+proxies is implied.
+
+
+9 Extended Limitations
+SPINE is a transparent computational framework, not a calibrated biological reconstruction. The
+baseline reference track preserves pre-specied assumptions even when they are simplied. The
+plausibility-revised and active-extension tracks are explicitly separated. Exploratory perturbation
+scenarios are supplemental stress tests and are not disease models.
+
+                                                                                                    13
+    The analytic divider is a DC small-signal reference. The simulated targets in this manuscript are
+transient conductance-based peak responses, so residuals from the divider are expected and infor-
+mative. The independent direct-matrix benchmark checks the passive three-compartment baseline
+implementation against an independently assembled equation solve, but it does not check every mor-
+phology, active, uncertainty, or exploratory output. NEURON cross-checking was not performed.
+    The deterministic uncertainty ensembles are sensitivity designs, not experimentally tted pos-
+terior distributions. The N=768 ensemble contains no high-ρL rows, so high-isolation uncertainty
+remains a targeted limitation. Radius uncertainty, unmodeled ultrastructure, cytoplasmic resistiv-
+ity uncertainty, segmentation error, local synaptic receptor composition, and active conductance
+distributions can all alter interpretation.
+    The current package does not include posterior inference from experimental voltage traces, cell-
+type-specic channel tting, full morphology libraries, biochemical calcium reaction-diusion, re-
+ceptor tracking, signaling cascades, or receptor-level plasticity mechanisms. These are future
+validation targets, not hidden assumptions of the current manuscript.
+
+
+References
+ [1] Mark L. Mayer, Gary L. Westbrook, and Peter B. Guthrie. Voltage-dependent block by mg2+
+     of nmda responses in spinal cord neurones. Nature, 309:261263, 1984. doi: 10.1038/309261a0.
+
+ [2] Craig E. Jahr and Charles F. Stevens. A quantitative description of nmda receptor-channel
+     kinetic behavior. The Journal of Neuroscience, 10(6):18301837, 1990. doi: 10.1523/
+     JNEUROSCI.10-06-01830.1990.
+
+ [3] Alan L. Hodgkin and Andrew F. Huxley. A quantitative description of membrane current
+     and its application to conduction and excitation in nerve. The Journal of Physiology, 117(4):
+     500544, 1952. doi: 10.1113/jphysiol.1952.sp004764.
+
+ [4] Jerey C. Magee. Dendritic hyperpolarization-activated currents modify the integrative prop-
+     erties of hippocampal ca1 pyramidal neurons. The Journal of Neuroscience, 18(19):76137624,
+     1998. doi: 10.1523/JNEUROSCI.18-19-07613.1998.
+
+ [5] Jerey C. Magee. Dendritic ih normalizes temporal summation in hippocampal ca1 neurons.
+     Nature Neuroscience, 2(6):508514, 1999. doi: 10.1038/9158.
+ [6] John A. Connor and Charles F. Stevens. Prediction of repetitive ring behaviour from voltage
+     clamp data on an isolated neurone soma. The Journal of Physiology, 213(1):3153, 1971. doi:
+     10.1113/jphysiol.1971.sp009366.
+
+ [7] John R. Huguenard and David A. McCormick. Simulation of the currents involved in rhythmic
+     oscillations in thalamic relay neurons. Journal of Neurophysiology, 68(4):13731383, 1992. doi:
+     10.1152/jn.1992.68.4.1373.
+
+ [8] Roland A. Bender, Seyed V. Soleymani, Amy L. Brewster, Son T. Nguyen, Heinz Beck, Gary W.
+     Mathern, and Tallie Z. Baram. Enhanced expression of a specic hyperpolarization-activated
+     cyclic nucleotide-gated cation channel (hcn) in surviving dentate gyrus granule cells of human
+     and experimental epileptic hippocampus. The Journal of Neuroscience, 23(17):68266836, 2003.
+     doi: 10.1523/JNEUROSCI.23-17-06826.2003.
+
+
+
+
+                                                 14
+ [9] Maarten H. P. Kole, Andrea U. Braeuer, and Greg J. Stuart. Inherited cortical hcn1 channel
+     loss amplies dendritic calcium electrogenesis and burst ring in a rat absence epilepsy model.
+     The Journal of Physiology, 578(2):507525, 2007. doi: 10.1113/jphysiol.2006.122028.
+[10] Caroline Nava, Caroline Dalle, Agnes Rastetter, Pasquale Striano, Carolien G. F. de Kovel,
+     Rima Nabbout, Claire Cances, Damien Ville, Eva H. Brilstra, Giuseppe Gobbi, Emilio Rao,
+     Delphine Bouteiller, Yves Marie, Olivier Trouillard, Andrea Robbiano, Boris Keren, Alexandra
+     Afenjar, Alexis Arzimanoglou, Helene Maurey, Christophe Hubans, Nady El Hajj, Zeynep
+     Yapici, Bela Melegh, Anita Kutas, Jean-Louis Mandel, Thierry Frebourg, Christel Depienne,
+     and Stephanie Baulac. De novo mutations in hcn1 cause early infantile epileptic encephalopathy.
+     Nature Genetics, 46(6):640645, 2014. doi: 10.1038/ng.2952.
+[11] Attila Losonczy, Judit K. Makara, and Jerey C. Magee. Compartmentalized dendritic
+     plasticity and input feature storage in neurons. Nature, 452(7186):436441, 2008. doi:
+     10.1038/nature06725.
+
+[12] Tim Jarsky, Alex Roxin, William L. Kath, and Nelson Spruston. Conditional dendritic spike
+     propagation following distal synaptic activation of hippocampal ca1 pyramidal neurons. Nature
+     Neuroscience, 8(12):16671676, 2005. doi: 10.1038/nn1599.
+Table S2. Validation coverage by deterministic row class. Brian2-hosted checks are scoped and do not
+cover every row.
+
+ row_class                                                row_count   direct_matrix_benchmark_coverage   dc_analytic_ch
+ baseline targets                                         3           yes                                yes
+ xed-load sweep                                          400         partial                            yes
+ matched-neck/matched-load sweep                          30          partial                            yes
+ passive morphology                                       24          no                                 partial
+ spatial convergence/distributed morphology checks        4           partial                            partial
+ active/NMDA challenge                                    47          no                                 no
+ progressive uncertainty designs                          2880        no                                 ratio algebra on
+ original N=96 uncertainty screen                         192         no                                 ratio algebra on
+ exploratory perturbation scenarios                       134         no                                 ratio algebra on
+
+
+
+
+                                                     15
+Table S3. Reconciled deterministic row provenance. The archived original N=96 uncertainty screen is
+non-additive.
+
+ row_class                                                 row_count    denominator_contribution      status            ex
+ phase02_baseline_target_cases                             3            3                             included          no
+ phase02_dt_convergence_intermediate                       4            4                             included          no
+ phase02_xed_load_geometry_sweep                          400          400                           included          no
+ phase02_matched_neck_load_sweep                           30           30                            included          no
+ phase03_passive_morphology_challenge                      24           24                            included          no
+ phase03_spatial_convergence                               4            4                             included          no
+ phase04_active_nonlinear_challenge                        47           47                            included          no
+ phase05_1_global_uncertainty_N96                          192          192                           included          no
+ phase05_1_global_uncertainty_N192                         384          384                           included          no
+ phase05_1_global_uncertainty_N384                         768          768                           included          no
+ phase05_1_global_uncertainty_N768                         1536         1536                          included          no
+ phase05_global_uncertainty_N96                            192          192                           included          no
+ phase06_exploratory_matched_baseline_comparisons          27           27                            included          ye
+ phase06_exploratory_mechanistic_decomposition             8            8                             included          ye
+ phase06_exploratory_scenario_metrics                      27           27                            included          ye
+ phase06_exploratory_uncertainty_samples                   72           72                            included          ye
+ original_N96_uncertainty_screen_if_listed_separately      192          0                             excluded/nested   no
+
+
+Table S4. Residual metric controls for baseline cases and the largest matched-neck peak residual.
+ condition                                rho_load                Gamma_divider         Gamma_peak_separate_h_to_d
+ low                                      0.0088121579017196      0.9912648179022263    0.9839703151549645
+ intermediate                             0.1147416393453083      0.8970688495921831    0.751282130869046
+ high                                     1.3218236852579517      0.4306959250822274    0.10213244622161506
+ matched_neck_largest_peak_residual       0.45210526315789473     0.6887                0.1962
+
+
+Table S5. Row-class residual summaries. Fractions are deterministic design fractions.
+ row_class                                                n      median_abs_residual     mean_abs_residual     max_abs_
+ phase02_baseline_target_cases                            3      0.1458                  0.1605                0.3286
+ phase02_dt_convergence_intermediate                      4      0.1457                  0.1458                0.1463
+ phase02_xed_load_geometry_sweep                         400    0.1258                  0.1779                0.4201
+ phase02_matched_neck_load_sweep                          30     0.4313                  0.378                 0.4924
+ phase03_passive_morphology_challenge                     24     0.1071                  0.1339                0.454
+ phase03_spatial_convergence                              4      0.02423                 0.02465               0.02675
+ phase04_active_nonlinear_challenge                       47     0.09292                 0.1039                0.1938
+ phase05_1_global_uncertainty_N192                        384    0.05347                 0.05815               0.17
+ phase05_1_global_uncertainty_N384                        768    0.05246                 0.05704               0.1437
+ phase05_1_global_uncertainty_N768                        1536   0.05315                 0.05739               0.1724
+ phase05_1_global_uncertainty_N96                         192    0.05391                 0.05651               0.1142
+ phase05_global_uncertainty_N96                           192    0.05299                 0.05753               0.1362
+ phase06_exploratory_matched_baseline_comparisons         27     0.02555                 0.02976               0.05912
+ phase06_exploratory_mechanistic_decomposition            8      0.0388                  0.04189               0.05212
+ phase06_exploratory_scenario_metrics                     27     0.02555                 0.02976               0.05912
+ phase06_exploratory_uncertainty_samples                  72     0.04043                 0.04169               0.06926
+
+
+                                                   16
+Table S6. Bounded deterministic high-ρ uncertainty extension.                                                                                         L
+
+
+   metric                                                                                                                                                                  value                                 interpretation
+   true_high_rhol_parameter_combinations                                                                                                                                   41                                    bounded deterministic high-ratio extension; not a population samp
+   radius_measurement_rows                                                                                                                                                 205                                   ve deterministic radius scales per true high-ratio combination
+   class_ip_rows                                                                                                                                                          16                                    ips occur when measured radius moves borderline high cases below
+   class_ip_design_fraction                                                                                                                                               0.07805                               design fraction only
+   median_peak_residual_high_rhol                                                                                                                                          -0.3245                               same transient peak metric as main residual table
+
+
+
+
+Table S7. Environment and runtime contexts. Brian2 is optional and used only for scoped Brian2-hosted
+implementation checks. Package availability is runtime-specic.
+Context                                  OS/platform                 Python           NumPy            SciPy            Pandas           Matplotlib       statsmodels/sklearn               Brian2           Solver/check role                                                      Notes
+Default project/document runtime         Windows-11-10.0.26200-SP0   3.12.13          2.3.5            not importable   3.0.1            not importable   not importable / not importable   not importable   unit tests, package rebuild scripts, document QA                       Missing optional analysis packages in this bundled runtime do not imply missing packages in other project environments.
+Local LaTeX/document build tools         Windows-11-10.0.26200-SP0   not applicable   not applicable   not applicable   not applicable   not applicable   not applicable                    not applicable   pdatex, BibTeX, pdftotext, pdftoppm                                   MiKTeX command-line tools produced the rebuilt PDFs and visual QA contact sheets.
+Optional Brian2 validation environment   Windows-11-10.0.26200-SP0   3.12.13          2.4.6            1.17.1           3.0.3            3.11.0           0.14.6 / not installed            2.10.1           Brian2-hosted scoped checks                                            Brian2 is not a required SPINE runtime dependency; checks covered selected passive and synapse-only reference cases.
+Reference numerical settings             not applicable              not applicable   not applicable   not applicable   not applicable   not applicable   not applicable                    not applicable   Backward Euler production solver; Crank-Nicolson internal comparison   ∆t = 0.01 ms; 2070 ms metric window; deterministic seeds 202605 plus workow osets.
+Release metadata                         not applicable              not applicable   not applicable   not applicable   not applicable   not applicable   not applicable                    not applicable   package provenance                                                     Repository https://github.com/blakepi/spine-divider-residuals; release v1.0.0-submission; DOI 10.5281/zenodo.20672333.
+
+
+
+
+Table S8. Active-mechanism implementation map. Active mechanisms are verication stress tests, not
+biological calibration.
+
+   mechanism                                                               source_le                                                                                  parameters                                                                                                                                                                 gating
+   AMPA                                                                    src/spine/synapses.py                                                                       gmax 1.4 nS baseline; tau 0.3/3 ms                                                                                                                                         none
+   NMDA                                                                    src/spine/synapses.py                                                                       gmax 0.7 nS active extension; tau 2/80 ms                                                                                                                                  voltage-dependent Mg unblock
+   magnesium block                                                         src/spine/synapses.py                                                                       Mg 1 mM, eta 3.57, gamma 0.062/mV                                                                                                                                          voltage-dependent
+   Na                                                                      src/spine/channels.py                                                                       na_gbar_nS 6.0                                                                                                                                                             m/h gates
+   KDR                                                                     src/spine/channels.py                                                                       kdr_gbar_nS 1.5                                                                                                                                                            n gate
+   HCN                                                                     src/spine/channels.py                                                                       hcn_gbar_nS 0.05                                                                                                                                                           h gate
+   A-type K                                                                src/spine/channels.py                                                                       ka_gbar_nS 0.5                                                                                                                                                             a/b gates
+   restrained CaT                                                          src/spine/channels.py                                                                       cat_gbar_nS 0.05                                                                                                                                                           m/h gates
+
+
+
+
+                                                                                                                                                                                                17
+

@@ -1,0 +1,12 @@
+language_type,claim_language,status,reason,safer_replacement
+allowed,Summary-level anchors occupy distinct load-normalized regimes.,allowed,Supported by source-native and bounded common-load calculations.,
+allowed_with_caveat,The result supports a load-normalization hypothesis for part of the high- versus low-isolation contrast.,allowed_with_caveat,Hypothesis-level only; the rows are summary/model anchors.,Machine-recoverable summary-level anchors support a load-normalization hypothesis.
+allowed_with_caveat,The analysis is not a per-spine reanalysis.,allowed_with_caveat,This caveat must accompany any external empirical claim.,Use summary-level anchor analysis rather than per-spine language.
+allowed_with_caveat,External transfer measures were treated as proxy-only compatibility checks.,allowed_with_caveat,Phase 2a/2b do not authorize external SPINE residuals.,Transfer proxies are not SPINE residuals.
+allowed_with_caveat,Kwon and Cornejo remain context/exclusion rows.,allowed_with_caveat,No accepted numeric rho_L coordinate exists for those sources.,Kwon and Cornejo were not plotted as rho_L data.
+forbidden,we resolved the spine-isolation controversy,forbidden,The dataset is summary-only and too thin for field-resolution claims.,summary-level anchors occupy distinct load-normalized regimes
+forbidden,per-spine published data validate SPINE,forbidden,No per-spine rows are present.,the analysis is not a per-spine reanalysis
+forbidden,Harnett measured spines were reanalyzed per spine,forbidden,Harnett native paired measured rows were not machine-recovered.,Harnett is a model/summary high-isolation anchor.
+forbidden,external data validate the divider-residual model,forbidden,Transfer proxies are not residuals and rows are summary-level.,the result supports a load-normalization hypothesis
+forbidden,these rows estimate biological prevalence,forbidden,Summary anchors are not a population sample.,"these rows are selected summary anchors, not prevalence estimates."
+forbidden,Kwon and Cornejo confirm the rho_L split,forbidden,Kwon and Cornejo lack accepted numeric rho_L coordinates.,Kwon and Cornejo remain context/exclusion rows.

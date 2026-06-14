@@ -1,0 +1,3 @@
+audit_item,status,exact_command,notes
+phase4_rebuild_policy,PASS_NO_REBUILD_NEEDED,,Existing Phase 3 PDFs were available and current; Phase 4 did not rebuild in place.
+phase3_latex_audit_available,PASS,,results/external_empirical/phase3_manuscript_addon/phase3_latex_build_audit.csv

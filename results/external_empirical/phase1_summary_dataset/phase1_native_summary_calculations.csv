@@ -1,0 +1,8 @@
+row_id,source_id,dataset_role,data_level,R_neck_MOhm,load_value_MOhm,rho_L_source_native,Gamma_div_source_native,rho_L_class_source_native,calculation_note
+harnett_2012_summary_model_anchor,harnett_2012,harnett_high_isolation_anchor,summary_model,500,125,4,0.2,high_gte_0p75,Source-native feasibility calculation only; not a load-model sensitivity sweep.
+harnett_2012_long_neck_subset_context,harnett_2012,harnett_high_isolation_anchor,context_only,,,,,not_calculated,Not calculated because R_neck and load are not both available.
+popovic_2015_measured_summary_anchor,popovic_2015,popovic_low_isolation_anchor,summary_measured,27,275,0.0981818182,0.910596026,low_lt_0p25,Source-native feasibility calculation only; not a load-model sensitivity sweep.
+popovic_2015_model_fit_reference,popovic_2015,popovic_low_isolation_anchor,summary_model,40.5,564,0.0718085106,0.933002481,low_lt_0p25,Source-native feasibility calculation only; not a load-model sensitivity sweep.
+kwon_2017_excluded_no_numeric_row,kwon_2017,kwon_low_isolation_excluded,excluded_no_numeric_route1_row,,,,,not_calculated,Not calculated because R_neck and load are not both available.
+cornejo_2022_contrast_only_no_rho_coordinate,cornejo_2022,cornejo_voltage_contrast,contrast_only,,,,,not_calculated,Not calculated because R_neck and load are not both available.
+zecevic_2023_interpretive_context,zecevic_2023,zecevic_interpretive_context,context_only,,,,,not_calculated,Not calculated because R_neck and load are not both available.

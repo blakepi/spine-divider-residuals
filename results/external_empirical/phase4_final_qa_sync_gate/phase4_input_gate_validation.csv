@@ -1,0 +1,6 @@
+check_id,requirement,status,observed,expected,notes
+phase0_1_gate,Phase 0.1 classification is GO_SUMMARY_ONLY,PASS,GO_SUMMARY_ONLY,GO_SUMMARY_ONLY,Summary-only route remains the governing evidence boundary.
+phase2a_gate,Phase 2a classification is SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,PASS,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,SUMMARY_SIGNAL_FOR_REFRAMING_HYPOTHESIS,Phase 2a supports hypothesis-level reframing only.
+phase2b_gate,Phase 2b recommendation is PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON,PASS,PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON,PROCEED_TO_CONTROLLED_MANUSCRIPT_ADDON,Phase 2b allows controlled manuscript add-on only.
+phase3_complete,Phase 3 validation passed,PASS,passed,passed,Phase 3 integration was accepted before Phase 4.
+no_per_spine_rows,No external empirical row is usable as per-spine Route 1 evidence,PASS,none,none,Summary-usable rows: harnett_2012_summary_model_anchor;popovic_2015_measured_summary_anchor;popovic_2015_model_fit_reference.
